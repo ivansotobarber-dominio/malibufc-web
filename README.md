@@ -4,7 +4,7 @@ Fuente de verdad técnica y documental de la web oficial del Malibú FC. La solu
 
 ## Estado
 
-La base técnica y el diseño inicial están disponibles. La web no está autorizada todavía para su lanzamiento definitivo ni para vender productos. Los bloqueos vigentes se mantienen en `docs/BACKLOG.md`.
+El repositorio público y GitHub Pages están activos. El dominio continúa sin resolución DNS y la web no está autorizada todavía para indexación ni venta de productos. Los bloqueos vigentes se mantienen en `docs/BACKLOG.md`.
 
 ## Documentación principal
 

@@ -73,6 +73,6 @@ Estos elementos no deben publicarse como hechos ni activar funcionalidades hasta
 
 ## Estado de preparación
 
-La base técnica es adecuada para el alcance inicial y no necesita dependencias ni proceso de compilación. La publicación definitiva continúa bloqueada por información legal, comercial, deportiva, de contacto e imágenes. El dominio está confirmado, pero su delegación DNS y GitHub Pages todavía no están activos.
+La base técnica es adecuada para el alcance inicial y no necesita dependencias ni proceso de compilación. La publicación definitiva continúa bloqueada por información legal, comercial, deportiva, de contacto e imágenes. El dominio está confirmado y GitHub Pages está activo, pero la delegación DNS continúa en `NXDOMAIN`; por ello el dominio y el certificado todavía no están operativos.
 
-El repositorio está inicializado localmente con Git en la rama `main`. La creación del repositorio remoto, el primer commit y el envío a GitHub requieren autenticación e identidad Git configuradas.
+El repositorio público `ivansotobarber-dominio/malibufc-web` está operativo. `main` contiene el commit inicial y GitHub Pages publica desde `/(root)`. GitHub reconoce `malibufc.es` como dominio personalizado; quedan pendientes la delegación DNS, el certificado y `Enforce HTTPS`.

@@ -10,7 +10,6 @@ Prioridades: P0 bloquea un hito comprometido, P1 aporta valor inmediato, P2 mejo
 
 | ID | Prioridad | Tarea | Responsable | Dependencia | Criterio de aceptación |
 |---|---|---|---|---|---|
-| AH-01 | P0 | Configurar identidad Git, autenticar GitHub y crear `ivansotobarber-dominio/malibufc-web` | Iván | Acceso a GitHub | Primer commit en `main`, remoto accesible y repositorio público operativo |
 | AH-03 | P0 | Confirmar responsable de la web y vendedor | Iván y directiva | Datos legales | Identidad y datos mínimos disponibles para textos legales |
 | AH-04 | P0 | Validar información deportiva y corporativa existente | Iván y directiva | Fuente autorizada | Cada dato pendiente de `PROJECT_CONTEXT.md` queda confirmado, corregido o retirado |
 | AH-05 | P0 | Aportar y aprobar identidad e imágenes oficiales | Iván | Derechos de uso | Escudo, favicon y fotografías definitivas almacenados con procedencia y autorización |

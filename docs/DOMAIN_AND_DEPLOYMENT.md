@@ -10,7 +10,7 @@ Fecha de configuración: 2026-07-29.
 | Variante secundaria | `www.malibufc.es` |
 | Comportamiento esperado de `www` | Redirección automática a `https://malibufc.es/` |
 | Registrador y DNS | OVHcloud |
-| Repositorio previsto | `ivansotobarber-dominio/malibufc-web` |
+| Repositorio | `ivansotobarber-dominio/malibufc-web` |
 | Rama de publicación | `main` |
 | Carpeta de publicación | `/(root)` |
 | Archivo de dominio | `/CNAME` |
@@ -31,9 +31,9 @@ Comprobación realizada el 2026-07-29 desde Canarias:
 | Resolutor público Google `8.8.8.8` | `NXDOMAIN` |
 | Registros A y AAAA del dominio raíz | No publicados |
 | CNAME de `www` | No publicado |
-| Repositorio accesible mediante la integración de GitHub | No, respuesta 404 |
-| GitHub Pages | No activado |
-| Certificado TLS | No emitido |
+| Repositorio público | Activo en `https://github.com/ivansotobarber-dominio/malibufc-web` |
+| GitHub Pages | Compilación completada desde `main` y `/(root)` |
+| Certificado TLS | No emitido; GitHub responde `The certificate does not exist yet` |
 | HTTPS forzado | No activado |
 
 El estado `NXDOMAIN` en el servidor autoritativo de `.es` indica que el alta o la delegación todavía no es visible públicamente. No debe interpretarse como un error de los registros que aún no se han creado.
