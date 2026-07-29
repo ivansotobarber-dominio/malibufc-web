@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# La indexación se habilitará cuando el dominio y los contenidos estén confirmados.

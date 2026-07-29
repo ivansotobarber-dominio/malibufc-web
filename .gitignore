@@ -1,0 +1,13 @@
+# Datos y credenciales locales
+private-data/
+.env
+.env.*
+!.env.example
+
+# Dependencias y artefactos temporales
+node_modules/
+.audit/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

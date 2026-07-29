@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#071f18">
+  <title>Control deportivo · Malibú FC</title>
+  <link rel="stylesheet" href="./control.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir al contenido</a>
+
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Área interna · demostración</p>
+      <h1>Control deportivo</h1>
+    </div>
+    <span class="mode-badge" id="mode-badge">Datos simulados</span>
+  </header>
+
+  <nav class="tabs" aria-label="Módulos del control">
+    <button class="tab is-active" type="button" data-view="dashboard">Resumen</button>
+    <button class="tab" type="button" data-view="events">Eventos</button>
+    <button class="tab" type="button" data-view="availability">Disponibilidad</button>
+    <button class="tab" type="button" data-view="callups">Convocatoria</button>
+  </nav>
+
+  <main id="main" class="app-main">
+    <section class="toolbar" aria-label="Filtros">
+      <label>
+        Equipo
+        <select id="team-filter">
+          <option value="all">Ambos equipos</option>
+          <option value="first">Primer equipo</option>
+          <option value="second">Segundo equipo</option>
+        </select>
+      </label>
+      <label>
+        Evento activo
+        <select id="event-filter"></select>
+      </label>
+    </section>
+
+    <section class="view is-active" id="view-dashboard" data-view-panel="dashboard">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Estado operativo</p>
+          <h2>Resumen</h2>
+        </div>
+        <p id="dashboard-context" class="supporting"></p>
+      </div>
+      <div class="metric-grid" id="metric-grid" aria-live="polite"></div>
+      <div class="split-grid">
+        <article class="panel">
+          <div class="panel-heading">
+            <h3>Próximos eventos</h3>
+            <span class="count" id="event-count"></span>
+          </div>
+          <div id="dashboard-events" class="card-list"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-heading">
+            <h3>Estado de respuesta</h3>
+          </div>
+          <div id="response-breakdown" class="breakdown"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="view" id="view-events" data-view-panel="events" hidden>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Agenda</p>
+          <h2>Eventos</h2>
+        </div>
+        <button class="secondary-button" type="button" id="new-event-button">Simular evento</button>
+      </div>
+      <div id="events-list" class="event-grid"></div>
+    </section>
+
+    <section class="view" id="view-availability" data-view-panel="availability" hidden>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Respuesta individual</p>
+          <h2>Disponibilidad</h2>
+        </div>
+        <p class="supporting">Los cambios son temporales y no salen de este navegador.</p>
+      </div>
+      <div class="status-legend" aria-label="Estados">
+        <span><i class="dot available"></i> Disponible</span>
+        <span><i class="dot doubt"></i> Duda</span>
+        <span><i class="dot unavailable"></i> No disponible</span>
+      </div>
+      <div id="availability-list" class="player-list"></div>
+    </section>
+
+    <section class="view" id="view-callups" data-view-panel="callups" hidden>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Preparación</p>
+          <h2>Convocatoria</h2>
+        </div>
+        <div class="target-chip"><span id="callup-selected">0</span>/<span id="callup-target">0</span></div>
+      </div>
+      <div class="notice" id="callup-notice" role="status"></div>
+      <div id="callup-list" class="player-list"></div>
+      <div class="sticky-action">
+        <button class="primary-button" type="button" id="save-callup-button">Guardar borrador simulado</button>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="event-dialog">
+    <form method="dialog" id="event-form">
+      <div class="dialog-heading">
+        <div>
+          <p class="eyebrow">Datos simulados</p>
+          <h2>Nuevo evento</h2>
+        </div>
+        <button class="icon-button" value="cancel" aria-label="Cerrar">×</button>
+      </div>
+      <label>Descripción <input name="title" required maxlength="80" placeholder="Entrenamiento técnico"></label>
+      <label>Equipo
+        <select name="team" required>
+          <option value="first">Primer equipo</option>
+          <option value="second">Segundo equipo</option>
+          <option value="both">Ambos equipos</option>
+        </select>
+      </label>
+      <label>Fecha y hora <input name="startAt" type="datetime-local" required></label>
+      <label>Objetivo de convocatoria <input name="callupTarget" type="number" min="1" max="30" value="14" required></label>
+      <div class="dialog-actions">
+        <button class="secondary-button" value="cancel">Cancelar</button>
+        <button class="primary-button" value="default">Crear simulación</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="./api.js"></script>
+  <script src="./control.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.site-status {
+  position: relative;
+  z-index: 200;
+  padding: 10px 20px;
+  background: #d6ae55;
+  color: #10110f;
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 28px;
+  border: 1px dashed currentColor;
+  border-radius: var(--radius);
+  color: var(--muted);
+}
+
+.sponsor-grid .empty-state {
+  min-height: 150px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

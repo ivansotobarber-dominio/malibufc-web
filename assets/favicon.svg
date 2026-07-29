@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Escudo provisional Malibú FC</title>
+  <desc id="desc">Emblema circular verde oscuro y dorado con las letras MFC.</desc>
+  <circle cx="256" cy="256" r="248" fill="#10110f"/>
+  <circle cx="256" cy="256" r="218" fill="#123f2e" stroke="#d6ae55" stroke-width="14"/>
+  <path d="M150 335V178h48l58 77 58-77h48v157h-51v-78l-55 70-55-70v78z" fill="#f4f2ed"/>
+  <text x="256" y="404" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="54" letter-spacing="10" fill="#d6ae55">MFC</text>
+  <path d="M179 119h154" stroke="#d6ae55" stroke-width="10" stroke-linecap="round"/>
+</svg>

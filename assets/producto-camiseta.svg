@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Camiseta oficial Malibú FC</title>
+  <desc id="desc">Representación provisional de una camiseta deportiva del Malibú FC.</desc>
+  <rect width="1200" height="900" fill="#e9e6dc"/>
+  <path d="M415 205 510 150h180l95 55 158 75-72 156-108-50v340H437V386l-108 50-72-156z" fill="#123f2e" stroke="#10110f" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M510 150c14 62 166 62 180 0" fill="none" stroke="#d6ae55" stroke-width="18"/>
+  <circle cx="600" cy="420" r="105" fill="#10110f" stroke="#d6ae55" stroke-width="9"/>
+  <text x="600" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="70" font-weight="900" fill="#f4f2ed">MFC</text>
+  <text x="600" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="800" fill="#10110f">IMAGEN PROVISIONAL</text>
+</svg>
