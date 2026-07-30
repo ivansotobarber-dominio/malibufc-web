@@ -4,7 +4,7 @@ Fuente de verdad técnica y documental de la web oficial del Malibú FC. La solu
 
 ## Estado
 
-El repositorio público y GitHub Pages están activos. El dominio continúa sin resolución DNS y la web no está autorizada todavía para indexación ni venta de productos. Los bloqueos vigentes se mantienen en `docs/BACKLOG.md`.
+El repositorio público, GitHub Pages, el dominio y HTTPS están activos. `www.malibufc.es` redirige al dominio principal. La web todavía no está autorizada para indexación ni venta de productos; los bloqueos vigentes se mantienen en `docs/BACKLOG.md`.
 
 ## Documentación principal
 

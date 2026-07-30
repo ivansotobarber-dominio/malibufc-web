@@ -1,6 +1,6 @@
 # Dominio y despliegue de GitHub Pages
 
-Fecha de configuración: 2026-07-29.
+Fecha de configuración: 2026-07-29. Última comprobación: 2026-07-30.
 
 ## Configuración confirmada
 
@@ -22,21 +22,22 @@ GitHub Pages redirigirá `www.malibufc.es` al dominio raíz cuando ambos DNS est
 
 ## Estado comprobado
 
-Comprobación realizada el 2026-07-29 desde Canarias:
+Comprobación realizada el 2026-07-30 desde Canarias:
 
 | Componente | Estado |
 |---|---|
-| Servidor autoritativo de `.es` | `NXDOMAIN` para `malibufc.es` |
-| Resolutor público Cloudflare `1.1.1.1` | `NXDOMAIN` |
-| Resolutor público Google `8.8.8.8` | `NXDOMAIN` |
-| Registros A y AAAA del dominio raíz | No publicados |
-| CNAME de `www` | No publicado |
+| Resolutor público Cloudflare `1.1.1.1` | A y AAAA correctos |
+| Resolutor público Google `8.8.8.8` | A correctos |
+| Registros A y AAAA del dominio raíz | Publicados con las ocho direcciones oficiales de GitHub Pages |
+| CNAME de `www` | `ivansotobarber-dominio.github.io` |
 | Repositorio público | Activo en `https://github.com/ivansotobarber-dominio/malibufc-web` |
 | GitHub Pages | Compilación completada desde `main` y `/(root)` |
-| Certificado TLS | No emitido; GitHub responde `The certificate does not exist yet` |
-| HTTPS forzado | No activado |
+| Certificado TLS | Aprobado para `malibufc.es` y `www.malibufc.es`; vencimiento indicado por GitHub: 2026-10-28 |
+| HTTPS forzado | Activado |
+| `https://malibufc.es/` | Respuesta 200 |
+| `https://www.malibufc.es/` | Redirección 301 a `https://malibufc.es/` |
 
-El estado `NXDOMAIN` en el servidor autoritativo de `.es` indica que el alta o la delegación todavía no es visible públicamente. No debe interpretarse como un error de los registros que aún no se han creado.
+La asociación del dominio se reinició el 2026-07-30 después de completarse la propagación DNS, conforme al procedimiento de resolución de GitHub Pages. Esto generó y aprobó el certificado para ambos nombres. La configuración técnica de dominio y HTTPS queda completada.
 
 ## Orden de implantación
 

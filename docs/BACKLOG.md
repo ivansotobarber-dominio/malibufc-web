@@ -18,7 +18,7 @@ Prioridades: P0 bloquea un hito comprometido, P1 aporta valor inmediato, P2 mejo
 | AH-08 | P0 | Completar aviso legal, privacidad y condiciones de pedido | Responsable legal por confirmar | AH-03 y AH-07 | Textos sin marcadores pendientes y coherentes con la operación |
 | AH-09 | P0 | Sustituir placeholders y activar datos públicos confirmados | Codex | AH-04 a AH-08 | La web solo muestra información confirmada |
 | AH-10 | P0 | Ejecutar revisión final de publicación | Codex | AH-09 | Responsive, teclado, enlaces, consola, SEO, privacidad y secretos validados |
-| AH-11 | P0 | Publicar en GitHub Pages con dominio y HTTPS | Codex e Iván | AH-01, AH-10 y registros DNS en OVHcloud | `malibufc.es` accesible, `www` redirigido, HTTPS forzado e indexación habilitada |
+| AH-11 | P0 | Habilitar indexación tras la revisión final | Codex e Iván | AH-10 | HTTPS ya operativo; `robots.txt` y sitemap definitivos habilitados tras aprobar la publicación |
 | AH-12 | P1 | Asignar responsables funcionales y aprobador final | Directiva | Acuerdo organizativo | Responsables y suplencias documentados |
 
 ## Próximo
