@@ -17,6 +17,9 @@ Aportado y autorizado por Iván el 2026-07-30:
 - Fotografía de la equipación oficial.
 - Dos fotografías de grupo y un cartel conmemorativo del equipo.
 - Autorización expresa para publicar estos cinco archivos en la web oficial.
+- Patrocinadores confirmados: Giroenviro y La Laguna Gran Hotel.
+- Colaboradores confirmados: Envite Canario y Peakland.
+- Instagram oficial del equipo: `https://www.instagram.com/malibufc__/?hl=es`.
 
 Continúa pendiente:
 
@@ -24,14 +27,14 @@ Continúa pendiente:
 2. Identificar autor y fecha aproximada de cada fotografía para completar el archivo histórico.
 3. Confirmar o corregir ubicación, modalidad deportiva, número de equipos, categoría, competición, ascenso, temporada y lema.
 4. Aportar un texto institucional breve del club.
-5. Confirmar nombre, enlace y logotipo de cada patrocinador autorizado, además de sus condiciones de uso.
+5. Aportar los logotipos autorizados de patrocinadores y colaboradores si se desea sustituir las tarjetas de texto, e identificar vigencia y condiciones de uso.
 
 ### Contacto
 
 1. Número oficial de WhatsApp con prefijo internacional.
-2. URL exacta de Instagram.
-3. Correo oficial o confirmación de que no se publicará inicialmente.
-4. Responsable de recibir pedidos, consultas y propuestas de patrocinio.
+2. Correo oficial o confirmación de que no se publicará inicialmente.
+3. Responsable de recibir pedidos, consultas y propuestas de patrocinio.
+4. URL oficial de YouTube cuando el canal deje de estar en construcción.
 
 ### Catálogo y pedidos
 

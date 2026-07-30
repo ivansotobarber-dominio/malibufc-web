@@ -144,3 +144,13 @@ Decisión: el escudo en PNG aportado por Iván será la identidad visual oficial
 Restricción: la exhibición de la equipación no habilita pedidos ni confirma precio, tallas, variantes, disponibilidad o condiciones comerciales.
 
 Origen: aportación y autorización expresa de Iván.
+
+### D-019. Patrocinadores, colaboradores y redes sociales
+
+Fecha: 2026-07-30.
+
+Decisión: Giroenviro y La Laguna Gran Hotel se publicarán como patrocinadores. Envite Canario y Peakland se publicarán como colaboradores. El Instagram oficial del equipo será `https://www.instagram.com/malibufc__/?hl=es`.
+
+Restricción: YouTube se mostrará como canal «en construcción» y no tendrá enlace hasta que Iván aporte la URL oficial. Los logotipos de las entidades no se reproducirán sin archivos autorizados; inicialmente se usarán tarjetas de texto enlazadas.
+
+Origen: confirmación expresa de Iván.

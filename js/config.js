@@ -13,7 +13,8 @@ window.MALIBU_CONFIG = {
   whatsappNumber: "",
   whatsappGeneralMessage: "Hola, contacto con el Malibú FC desde la web.",
 
-  instagramUrl: "",
+  instagramUrl: "https://www.instagram.com/malibufc__/?hl=es",
+  youtubeUrl: "",
   email: "",
 
   products: [
@@ -29,6 +30,12 @@ window.MALIBU_CONFIG = {
   ],
 
   sponsors: [
-    { name: "La Laguna Gran Hotel", url: "", active: false }
+    { name: "Giroenviro", url: "https://giroenviro.com/", active: true },
+    { name: "La Laguna Gran Hotel", url: "https://lalagunagranhotel.com/", active: true }
+  ],
+
+  collaborators: [
+    { name: "Envite Canario", url: "https://envitecanario.es/", active: true },
+    { name: "Peakland", url: "https://www.instagram.com/peakland_/?hl=es", active: true }
   ]
 };

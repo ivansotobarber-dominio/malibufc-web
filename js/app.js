@@ -120,27 +120,71 @@
     }
   }
 
-  const sponsorGrid = $("#sponsor-grid");
-  if (sponsorGrid) {
-    const sponsors = Array.isArray(config.sponsors) ? config.sponsors.filter((sponsor) => sponsor.active === true) : [];
-    if (!sponsors.length) {
+  const renderPartnerGrid = (selector, items, emptyText) => {
+    const grid = $(selector);
+    if (!grid) return;
+
+    const activeItems = Array.isArray(items) ? items.filter((item) => item.active === true) : [];
+    if (!activeItems.length) {
       const empty = document.createElement("p");
       empty.className = "empty-state";
-      empty.textContent = "Los patrocinadores se incorporarán cuando estén confirmados y autorizados.";
-      sponsorGrid.appendChild(empty);
-    } else {
-      sponsors.forEach((sponsor) => {
-        const element = sponsor.url ? document.createElement("a") : document.createElement("div");
-        element.className = "sponsor-card";
-        element.textContent = text(sponsor.name);
-        if (sponsor.url) {
-          element.href = text(sponsor.url);
-          element.target = "_blank";
-          element.rel = "noopener";
-        }
-        sponsorGrid.appendChild(element);
-      });
+      empty.textContent = emptyText;
+      grid.appendChild(empty);
+      return;
     }
+
+    activeItems.forEach((item) => {
+      const element = item.url ? document.createElement("a") : document.createElement("div");
+      element.className = "partner-card";
+
+      const name = document.createElement("span");
+      name.className = "partner-name";
+      name.textContent = text(item.name);
+      element.appendChild(name);
+
+      if (item.url) {
+        const action = document.createElement("span");
+        action.className = "partner-action";
+        action.textContent = "Visitar enlace ↗";
+        element.appendChild(action);
+        element.href = text(item.url);
+        element.target = "_blank";
+        element.rel = "noopener noreferrer";
+      }
+
+      grid.appendChild(element);
+    });
+  };
+
+  renderPartnerGrid("#sponsor-grid", config.sponsors, "Los patrocinadores se incorporarán cuando estén confirmados y autorizados.");
+  renderPartnerGrid("#collaborator-grid", config.collaborators, "Los colaboradores se incorporarán cuando estén confirmados y autorizados.");
+
+  const socialGrid = $("#social-grid");
+  if (socialGrid) {
+    const socialItems = [
+      { name: "Instagram", detail: "@malibufc__", url: config.instagramUrl },
+      { name: "YouTube", detail: config.youtubeUrl ? "Canal oficial" : "Canal en construcción", url: config.youtubeUrl }
+    ];
+
+    socialItems.forEach((item) => {
+      const element = item.url ? document.createElement("a") : document.createElement("div");
+      element.className = "social-card";
+      if (item.url) {
+        element.href = text(item.url);
+        element.target = "_blank";
+        element.rel = "noopener noreferrer";
+      } else {
+        element.classList.add("social-card-disabled");
+        element.setAttribute("aria-disabled", "true");
+      }
+
+      const name = document.createElement("strong");
+      name.textContent = item.name;
+      const detail = document.createElement("span");
+      detail.textContent = item.detail;
+      element.append(name, detail);
+      socialGrid.appendChild(element);
+    });
   }
 
   $$(".whatsapp-general").forEach((link) => {

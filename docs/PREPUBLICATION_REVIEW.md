@@ -8,7 +8,7 @@ La arquitectura estática es adecuada para GitHub Pages y el alcance inicial. El
 
 ## Ajustes aplicados
 
-1. Los productos y patrocinadores no confirmados quedan desactivados.
+1. Los productos y las entidades no confirmadas quedan desactivados; los patrocinadores y colaboradores confirmados se muestran mediante enlaces de texto.
 2. Las afirmaciones deportivas y corporativas sin validación se sustituyen en la web por mensajes de preparación.
 3. La web muestra un aviso visible mientras `siteReady` no sea `true`.
 4. Los enlaces de contacto sin configurar quedan realmente deshabilitados para ratón y teclado.
@@ -20,6 +20,7 @@ La arquitectura estática es adecuada para GitHub Pages y el alcance inicial. El
 10. El escudo oficial sustituye los recursos provisionales visibles y se utiliza también como favicon derivado.
 11. La equipación se muestra como referencia visual, con pedidos desactivados hasta confirmar sus condiciones.
 12. La galería y el catálogo se han revisado a 1440 px y 390 px, sin errores ni avisos de consola.
+13. Los enlaces confirmados de patrocinadores, colaboradores e Instagram se han incorporado; YouTube queda visible y desactivado como canal en construcción.
 
 ## Bloqueos
 
