@@ -19,6 +19,8 @@ Prioridades: P0 bloquea un hito comprometido, P1 aporta valor inmediato, P2 mejo
 | AH-10 | P0 | Ejecutar revisión final de publicación | Codex | AH-09 | Responsive, teclado, enlaces, consola, SEO, privacidad y secretos validados |
 | AH-11 | P0 | Habilitar indexación tras la revisión final | Codex e Iván | AH-10 | HTTPS ya operativo; `robots.txt` y sitemap definitivos habilitados tras aprobar la publicación |
 | AH-12 | P1 | Asignar responsables funcionales y aprobador final | Directiva | Acuerdo organizativo | Responsables y suplencias documentados |
+| AH-13 | P0 | Confirmar plantilla publicable y permisos de imagen | Iván y directiva | Consentimientos y datos deportivos | Solo aparecen jugadores autorizados con nombre, dorsal, posición y fotografía validados |
+| AH-14 | P0 | Confirmar calendario público y operativa de entradas gratuitas | Iván y responsable deportivo | Calendario oficial y decisión de aforo | Partidos trazables y entradas sin promesas ni reservas ficticias |
 
 ## Próximo
 
@@ -36,6 +38,7 @@ Prioridades: P0 bloquea un hito comprometido, P1 aporta valor inmediato, P2 mejo
 | PR-10 | P1 | Aprobar catálogos y modelo canónico del control deportivo | Responsable deportivo por asignar | `docs/malibu-sheets-data-model.md` | Campos, estados, claves y reglas de integridad confirmados |
 | PR-11 | P1 | Migrar Google Sheets y completar Apps Script fase 2 | Codex y responsable deportivo | PR-08 a PR-10 | Copia, migración conciliada, API validada y auditoría activa |
 | PR-12 | P1 | Pilotar el ciclo evento, disponibilidad, convocatoria y asistencia | Responsable deportivo por asignar | PR-11 | Un ciclo real autorizado cerrado sin errores críticos y con conciliación manual |
+| PR-13 | P1 | Conectar y reconciliar el cuadro de mando con Google Sheets | Codex y responsable deportivo | PR-08 a PR-11 | Métricas agregadas coinciden con la hoja, aplican filtros y no exponen datos restringidos |
 
 ## Más adelante
 

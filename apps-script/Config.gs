@@ -7,6 +7,7 @@ const SHEETS = Object.freeze({
   availability: 'Disponibilidad',
   callups: 'Convocatorias',
   attendance: 'Asistencia',
+  recruitment: 'Altas y pruebas',
 });
 
 function getSpreadsheet_() {

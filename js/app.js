@@ -62,6 +62,152 @@
   const year = $("#current-year");
   if (year) year.textContent = String(new Date().getFullYear());
 
+  const squadContent = $("#squad-content");
+  if (squadContent) {
+    const squad = config.squad || {};
+    const players = Array.isArray(squad.players) ? squad.players.filter((player) => player.published === true) : [];
+
+    if (squad.published !== true || !players.length) {
+      const notice = document.createElement("div");
+      notice.className = "squad-pending";
+      const copy = document.createElement("div");
+      const heading = document.createElement("h3");
+      heading.textContent = "Plantilla en preparación";
+      const paragraph = document.createElement("p");
+      paragraph.textContent = "Faltan confirmar los jugadores que pueden publicarse y sus autorizaciones de imagen.";
+      copy.append(heading, paragraph);
+      const badge = document.createElement("span");
+      badge.textContent = "Datos pendientes";
+      notice.append(copy, badge);
+      squadContent.appendChild(notice);
+
+      const lines = ["Porteros", "Defensas", "Centrocampistas", "Delanteros"];
+      const placeholderGrid = document.createElement("div");
+      placeholderGrid.className = "squad-placeholder-grid";
+      lines.forEach((line) => {
+        const card = document.createElement("article");
+        card.className = "squad-line-card";
+        const number = document.createElement("span");
+        number.textContent = "—";
+        const name = document.createElement("strong");
+        name.textContent = line;
+        const detail = document.createElement("small");
+        detail.textContent = "Jugadores por confirmar";
+        card.append(number, name, detail);
+        placeholderGrid.appendChild(card);
+      });
+      squadContent.appendChild(placeholderGrid);
+    } else {
+      const groups = ["Porteros", "Defensas", "Centrocampistas", "Delanteros"];
+      groups.forEach((group) => {
+        const groupPlayers = players.filter((player) => text(player.group) === group);
+        if (!groupPlayers.length) return;
+        const section = document.createElement("section");
+        section.className = "squad-group";
+        const heading = document.createElement("h3");
+        heading.textContent = group;
+        const grid = document.createElement("div");
+        grid.className = "squad-grid";
+        groupPlayers.forEach((player) => {
+          const card = document.createElement("article");
+          card.className = "player-card";
+          const image = document.createElement("img");
+          image.src = text(player.image, "assets/images/club/escudo-malibu-fc.png");
+          image.alt = text(player.name, "Jugador del Malibú FC");
+          image.loading = "lazy";
+          const data = document.createElement("div");
+          const number = document.createElement("span");
+          number.textContent = text(player.number, "—");
+          const name = document.createElement("strong");
+          name.textContent = text(player.name);
+          const position = document.createElement("small");
+          position.textContent = text(player.position);
+          data.append(number, name, position);
+          card.append(image, data);
+          grid.appendChild(card);
+        });
+        section.append(heading, grid);
+        squadContent.appendChild(section);
+      });
+    }
+  }
+
+  const calendarGrid = $("#calendar-grid");
+  if (calendarGrid) {
+    const calendar = config.calendar || {};
+    const events = Array.isArray(calendar.events) ? calendar.events : [];
+    if (!events.length) {
+      const empty = document.createElement("p");
+      empty.className = "empty-state";
+      empty.textContent = "El calendario se publicará cuando estén confirmados los próximos partidos.";
+      calendarGrid.appendChild(empty);
+    } else {
+      events.forEach((event) => {
+        const card = document.createElement("article");
+        card.className = "match-card";
+
+        const meta = document.createElement("div");
+        meta.className = "match-meta";
+        const date = document.createElement("strong");
+        date.textContent = text(event.dateLabel, "Fecha por confirmar");
+        const competition = document.createElement("span");
+        competition.textContent = text(event.competition);
+        meta.append(date, competition);
+
+        const match = document.createElement("div");
+        match.className = "match-teams";
+        [event.home, event.away].forEach((teamName, index) => {
+          const team = document.createElement("div");
+          if (text(teamName).toLowerCase().includes("malibú")) {
+            const crest = document.createElement("img");
+            crest.src = "assets/images/club/escudo-malibu-fc.png";
+            crest.alt = "";
+            team.appendChild(crest);
+          }
+          const name = document.createElement("strong");
+          name.textContent = text(teamName);
+          team.appendChild(name);
+          match.appendChild(team);
+          if (index === 0) {
+            const versus = document.createElement("span");
+            versus.className = "match-versus";
+            versus.textContent = "VS";
+            match.appendChild(versus);
+          }
+        });
+
+        const footer = document.createElement("div");
+        footer.className = "match-footer";
+        const venue = document.createElement("span");
+        venue.textContent = text(event.venue, "Lugar por confirmar");
+        const ticket = document.createElement("div");
+        ticket.className = "ticket-box";
+        const price = document.createElement("strong");
+        price.textContent = text(event.ticketPrice, "0 €");
+        const button = document.createElement(event.ticketEnabled && event.ticketUrl ? "a" : "span");
+        button.className = "ticket-action";
+        if (event.ticketEnabled && event.ticketUrl) {
+          button.href = text(event.ticketUrl);
+          button.textContent = "Obtener entrada";
+        } else {
+          button.textContent = calendar.demoMode ? "Entrada demo" : "Próximamente";
+          button.setAttribute("aria-disabled", "true");
+        }
+        ticket.append(price, button);
+        footer.append(venue, ticket);
+
+        if (calendar.demoMode) {
+          const demo = document.createElement("span");
+          demo.className = "demo-label";
+          demo.textContent = "Demostración · no genera reserva";
+          card.appendChild(demo);
+        }
+        card.append(meta, match, footer);
+        calendarGrid.appendChild(card);
+      });
+    }
+  }
+
   const productGrid = $("#product-grid");
   if (productGrid) {
     const products = Array.isArray(config.products) ? config.products.filter((product) => product.published === true) : [];

@@ -166,3 +166,15 @@ Decisión: la Liga de la Amistad se identifica como la competición en la que ju
 Restricción: no se publicarán todavía municipio, modalidad concreta, categoría, resultados, temporadas ni hitos históricos no confirmados.
 
 Origen: confirmación expresa de Iván.
+
+### D-021. Cuadro de mando, plantilla pública, calendario y entradas
+
+Fecha: 2026-07-30.
+
+Decisión: el sistema interno incorporará un cuadro de mando de plantilla, renovaciones, asignación, posiciones, captación y actividad deportiva. Los agregados reales se calcularán mediante la API de Google Apps Script sobre la hoja privada; el repositorio y la demostración solo contendrán datos sintéticos.
+
+Decisión: la web pública tendrá secciones de plantilla, calendario y entradas gratuitas. La plantilla permanecerá sin nombres ni fotografías hasta confirmar autorización pública. El calendario inicial y la entrada a 0 € se mostrarán como demostración, sin reserva, cobro ni almacenamiento de datos.
+
+Restricción: la hoja privada no se expondrá directamente desde GitHub Pages y no se copiarán al repositorio nombres, observaciones, estados internos ni otros datos personales.
+
+Origen: instrucción expresa de Iván y reglas de privacidad confirmadas del proyecto.

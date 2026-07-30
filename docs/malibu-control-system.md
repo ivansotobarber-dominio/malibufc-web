@@ -42,7 +42,7 @@ La auditoría se ha realizado en modo lectura sobre el Excel y Google Sheets. No
 | Baja | La mayoría de jugadores tiene posición sin definir | Limita la preparación deportiva de convocatorias | Completar la posición antes del piloto |
 | Baja | Teléfono está vacío en la copia revisada | No afecta al modelo y evita una exposición adicional | Mantenerlo fuera del API salvo necesidad aprobada |
 
-Los rangos con fórmulas vacías no se consideran registros. Los porcentajes actuales son valores estructurales, no evidencia de rendimiento.
+Los rangos con fórmulas vacías no se consideran registros. Los porcentajes actuales son valores estructurales, no evidencia de rendimiento. En la revisión de 2026-07-30 la hoja contiene plantilla y captación, pero continúa con cero eventos, disponibilidades, convocatorias y asistencias; por tanto, el cuadro de mando no debe presentar tasas operativas distintas de cero hasta que exista actividad real.
 
 ## Arquitectura objetivo
 
@@ -150,7 +150,7 @@ La API utilizará códigos estables, validará el rol en servidor y no devolver�
 
 ## Indicadores y definiciones mínimas
 
-El dashboard debe filtrar por temporada, periodo, equipo y tipo de evento. Como mínimo mostrará jugadores activos y elegibles, eventos, tasa de respuesta, disponibilidad positiva, convocados, confirmaciones, asistentes, retrasos, ausencias, déficit de convocatoria y distribución por estado.
+El dashboard debe filtrar por temporada, periodo, equipo y tipo de evento. Como mínimo mostrará jugadores activos y elegibles, eventos, tasa de respuesta, disponibilidad positiva, convocados, confirmaciones, asistentes, retrasos, ausencias, déficit de convocatoria y distribución por estado. También mostrará preparación de plantilla, renovaciones, asignación por equipo, posiciones definidas y estado de altas y pruebas.
 
 Cada tasa deberá publicar numerador y denominador. Una convocatoria contará únicamente cuando la decisión sea `called_up`; una asistencia positiva será `present` o `late`; una ausencia justificada no se mezclará con una ausencia no justificada.
 

@@ -9,6 +9,7 @@
     events: [],
     availability: {},
     callups: [],
+    dashboard: null,
   };
 
   const elements = {
@@ -19,6 +20,11 @@
     eventCount: document.querySelector('#event-count'),
     dashboardContext: document.querySelector('#dashboard-context'),
     responseBreakdown: document.querySelector('#response-breakdown'),
+    sourceNotice: document.querySelector('#source-notice'),
+    renewalChart: document.querySelector('#renewal-chart'),
+    assignmentChart: document.querySelector('#assignment-chart'),
+    readinessChart: document.querySelector('#readiness-chart'),
+    recruitmentChart: document.querySelector('#recruitment-chart'),
     eventsList: document.querySelector('#events-list'),
     availabilityList: document.querySelector('#availability-list'),
     callupList: document.querySelector('#callup-list'),
@@ -77,9 +83,10 @@
   }
 
   async function load() {
-    [state.players, state.events] = await Promise.all([
+    [state.players, state.events, state.dashboard] = await Promise.all([
       api.getPlayers('all'),
       api.getEvents(state.teamId),
+      api.getDashboard(state.teamId),
     ]);
     if (!state.events.some((event) => event.eventId === state.eventId)) {
       state.eventId = state.events[0] ? state.events[0].eventId : '';
@@ -115,6 +122,66 @@
     elements.eventFilter.value = state.eventId;
   }
 
+  function percent(value, total) {
+    return total > 0 ? Math.round(value / total * 100) : 0;
+  }
+
+  function renderBarChart(container, breakdown, labelMap) {
+    container.replaceChildren();
+    const entries = Object.entries(breakdown || {});
+    const total = entries.reduce((sum, entry) => sum + Number(entry[1] || 0), 0);
+    if (!entries.length || total === 0) {
+      container.textContent = 'Sin datos para este filtro.';
+      container.classList.add('is-empty');
+      return;
+    }
+    container.classList.remove('is-empty');
+    entries.sort((a, b) => Number(b[1]) - Number(a[1])).forEach(([key, rawValue]) => {
+      const value = Number(rawValue || 0);
+      const row = document.createElement('div');
+      row.className = 'bar-row';
+      const header = document.createElement('div');
+      const label = document.createElement('span');
+      label.textContent = labelMap && labelMap[key] ? labelMap[key] : key;
+      const amount = document.createElement('strong');
+      amount.textContent = String(value);
+      header.append(label, amount);
+      const track = document.createElement('div');
+      track.className = 'bar-track';
+      const fill = document.createElement('span');
+      fill.style.width = percent(value, total) + '%';
+      track.appendChild(fill);
+      row.append(header, track);
+      container.appendChild(row);
+    });
+  }
+
+  function renderReadiness(readiness, total) {
+    elements.readinessChart.replaceChildren();
+    const items = [
+      ['Activos para convocatorias', Number(readiness.activeCallups || 0)],
+      ['Asignación definida', Number(readiness.assigned || 0)],
+      ['Posición definida', Number(readiness.positionDefined || 0)],
+    ];
+    items.forEach(([labelText, value]) => {
+      const row = document.createElement('div');
+      row.className = 'readiness-row';
+      const copy = document.createElement('div');
+      const label = document.createElement('span');
+      label.textContent = labelText;
+      const amount = document.createElement('strong');
+      amount.textContent = value + ' de ' + total;
+      copy.append(label, amount);
+      const progress = document.createElement('div');
+      progress.className = 'readiness-track';
+      const fill = document.createElement('span');
+      fill.style.width = percent(value, total) + '%';
+      progress.appendChild(fill);
+      row.append(copy, progress);
+      elements.readinessChart.appendChild(row);
+    });
+  }
+
   function renderDashboard() {
     const players = state.players.filter((player) => state.teamId === 'all' || player.teamId === state.teamId);
     const eventPlayers = eligiblePlayers();
@@ -122,25 +189,43 @@
     const available = statuses.filter((status) => status === 'available').length;
     const responded = statuses.filter((status) => status !== 'no_response').length;
     const target = selectedEvent() ? selectedEvent().callupTarget : 0;
+    const dashboard = state.dashboard || { metrics: {}, breakdowns: {}, readiness: {}, source: {} };
+    const summary = dashboard.metrics || {};
+    const totalPlayers = Number(summary.players || players.length || 0);
+    const assigned = Number(summary.assigned || 0);
+    const positionDefined = Number(summary.positionDefined || 0);
     const metrics = [
-      ['Jugadores activos', players.length, 'Plantilla simulada'],
-      ['Eventos', state.events.length, labels[state.teamId] || 'Ambos equipos'],
-      ['Tasa de respuesta', eventPlayers.length ? `${Math.round(responded / eventPlayers.length * 100)}%` : '—', `${responded} de ${eventPlayers.length}`],
-      ['Disponibles', available, target ? `Objetivo ${target}` : 'Sin objetivo'],
-      ['Convocados', state.callups.length, target ? `Déficit ${Math.max(0, target - state.callups.length)}` : 'Borrador'],
-      ['Confirmaciones', state.callups.length ? '50%' : '—', 'Dato simulado'],
-      ['Asistentes', '—', 'Sin evento cerrado'],
-      ['Retrasos', '—', 'Sin evento cerrado'],
+      ['Jugadores gestionables', summary.manageable ?? players.length, totalPlayers + ' jugadores registrados'],
+      ['Renovaciones pendientes', summary.renewalPending ?? '—', 'Requieren decisión'],
+      ['Asignación definida', totalPlayers ? percent(assigned, totalPlayers) + '%' : '—', assigned + ' de ' + totalPlayers],
+      ['Posición definida', totalPlayers ? percent(positionDefined, totalPlayers) + '%' : '—', positionDefined + ' de ' + totalPlayers],
+      ['Altas y pruebas', summary.recruitment ?? '—', 'Seguimiento activo'],
+      ['Eventos registrados', summary.events ?? state.events.length, labels[state.teamId] || 'Ambos equipos'],
+      ['Respuesta del evento', eventPlayers.length ? percent(responded, eventPlayers.length) + '%' : '—', responded + ' de ' + eventPlayers.length],
+      ['Convocatoria', state.callups.length, target ? 'Objetivo ' + target + ' · déficit ' + Math.max(0, target - state.callups.length) : 'Sin objetivo'],
     ];
     elements.metricGrid.innerHTML = metrics.map(([label, value, detail]) => `
       <article class="metric">
-        <span>${label}</span>
-        <strong>${value}</strong>
-        <small>${detail}</small>
+        <span>${escapeHtml(label)}</span>
+        <strong>${escapeHtml(value)}</strong>
+        <small>${escapeHtml(detail)}</small>
       </article>
     `).join('');
+
+    const source = dashboard.source || {};
+    elements.sourceNotice.className = 'source-notice ' + (source.mode === 'remote' ? 'is-live' : 'is-demo');
+    elements.sourceNotice.textContent = source.mode === 'remote'
+      ? 'Datos agregados de Google Sheets. Actualización: ' + (source.updatedAt || 'actual') + '.'
+      : 'Demostración con datos sintéticos. La hoja real solo se conectará mediante la API autorizada.';
+    document.querySelector('#mode-badge').textContent = source.mode === 'remote' ? 'Google Sheets' : 'Datos simulados';
+
+    renderBarChart(elements.renewalChart, dashboard.breakdowns && dashboard.breakdowns.renewals);
+    renderBarChart(elements.assignmentChart, dashboard.breakdowns && dashboard.breakdowns.assignments, { first: 'Primer equipo', second: 'Segundo equipo', both: 'Ambos equipos' });
+    renderBarChart(elements.recruitmentChart, dashboard.breakdowns && dashboard.breakdowns.recruitment);
+    renderReadiness(dashboard.readiness || {}, totalPlayers);
+
     elements.dashboardContext.textContent = selectedEvent() ? selectedEvent().title : 'Sin evento seleccionado';
-    elements.eventCount.textContent = `${state.events.length} eventos`;
+    elements.eventCount.textContent = state.events.length + ' eventos';
     elements.dashboardEvents.innerHTML = state.events.slice(0, 3).map(eventCard).join('') || emptyState('No hay eventos para este filtro.');
 
     const counts = ['available', 'doubt', 'unavailable', 'no_response'].map((status) => ({

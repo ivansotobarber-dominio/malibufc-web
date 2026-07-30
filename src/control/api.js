@@ -2,18 +2,18 @@
   'use strict';
 
   const players = [
-    { playerId: 'MOCK-P001', displayName: 'Jugador 01', teamId: 'first', position: 'Portero', active: true },
-    { playerId: 'MOCK-P002', displayName: 'Jugador 02', teamId: 'first', position: 'Defensa', active: true },
-    { playerId: 'MOCK-P003', displayName: 'Jugador 03', teamId: 'first', position: 'Defensa', active: true },
-    { playerId: 'MOCK-P004', displayName: 'Jugador 04', teamId: 'first', position: 'Centrocampista', active: true },
-    { playerId: 'MOCK-P005', displayName: 'Jugador 05', teamId: 'first', position: 'Delantero', active: true },
-    { playerId: 'MOCK-P006', displayName: 'Jugador 06', teamId: 'first', position: 'Polivalente', active: true },
-    { playerId: 'MOCK-P007', displayName: 'Jugador 07', teamId: 'second', position: 'Portero', active: true },
-    { playerId: 'MOCK-P008', displayName: 'Jugador 08', teamId: 'second', position: 'Defensa', active: true },
-    { playerId: 'MOCK-P009', displayName: 'Jugador 09', teamId: 'second', position: 'Centrocampista', active: true },
-    { playerId: 'MOCK-P010', displayName: 'Jugador 10', teamId: 'second', position: 'Delantero', active: true },
-    { playerId: 'MOCK-P011', displayName: 'Jugador 11', teamId: 'second', position: 'Polivalente', active: true },
-    { playerId: 'MOCK-P012', displayName: 'Jugador 12', teamId: 'second', position: 'Defensa', active: true },
+    { playerId: 'MOCK-P001', displayName: 'Jugador 01', teamId: 'first', position: 'Portero', renewalStatus: 'IN', active: true },
+    { playerId: 'MOCK-P002', displayName: 'Jugador 02', teamId: 'first', position: 'Defensa', renewalStatus: 'Pendiente', active: true },
+    { playerId: 'MOCK-P003', displayName: 'Jugador 03', teamId: 'first', position: 'Defensa', renewalStatus: 'Pendiente', active: true },
+    { playerId: 'MOCK-P004', displayName: 'Jugador 04', teamId: 'first', position: 'Centrocampista', renewalStatus: 'Pendiente', active: true },
+    { playerId: 'MOCK-P005', displayName: 'Jugador 05', teamId: 'first', position: 'Delantero', renewalStatus: 'Condicionado', active: true },
+    { playerId: 'MOCK-P006', displayName: 'Jugador 06', teamId: 'first', position: 'Polivalente', renewalStatus: 'IN', active: true },
+    { playerId: 'MOCK-P007', displayName: 'Jugador 07', teamId: 'second', position: 'Portero', renewalStatus: 'IN', active: true },
+    { playerId: 'MOCK-P008', displayName: 'Jugador 08', teamId: 'second', position: 'Defensa', renewalStatus: 'Pendiente', active: true },
+    { playerId: 'MOCK-P009', displayName: 'Jugador 09', teamId: 'second', position: 'Centrocampista', renewalStatus: 'Pendiente', active: true },
+    { playerId: 'MOCK-P010', displayName: 'Jugador 10', teamId: 'second', position: 'Delantero', renewalStatus: 'Condicionado', active: true },
+    { playerId: 'MOCK-P011', displayName: 'Jugador 11', teamId: 'second', position: 'Polivalente', renewalStatus: 'IN', active: true },
+    { playerId: 'MOCK-P012', displayName: 'Jugador 12', teamId: 'second', position: 'Defensa', renewalStatus: 'Pendiente', active: true },
   ];
 
   const events = [
@@ -73,6 +73,51 @@
     'MOCK-E002': ['MOCK-P001', 'MOCK-P007'],
   };
 
+  const recruitment = [
+    { status: 'Pendiente', category: 'Fichaje' },
+    { status: 'Pendiente', category: 'Fichaje' },
+    { status: 'IN', category: 'Fichaje' },
+    { status: 'OUT', category: 'Recámara' },
+  ];
+
+  const countBy = (items, field) => items.reduce((result, item) => {
+    const key = item[field] || 'Sin definir';
+    result[key] = (result[key] || 0) + 1;
+    return result;
+  }, {});
+
+  function buildMockDashboard(teamId) {
+    const scopedPlayers = players.filter((player) => teamMatches(player.teamId, teamId));
+    const scopedEvents = events.filter((event) => teamMatches(event.teamId, teamId));
+    return {
+      source: {
+        label: 'Datos simulados',
+        mode: 'mock',
+        updatedAt: null,
+        operationalHistory: true,
+      },
+      metrics: {
+        players: scopedPlayers.length,
+        manageable: scopedPlayers.filter((player) => player.active).length,
+        renewalPending: scopedPlayers.filter((player) => player.renewalStatus === 'Pendiente').length,
+        assigned: scopedPlayers.filter((player) => player.teamId).length,
+        positionDefined: scopedPlayers.filter((player) => player.position && player.position !== 'Sin definir').length,
+        recruitment: recruitment.length,
+        events: scopedEvents.length,
+      },
+      breakdowns: {
+        renewals: countBy(scopedPlayers, 'renewalStatus'),
+        assignments: countBy(scopedPlayers, 'teamId'),
+        recruitment: countBy(recruitment, 'status'),
+      },
+      readiness: {
+        activeCallups: scopedPlayers.filter((player) => player.active).length,
+        assigned: scopedPlayers.filter((player) => player.teamId).length,
+        positionDefined: scopedPlayers.filter((player) => player.position && player.position !== 'Sin definir').length,
+      },
+    };
+  }
+
   const delay = (value) => Promise.resolve(JSON.parse(JSON.stringify(value)));
   const teamMatches = (itemTeam, selected) => selected === 'all' || itemTeam === selected || itemTeam === 'both';
 
@@ -84,6 +129,9 @@
       },
       async getEvents(teamId) {
         return delay(events.filter((event) => teamMatches(event.teamId, teamId)));
+      },
+      async getDashboard(teamId) {
+        return delay(buildMockDashboard(teamId));
       },
       async createEvent(input) {
         const event = {
@@ -132,6 +180,7 @@
       mode: 'remote',
       getPlayers: async (teamId) => (await request('/v1/players', { team: teamId })).items,
       getEvents: async (teamId) => (await request('/v1/events', { team: teamId })).items,
+      getDashboard: (teamId) => request('/v1/dashboard', { team: teamId }),
       createEvent: (input) => request('/v1/events', {}, { method: 'POST', body: JSON.stringify(input) }),
       getAvailability: async (eventId) => {
         const items = (await request(`/v1/events/${eventId}/availability`)).items;

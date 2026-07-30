@@ -12,11 +12,11 @@ El mandato y la dirección estratégica se mantienen en `docs/MASTER_PLAN.md`, y
 
 El objetivo inmediato es desarrollar, publicar y mantener la web oficial del Malibú FC con coste fijo mínimo. El Malibú FC es un equipo de fútbol de Tenerife, Canarias. El dominio principal confirmado es `malibufc.es`, registrado en OVHcloud, y la publicación se realizará mediante GitHub Pages.
 
-La primera versión debe permitir presentar el club y, cuando exista información validada, sus equipos, patrocinadores y catálogo de productos. Los pedidos se iniciarán mediante WhatsApp, serán confirmados manualmente por el club y se pagarán posteriormente por Bizum.
+La primera versión debe permitir presentar el club y, cuando exista información validada, su plantilla pública, calendario, partidos, patrocinadores y catálogo de productos. Los pedidos se iniciarán mediante WhatsApp, serán confirmados manualmente por el club y se pagarán posteriormente por Bizum.
 
 La web no formaliza automáticamente la venta, no almacena pedidos y no publica datos de pago. El seguimiento de pedidos y los datos personales deben mantenerse fuera del repositorio, en un entorno restringido.
 
-Los patrocinadores confirmados son Giroenviro y La Laguna Gran Hotel. Los colaboradores confirmados son Envite Canario y Peakland. El canal social oficial confirmado es Instagram, en `https://www.instagram.com/malibufc__/?hl=es`; el espacio de YouTube se mostrará como «en construcción» hasta disponer de una URL oficial. El equipo juega en la Liga de la Amistad y se enlazan su web, Instagram y Facebook oficiales desde la portada.
+Los patrocinadores confirmados son Giroenviro y La Laguna Gran Hotel. Los colaboradores confirmados son Envite Canario y Peakland. El canal social oficial confirmado es Instagram, en `https://www.instagram.com/malibufc__/?hl=es`; el espacio de YouTube se mostrará como «en construcción» hasta disponer de una URL oficial. El equipo juega en la Liga de la Amistad y se enlazan su web, Instagram y Facebook oficiales desde la portada. La web pública incorpora una estructura profesional para plantilla, calendario y entradas gratuitas; mientras falten datos autorizados, la plantilla permanecerá en preparación y las entradas se identificarán expresamente como demostración sin reserva real.
 
 ## Decisiones confirmadas
 
@@ -52,7 +52,7 @@ Cada producto con `orderEnabled: true` podrá abrir WhatsApp con un mensaje asoc
 
 El club dispone de una hoja privada de Google Sheets como fuente operativa confirmada para plantilla, eventos, disponibilidad, convocatorias y asistencia. El Excel local asociado es una referencia privada y queda excluido del repositorio.
 
-La integración futura utilizará un frontend estático separado de la web pública, una API de Google Apps Script y Google Sheets. No habrá conexión directa desde el navegador a la hoja. La fase 1 funciona exclusivamente con datos simulados; la conexión real requiere aprobar previamente autenticación, permisos por rol, retención, catálogos y corrección de la zona horaria.
+La integración futura utilizará un frontend estático separado de la web pública, una API de Google Apps Script y Google Sheets. No habrá conexión directa desde el navegador a la hoja. La fase 1 funciona exclusivamente con datos simulados; la conexión real requiere aprobar previamente autenticación, permisos por rol, retención, catálogos y corrección de la zona horaria. El cuadro de mando interno queda preparado para calcular agregados de plantilla, renovaciones, asignación, posiciones, captación, eventos, disponibilidad, convocatorias y asistencia mediante la API, sin incorporar nombres ni datos personales al repositorio.
 
 El diagnóstico funcional y técnico se mantiene en `docs/malibu-control-system.md`. El modelo canónico y el mapeo de las hojas actuales se mantienen en `docs/malibu-sheets-data-model.md`.
 

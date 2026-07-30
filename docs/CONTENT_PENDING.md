@@ -31,6 +31,9 @@ Continúa pendiente:
 4. Aportar un texto institucional breve del club.
 5. Desarrollar la historia del equipo con orígenes, cronología, temporadas, hitos y fuentes verificables.
 6. Aportar los logotipos autorizados de patrocinadores y colaboradores si se desea sustituir las tarjetas de texto, e identificar vigencia y condiciones de uso.
+7. Confirmar qué jugadores pueden publicarse y aportar para cada uno nombre público, dorsal, posición, fotografía y autorización de imagen.
+8. Confirmar el calendario público: fecha, hora, rival, lugar, jornada, condición local o visitante y estado de cada partido.
+9. Definir si las entradas gratuitas serán solo informativas o requerirán una reserva, límite de aforo, identificación y confirmación.
 
 ### Contacto
 
@@ -38,6 +41,7 @@ Continúa pendiente:
 2. Correo oficial o confirmación de que no se publicará inicialmente.
 3. Responsable de recibir pedidos, consultas y propuestas de patrocinio.
 4. URL oficial de YouTube cuando el canal deje de estar en construcción.
+5. Responsable de actualizar plantilla, calendario y estado de las entradas.
 
 ### Catálogo y pedidos
 

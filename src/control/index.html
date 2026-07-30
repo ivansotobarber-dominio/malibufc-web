@@ -6,6 +6,7 @@
   <meta name="robots" content="noindex,nofollow">
   <meta name="theme-color" content="#071f18">
   <title>Control deportivo · Malibú FC</title>
+  <link rel="icon" href="../../assets/images/club/favicon-malibu-fc.png" type="image/png">
   <link rel="stylesheet" href="./control.css">
 </head>
 <body>
@@ -50,7 +51,26 @@
         </div>
         <p id="dashboard-context" class="supporting"></p>
       </div>
+      <div id="source-notice" class="source-notice" role="status"></div>
       <div class="metric-grid" id="metric-grid" aria-live="polite"></div>
+      <div class="analytics-grid">
+        <article class="panel chart-panel">
+          <div class="panel-heading"><h3>Estado de renovación</h3><span class="count">Plantilla</span></div>
+          <div id="renewal-chart" class="bar-chart"></div>
+        </article>
+        <article class="panel chart-panel">
+          <div class="panel-heading"><h3>Asignación por equipo</h3><span class="count">Base</span></div>
+          <div id="assignment-chart" class="bar-chart"></div>
+        </article>
+        <article class="panel chart-panel">
+          <div class="panel-heading"><h3>Calidad de plantilla</h3><span class="count">Preparación</span></div>
+          <div id="readiness-chart" class="readiness-list"></div>
+        </article>
+        <article class="panel chart-panel">
+          <div class="panel-heading"><h3>Altas y pruebas</h3><span class="count">Captación</span></div>
+          <div id="recruitment-chart" class="bar-chart"></div>
+        </article>
+      </div>
       <div class="split-grid">
         <article class="panel">
           <div class="panel-heading">

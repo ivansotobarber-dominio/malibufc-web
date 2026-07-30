@@ -24,6 +24,27 @@ window.MALIBU_CONFIG = {
     facebookUrl: "https://www.facebook.com/futbol7amistad/?locale=es_ES"
   },
 
+  squad: {
+    published: false,
+    players: []
+  },
+
+  calendar: {
+    demoMode: true,
+    events: [
+      {
+        id: "demo-match",
+        dateLabel: "Fecha por confirmar",
+        competition: "Liga de la Amistad",
+        home: "Malibú FC",
+        away: "Rival por confirmar",
+        venue: "Lugar por confirmar",
+        ticketPrice: "0 €",
+        ticketEnabled: false
+      }
+    ]
+  },
+
   products: [
     {
       name: "Equipación oficial Malibú FC",
