@@ -154,3 +154,15 @@ Decisión: Giroenviro y La Laguna Gran Hotel se publicarán como patrocinadores.
 Restricción: YouTube se mostrará como canal «en construcción» y no tendrá enlace hasta que Iván aporte la URL oficial. Los logotipos de las entidades no se reproducirán sin archivos autorizados; inicialmente se usarán tarjetas de texto enlazadas.
 
 Origen: confirmación expresa de Iván.
+
+### D-020. Identidad futbolística, territorial y competición
+
+Fecha: 2026-07-30.
+
+Decisión: la web presentará al Malibú FC como equipo de fútbol de Tenerife, Canarias, y reforzará visualmente su carácter deportivo y canario usando los activos oficiales del club. La historia tendrá un apartado propio marcado como «en construcción» hasta disponer de contenido validado.
+
+Decisión: la Liga de la Amistad se identifica como la competición en la que juega el equipo y se enlazarán su web oficial, Instagram y Facebook.
+
+Restricción: no se publicarán todavía municipio, modalidad concreta, categoría, resultados, temporadas ni hitos históricos no confirmados.
+
+Origen: confirmación expresa de Iván.

@@ -10,13 +10,13 @@ El mandato y la dirección estratégica se mantienen en `docs/MASTER_PLAN.md`, y
 
 ## Contexto funcional confirmado
 
-El objetivo inmediato es desarrollar, publicar y mantener la web oficial del Malibú FC con coste fijo mínimo. El dominio principal confirmado es `malibufc.es`, registrado en OVHcloud, y la publicación se realizará mediante GitHub Pages.
+El objetivo inmediato es desarrollar, publicar y mantener la web oficial del Malibú FC con coste fijo mínimo. El Malibú FC es un equipo de fútbol de Tenerife, Canarias. El dominio principal confirmado es `malibufc.es`, registrado en OVHcloud, y la publicación se realizará mediante GitHub Pages.
 
 La primera versión debe permitir presentar el club y, cuando exista información validada, sus equipos, patrocinadores y catálogo de productos. Los pedidos se iniciarán mediante WhatsApp, serán confirmados manualmente por el club y se pagarán posteriormente por Bizum.
 
 La web no formaliza automáticamente la venta, no almacena pedidos y no publica datos de pago. El seguimiento de pedidos y los datos personales deben mantenerse fuera del repositorio, en un entorno restringido.
 
-Los patrocinadores confirmados son Giroenviro y La Laguna Gran Hotel. Los colaboradores confirmados son Envite Canario y Peakland. El canal social oficial confirmado es Instagram, en `https://www.instagram.com/malibufc__/?hl=es`; el espacio de YouTube se mostrará como «en construcción» hasta disponer de una URL oficial.
+Los patrocinadores confirmados son Giroenviro y La Laguna Gran Hotel. Los colaboradores confirmados son Envite Canario y Peakland. El canal social oficial confirmado es Instagram, en `https://www.instagram.com/malibufc__/?hl=es`; el espacio de YouTube se mostrará como «en construcción» hasta disponer de una URL oficial. El equipo juega en la Liga de la Amistad y se enlazan su web, Instagram y Facebook oficiales desde la portada.
 
 ## Decisiones confirmadas
 
@@ -60,7 +60,7 @@ El diagnóstico funcional y técnico se mantiene en `docs/malibu-control-system.
 
 Los siguientes datos aparecen en antecedentes o recursos iniciales, pero no cuentan todavía con confirmación documental:
 
-1. Ubicación en Santa Cruz de Tenerife.
+1. Municipio o ubicación concreta dentro de Tenerife.
 2. Modalidad de fútbol 7.
 3. Existencia de dos equipos.
 4. Ascenso a Primera en la Liga Clausura 2026.

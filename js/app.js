@@ -159,6 +159,34 @@
   renderPartnerGrid("#sponsor-grid", config.sponsors, "Los patrocinadores se incorporarán cuando estén confirmados y autorizados.");
   renderPartnerGrid("#collaborator-grid", config.collaborators, "Los colaboradores se incorporarán cuando estén confirmados y autorizados.");
 
+  const competitionLinks = $("#competition-links");
+  const competitionTitle = $("#competition-title");
+  if (competitionTitle && config.competition?.name) {
+    competitionTitle.textContent = `Jugamos en la ${text(config.competition.name)}`;
+  }
+  if (competitionLinks && config.competition) {
+    const competitionItems = [
+      { name: "Web oficial", url: config.competition.websiteUrl },
+      { name: "Instagram", url: config.competition.instagramUrl },
+      { name: "Facebook", url: config.competition.facebookUrl }
+    ];
+
+    competitionItems.filter((item) => item.url).forEach((item) => {
+      const link = document.createElement("a");
+      link.className = "competition-link";
+      link.href = text(item.url);
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+
+      const label = document.createElement("span");
+      label.textContent = item.name;
+      const action = document.createElement("strong");
+      action.textContent = "Abrir ↗";
+      link.append(label, action);
+      competitionLinks.appendChild(link);
+    });
+  }
+
   const socialGrid = $("#social-grid");
   if (socialGrid) {
     const socialItems = [

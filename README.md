@@ -16,7 +16,7 @@ El repositorio público, GitHub Pages, el dominio y HTTPS están activos. El esc
 
 ## Edición rápida
 
-Los datos principales están en `js/config.js`. Se pueden cambiar productos, patrocinadores, temporada y canales de contacto sin modificar el diseño.
+Los datos principales están en `js/config.js`. Se pueden cambiar productos, patrocinadores, colaboradores, competición, temporada y canales sociales o de contacto sin modificar el diseño.
 
 No incluir nunca el número o alias de Bizum en el repositorio. Se comunica por privado después de confirmar cada pedido.
 

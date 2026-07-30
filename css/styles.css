@@ -170,3 +170,107 @@ h3 { font-size: 1.45rem; line-height: 1.15; letter-spacing: -.03em; }
   .product-meta { display: block; }
   .footer-grid nav { flex-wrap: wrap; justify-content: center; }
 }
+
+
+/* Identidad futbolística de Tenerife */
+:root {
+  --pitch: #15462e;
+  --pitch-dark: #0b2d1e;
+  --cream: #f3e8c6;
+}
+
+body { background: #f1efe8; }
+section[id] { scroll-margin-top: 92px; }
+.site-header { background: rgba(3, 20, 38, .96); border-bottom-color: rgba(216, 165, 36, .45); }
+.site-header .brand, .main-nav a { color: white; }
+.main-nav { gap: 22px; }
+.main-nav a { position: relative; font-size: .88rem; text-transform: uppercase; letter-spacing: .035em; }
+.main-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -7px; height: 2px; background: var(--gold); transition: right .2s ease; }
+.main-nav a:hover { color: var(--gold-light); }
+.main-nav a:hover::after { right: 0; }
+.menu-button { color: white; border-color: rgba(255,255,255,.45); }
+
+.hero { position: relative; min-height: 760px; color: white; background-image: linear-gradient(90deg, rgba(3,20,38,.97) 0%, rgba(3,20,38,.82) 44%, rgba(3,20,38,.34) 72%, rgba(3,20,38,.62) 100%), url("../assets/images/equipo/equipo-malibu-fc.webp"); background-size: cover; background-position: center 44%; }
+.hero::after { content: ""; position: absolute; inset: auto 0 0; height: 8px; background: linear-gradient(90deg, var(--gold) 0 38%, var(--cream) 38% 62%, var(--gold) 62%); }
+.hero-grid { position: relative; z-index: 2; }
+.hero-pitch { position: absolute; z-index: 1; width: 440px; height: 440px; right: -150px; top: 50%; transform: translateY(-50%); border: 2px solid rgba(255,255,255,.16); border-radius: 50%; }
+.hero-pitch::before { content: ""; position: absolute; width: 2px; height: 760px; left: 50%; top: 50%; transform: translate(-50%,-50%); background: rgba(255,255,255,.12); }
+.hero .eyebrow { color: var(--gold); }
+.hero h1 { max-width: 760px; font-weight: 950; text-transform: uppercase; letter-spacing: -.065em; text-shadow: 0 4px 24px rgba(0,0,0,.28); }
+.hero h1 span { color: var(--cream); }
+.hero .lead { color: rgba(255,255,255,.86); font-size: 1.22rem; }
+.hero .button-primary { background: var(--gold); color: var(--dark); }
+.hero .button-secondary { border-color: rgba(255,255,255,.72); color: white; background: rgba(3,20,38,.28); }
+.hero-card { position: relative; width: min(100%, 370px); padding: 34px; background: rgba(3,20,38,.84); border: 1px solid rgba(216,165,36,.7); border-radius: 18px; box-shadow: 0 30px 80px rgba(0,0,0,.32); transform: none; backdrop-filter: blur(8px); }
+.hero-card::before, .hero-card::after { content: ""; position: absolute; width: 38px; height: 38px; border-color: var(--gold); }
+.hero-card::before { left: 12px; top: 12px; border-left: 2px solid; border-top: 2px solid; }
+.hero-card::after { right: 12px; bottom: 12px; border-right: 2px solid; border-bottom: 2px solid; }
+.hero-card-kicker { display: block; margin-bottom: 16px; color: rgba(255,255,255,.68) !important; text-transform: uppercase; letter-spacing: .14em; font-size: .72rem; }
+.hero-card img { width: min(100%, 250px); }
+
+.eyebrow { display: flex; align-items: center; gap: 10px; }
+.eyebrow::before { content: ""; width: 28px; height: 3px; flex: 0 0 auto; background: var(--gold); }
+h2 { font-weight: 950; text-transform: uppercase; letter-spacing: -.045em; }
+.club-section { position: relative; overflow: hidden; }
+.club-section::after { content: "MFC"; position: absolute; right: -28px; bottom: -82px; color: rgba(6,26,51,.045); font-size: clamp(9rem, 24vw, 24rem); line-height: .8; font-weight: 950; letter-spacing: -.1em; pointer-events: none; }
+.club-section .container { position: relative; z-index: 1; }
+.identity-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+.identity-tags span { padding: 9px 15px; border: 1px solid var(--navy); color: var(--navy); font-size: .78rem; font-weight: 900; text-transform: uppercase; letter-spacing: .08em; }
+
+.history-section { padding-top: 0; }
+.history-panel { position: relative; display: grid; grid-template-columns: 1.2fr .8fr; align-items: center; min-height: 470px; padding: 62px; overflow: hidden; background: var(--navy); color: white; border-radius: 18px; }
+.history-panel::before { content: ""; position: absolute; inset: 22px; border: 1px solid rgba(255,255,255,.13); pointer-events: none; }
+.history-copy { position: relative; z-index: 2; max-width: 680px; }
+.history-copy .eyebrow { color: var(--gold); }
+.history-copy p { color: rgba(255,255,255,.72); font-size: 1.08rem; }
+.status-pill { display: inline-flex; margin-top: 16px; padding: 9px 14px; background: var(--gold); color: var(--dark); font-size: .75rem; font-weight: 950; text-transform: uppercase; letter-spacing: .1em; }
+.history-mark { position: relative; justify-self: center; display: grid; place-items: center; width: 240px; aspect-ratio: 1; border: 2px solid rgba(255,255,255,.3); border-radius: 50%; }
+.history-mark::before { content: ""; position: absolute; top: -130px; bottom: -130px; left: 50%; width: 2px; background: rgba(255,255,255,.16); }
+.history-mark span { position: relative; z-index: 1; color: var(--gold); font-size: 4.4rem; font-weight: 950; letter-spacing: -.08em; }
+
+.section-dark { background: linear-gradient(135deg, rgba(21,70,46,.24), transparent 45%), var(--dark); }
+.gallery-card { border: 1px solid rgba(216,165,36,.28); border-radius: 12px; }
+.product-card, .steps li, .partner-card, .social-card { border-radius: 12px; }
+.product-card { border-top: 5px solid var(--gold); }
+.steps li { position: relative; border: 1px solid rgba(6,26,51,.1); }
+.steps li > span { border-radius: 4px; background: var(--pitch); }
+.partner-card { border-left: 5px solid var(--gold); }
+
+.competition-section { position: relative; overflow: hidden; background: var(--pitch); color: white; }
+.competition-section::before { content: ""; position: absolute; width: 460px; height: 460px; left: -230px; top: 50%; transform: translateY(-50%); border: 2px solid rgba(255,255,255,.14); border-radius: 50%; }
+.competition-section::after { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(255,255,255,.1); }
+.competition-grid { position: relative; z-index: 1; display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: center; }
+.competition-section .eyebrow { color: var(--gold-light); }
+.competition-section p { color: rgba(255,255,255,.76); font-size: 1.08rem; }
+.competition-links { display: grid; gap: 12px; }
+.competition-link { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 72px; padding: 0 22px; background: rgba(3,20,38,.58); border: 1px solid rgba(255,255,255,.18); color: white; text-decoration: none; font-weight: 900; transition: transform .2s ease, border-color .2s ease; }
+.competition-link:hover { transform: translateX(4px); border-color: var(--gold); }
+.competition-link strong { color: var(--gold); font-size: .82rem; text-transform: uppercase; letter-spacing: .06em; }
+.social-card { border-bottom: 5px solid var(--gold); }
+.site-footer { background: var(--dark); color: white; border-top-color: var(--gold); }
+.site-footer .footer-grid p, .site-footer .footer-grid nav a { color: rgba(255,255,255,.68); }
+
+@media (max-width: 1100px) {
+  .menu-button { display: inline-flex; }
+  .main-nav { display: none; position: absolute; top: 76px; left: 20px; right: 20px; flex-direction: column; align-items: stretch; padding: 20px; background: var(--navy); border: 1px solid rgba(216,165,36,.45); border-radius: 12px; box-shadow: var(--shadow); }
+  .main-nav.is-open { display: flex; }
+}
+
+@media (max-width: 900px) {
+  .history-panel, .competition-grid { grid-template-columns: 1fr; }
+  .history-mark { position: absolute; right: -70px; bottom: -70px; opacity: .3; }
+  .competition-section::after { display: none; }
+}
+
+@media (max-width: 600px) {
+  .hero { min-height: 730px; background-position: 60% center; background-image: linear-gradient(180deg, rgba(3,20,38,.95) 0%, rgba(3,20,38,.76) 58%, rgba(3,20,38,.96) 100%), url("../assets/images/equipo/equipo-malibu-fc.webp"); }
+  .hero-grid { padding-block: 56px 74px; }
+  .hero h1 { font-size: clamp(3.1rem, 16vw, 4.4rem); }
+  .hero-card { width: min(82%, 290px); padding: 22px; }
+  .hero-card img { width: 160px; margin-bottom: 10px; }
+  .hero-card p { font-size: 1.35rem; }
+  .history-panel { min-height: 440px; padding: 44px 28px; }
+  .history-panel::before { inset: 12px; }
+  .competition-grid { gap: 36px; }
+  .competition-link { min-height: 66px; }
+}

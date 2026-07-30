@@ -21,6 +21,7 @@ La arquitectura estática es adecuada para GitHub Pages y el alcance inicial. El
 11. La equipación se muestra como referencia visual, con pedidos desactivados hasta confirmar sus condiciones.
 12. La galería y el catálogo se han revisado a 1440 px y 390 px, sin errores ni avisos de consola.
 13. Los enlaces confirmados de patrocinadores, colaboradores e Instagram se han incorporado; YouTube queda visible y desactivado como canal en construcción.
+14. La identidad futbolística y canaria, la sección de historia en construcción y los enlaces oficiales de la Liga de la Amistad se han incorporado sin añadir datos deportivos no confirmados.
 
 ## Bloqueos
 

@@ -20,14 +20,17 @@ Aportado y autorizado por Iván el 2026-07-30:
 - Patrocinadores confirmados: Giroenviro y La Laguna Gran Hotel.
 - Colaboradores confirmados: Envite Canario y Peakland.
 - Instagram oficial del equipo: `https://www.instagram.com/malibufc__/?hl=es`.
+- Identidad territorial y deportiva: equipo de fútbol de Tenerife, Canarias.
+- Competición: Liga de la Amistad, con web, Instagram y Facebook oficiales enlazados.
 
 Continúa pendiente:
 
 1. Confirmar si el favicon debe diferenciarse del escudo; mientras tanto se utiliza una versión derivada.
 2. Identificar autor y fecha aproximada de cada fotografía para completar el archivo histórico.
-3. Confirmar o corregir ubicación, modalidad deportiva, número de equipos, categoría, competición, ascenso, temporada y lema.
+3. Confirmar o corregir municipio concreto, modalidad de fútbol, número de equipos, categoría, ascenso, temporada y lema.
 4. Aportar un texto institucional breve del club.
-5. Aportar los logotipos autorizados de patrocinadores y colaboradores si se desea sustituir las tarjetas de texto, e identificar vigencia y condiciones de uso.
+5. Desarrollar la historia del equipo con orígenes, cronología, temporadas, hitos y fuentes verificables.
+6. Aportar los logotipos autorizados de patrocinadores y colaboradores si se desea sustituir las tarjetas de texto, e identificar vigencia y condiciones de uso.
 
 ### Contacto
 

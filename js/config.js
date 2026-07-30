@@ -17,6 +17,13 @@ window.MALIBU_CONFIG = {
   youtubeUrl: "",
   email: "",
 
+  competition: {
+    name: "Liga de la Amistad",
+    websiteUrl: "https://futbol7amistad.com/",
+    instagramUrl: "https://www.instagram.com/futbol7amistad/?hl=es",
+    facebookUrl: "https://www.facebook.com/futbol7amistad/?locale=es_ES"
+  },
+
   products: [
     {
       name: "Equipación oficial Malibú FC",

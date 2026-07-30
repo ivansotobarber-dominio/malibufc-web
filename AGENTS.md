@@ -37,7 +37,7 @@ Mantener la web inicial con HTML, CSS y JavaScript puro, mobile first, sin backe
 
 Priorizar coste fijo mínimo, operación sencilla, dependencias evitables y soluciones reversibles. Documentar toda nueva dependencia y justificar por qué una alternativa manual o ya disponible no resuelve el problema.
 
-Centralizar en `js/config.js` temporada, dominio, contactos, productos y patrocinadores. Separar código, contenido y datos. Mantener formatos portables y evitar acoplamiento innecesario a proveedores.
+Centralizar en `js/config.js` temporada, dominio, contactos, productos, patrocinadores, colaboradores, competición y redes sociales. Separar código, contenido y datos. Mantener formatos portables y evitar acoplamiento innecesario a proveedores.
 
 No reorganizar el repositorio según una arquitectura futura antes de necesitarla. Crear carpetas y documentos cuando exista contenido real, responsable y flujo de mantenimiento.
 
