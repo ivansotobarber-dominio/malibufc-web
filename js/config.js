@@ -1,7 +1,8 @@
 /*
   FUENTE DE DATOS OPERATIVOS DE LA WEB.
   No publiques el número o alias de Bizum. Solo se facilita por privado tras confirmar el pedido.
-  Mantén desactivado cualquier producto o patrocinador hasta que sus datos estén confirmados.
+  Un producto puede mostrarse con published: true, pero el pedido solo se habilita con orderEnabled: true.
+  Mantén orderEnabled en false hasta confirmar precio, variantes, disponibilidad y condiciones.
 */
 window.MALIBU_CONFIG = {
   siteReady: false,
@@ -17,12 +18,13 @@ window.MALIBU_CONFIG = {
 
   products: [
     {
-      name: "Camiseta oficial Malibú FC",
+      name: "Equipación oficial Malibú FC",
       price: "Precio por confirmar",
-      description: "Descripción pendiente de validación.",
-      details: "Tallas, personalización, disponibilidad y plazo pendientes de confirmación.",
-      image: "assets/producto-camiseta.svg",
-      active: false
+      description: "Camiseta de manga larga color crema con detalles negros y pantalón negro.",
+      details: "Precio, tallas, personalización, disponibilidad y plazo pendientes de confirmación.",
+      image: "assets/images/productos/equipacion-oficial-malibu-fc.webp",
+      published: true,
+      orderEnabled: false
     }
   ],
 

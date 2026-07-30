@@ -1,6 +1,6 @@
 # Contexto del proyecto Malibú FC
 
-Fecha de consolidación: 2026-07-29.
+Fecha de consolidación: 2026-07-30.
 
 ## Función de este documento
 
@@ -34,7 +34,7 @@ La web no formaliza automáticamente la venta, no almacena pedidos y no publica 
 
 `index.html` contiene la portada. `css/styles.css` y `css/review.css` contienen el sistema visual, los puntos de ruptura responsive y los ajustes de accesibilidad. `js/config.js` contiene los datos operativos. `js/app.js` genera catálogo y patrocinadores, configura los enlaces de contacto y controla el menú móvil.
 
-`aviso-legal.html`, `privacidad.html` y `condiciones-pedido.html` son borradores. `assets/logo-provisional.svg`, `assets/favicon.svg` y `assets/producto-camiseta.svg` son recursos provisionales.
+`aviso-legal.html`, `privacidad.html` y `condiciones-pedido.html` son borradores. El escudo oficial, el favicon derivado, la fotografía de la equipación y tres imágenes del equipo están optimizados en `assets/images/` y publicados con autorización expresa de Iván. Los archivos provisionales se conservan temporalmente, pero ya no se utilizan en la portada.
 
 La indexación está bloqueada temporalmente mediante `robots.txt`. El archivo `CNAME` ya declara `malibufc.es`. El sitemap se conserva como `sitemap.pending.xml` hasta cerrar el resto de bloqueos de publicación. La configuración operativa del dominio se mantiene en `docs/DOMAIN_AND_DEPLOYMENT.md`.
 
@@ -42,9 +42,9 @@ La indexación está bloqueada temporalmente mediante `robots.txt`. El archivo `
 
 GitHub alojará el código y GitHub Pages servirá los archivos estáticos desde la raíz de `main`. `malibufc.es` será el nombre canónico y `www.malibufc.es` redirigirá al dominio raíz cuando los DNS y el certificado estén activos.
 
-`js/config.js` será el punto de actualización de temporada, dominio, contactos, productos y patrocinadores. Los productos y patrocinadores permanecerán desactivados hasta confirmar sus datos y su autorización de publicación.
+`js/config.js` será el punto de actualización de temporada, dominio, contactos, productos y patrocinadores. La equipación oficial puede mostrarse como referencia visual, pero el pedido permanecerá desactivado hasta confirmar precio, tallas, variantes, disponibilidad y condiciones. Los patrocinadores permanecerán desactivados hasta confirmar sus datos y autorización de publicación.
 
-Cada producto activo podrá abrir WhatsApp con un mensaje asociado. El club deberá confirmar disponibilidad, características, importe, plazo y entrega antes de facilitar los datos de Bizum por privado.
+Cada producto con `orderEnabled: true` podrá abrir WhatsApp con un mensaje asociado. El club deberá confirmar disponibilidad, características, importe, plazo y entrega antes de facilitar los datos de Bizum por privado.
 
 ## Sistema interno de control deportivo
 
@@ -65,7 +65,7 @@ Los siguientes datos aparecen en antecedentes o recursos iniciales, pero no cuen
 5. Temporada 2026/27.
 6. Lema “Más que un sentimiento, una familia”.
 7. Relación con La Laguna Gran Hotel como patrocinador.
-8. Camiseta oficial, opciones de personalización y condiciones comerciales.
+8. Precio, tallas, opciones de personalización, disponibilidad y condiciones comerciales de la equipación oficial.
 9. WhatsApp, Instagram y correo oficiales.
 10. Identidad del responsable de la web y del vendedor.
 
@@ -73,6 +73,6 @@ Estos elementos no deben publicarse como hechos ni activar funcionalidades hasta
 
 ## Estado de preparación
 
-La base técnica es adecuada para el alcance inicial y no necesita dependencias ni proceso de compilación. La publicación definitiva continúa bloqueada por información legal, comercial, deportiva, de contacto e imágenes. El dominio, GitHub Pages, el certificado para el dominio raíz y `www`, y el forzado de HTTPS están operativos.
+La base técnica es adecuada para el alcance inicial y no necesita dependencias ni proceso de compilación. La publicación definitiva continúa bloqueada por información legal, comercial, deportiva y de contacto. La identidad visual y las primeras imágenes oficiales ya están incorporadas. El dominio, GitHub Pages, el certificado para el dominio raíz y `www`, y el forzado de HTTPS están operativos.
 
 El repositorio público `ivansotobarber-dominio/malibufc-web` está operativo. `main` publica desde `/(root)`. `https://malibufc.es/` responde correctamente y `https://www.malibufc.es/` redirige al dominio principal. La indexación y la publicación funcional definitiva permanecen bloqueadas hasta cerrar los contenidos y revisiones P0.

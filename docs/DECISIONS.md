@@ -134,3 +134,13 @@ Decisión: `ivansotobarber-dominio` será la cuenta propietaria del repositorio 
 Impacto: el repositorio será `ivansotobarber-dominio/malibufc-web` y `www.malibufc.es` deberá apuntar a `ivansotobarber-dominio.github.io`.
 
 Origen: confirmación expresa de Iván.
+
+### D-018. Identidad visual e imágenes oficiales
+
+Fecha: 2026-07-30.
+
+Decisión: el escudo en PNG aportado por Iván será la identidad visual oficial de la web. La fotografía de la equipación, las dos fotografías de grupo y el cartel conmemorativo aportados en la misma entrega quedan autorizados para su publicación en `malibufc.es`.
+
+Restricción: la exhibición de la equipación no habilita pedidos ni confirma precio, tallas, variantes, disponibilidad o condiciones comerciales.
+
+Origen: aportación y autorización expresa de Iván.

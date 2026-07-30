@@ -2,6 +2,19 @@
 
 Esta carpeta contiene únicamente imágenes destinadas a la web pública. No subir fotografías privadas, documentos, capturas con datos personales ni material sin autorización de uso.
 
+## Inventario publicado
+
+| Archivo | Uso | Procedencia y autorización |
+|---|---|---|
+| `club/escudo-malibu-fc.png` | Cabecera, portada y pie | Aportado y autorizado por Iván el 2026-07-30 |
+| `club/favicon-malibu-fc.png` | Favicon derivado del escudo | Aportado y autorizado por Iván el 2026-07-30 |
+| `productos/equipacion-oficial-malibu-fc.webp` | Referencia visual de la equipación | Aportado y autorizado por Iván el 2026-07-30 |
+| `equipo/equipo-malibu-fc.webp` | Galería del equipo | Aportado y autorizado por Iván el 2026-07-30 |
+| `equipo/equipo-malibu-fc-campo.webp` | Galería del equipo | Aportado y autorizado por Iván el 2026-07-30 |
+| `equipo/ascenso-clausura-2026.webp` | Cartel conmemorativo en la galería | Aportado y autorizado por Iván el 2026-07-30 |
+
+Los originales permanecen fuera del repositorio. Las versiones publicadas están redimensionadas, sin metadatos y optimizadas para web. El autor y la fecha exacta de las fotografías continúan pendientes de identificación.
+
 ## Carpetas
 
 1. `club`, escudo, identidad visual y fotografías institucionales.

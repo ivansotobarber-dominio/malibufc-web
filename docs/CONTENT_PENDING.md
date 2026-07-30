@@ -11,12 +11,20 @@ Este documento concentra las aportaciones necesarias. No deben sustituirse por s
 
 ### Identidad y contenido del club
 
-1. Escudo oficial en SVG o PNG con fondo transparente y autorización de uso.
-2. Favicon oficial, si debe diferenciarse del escudo.
-3. Fotografía horizontal para portada, con calidad suficiente y autorización de las personas reconocibles.
-4. Confirmación o corrección de ubicación, modalidad deportiva, número de equipos, categoría, competición, ascenso, temporada y lema.
-5. Texto institucional breve del club.
-6. Nombre y enlace de cada patrocinador autorizado para publicación, además de su logotipo y condiciones de uso.
+Aportado y autorizado por Iván el 2026-07-30:
+
+- Escudo oficial en PNG con transparencia.
+- Fotografía de la equipación oficial.
+- Dos fotografías de grupo y un cartel conmemorativo del equipo.
+- Autorización expresa para publicar estos cinco archivos en la web oficial.
+
+Continúa pendiente:
+
+1. Confirmar si el favicon debe diferenciarse del escudo; mientras tanto se utiliza una versión derivada.
+2. Identificar autor y fecha aproximada de cada fotografía para completar el archivo histórico.
+3. Confirmar o corregir ubicación, modalidad deportiva, número de equipos, categoría, competición, ascenso, temporada y lema.
+4. Aportar un texto institucional breve del club.
+5. Confirmar nombre, enlace y logotipo de cada patrocinador autorizado, además de sus condiciones de uso.
 
 ### Contacto
 

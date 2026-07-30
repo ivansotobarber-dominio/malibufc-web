@@ -12,7 +12,6 @@ Prioridades: P0 bloquea un hito comprometido, P1 aporta valor inmediato, P2 mejo
 |---|---|---|---|---|---|
 | AH-03 | P0 | Confirmar responsable de la web y vendedor | Iván y directiva | Datos legales | Identidad y datos mínimos disponibles para textos legales |
 | AH-04 | P0 | Validar información deportiva y corporativa existente | Iván y directiva | Fuente autorizada | Cada dato pendiente de `PROJECT_CONTEXT.md` queda confirmado, corregido o retirado |
-| AH-05 | P0 | Aportar y aprobar identidad e imágenes oficiales | Iván | Derechos de uso | Escudo, favicon y fotografías definitivas almacenados con procedencia y autorización |
 | AH-06 | P0 | Confirmar WhatsApp, Instagram y decisión sobre correo | Iván | Canales oficiales | Enlaces configurados y probados |
 | AH-07 | P0 | Definir productos y condiciones comerciales | Iván y directiva | Proveedor y operativa | Precio, impuestos, variantes, disponibilidad, entrega, cambios e incidencias confirmados |
 | AH-08 | P0 | Completar aviso legal, privacidad y condiciones de pedido | Responsable legal por confirmar | AH-03 y AH-07 | Textos sin marcadores pendientes y coherentes con la operación |
@@ -30,7 +29,7 @@ Prioridades: P0 bloquea un hito comprometido, P1 aporta valor inmediato, P2 mejo
 | PR-03 | P1 | Documentar el procedimiento de pedido, cobro y entrega | Responsable de pedidos por asignar | PR-02 | Flujo operable por un suplente sin instrucciones externas |
 | PR-04 | P1 | Definir proceso de actualización y recuperación de la web | Responsable web por asignar | AH-01 y AH-12 | Frecuencia, revisión, copia y restauración documentadas |
 | PR-05 | P1 | Verificar indexación y sitemap | Responsable web por asignar | AH-11 | Sitemap enviado y estado de indexación comprobado |
-| PR-06 | P2 | Crear guía de identidad con activos confirmados | Responsable de comunicación por asignar | AH-05 | Usos, colores, tipografías, tono y formatos documentados |
+| PR-06 | P2 | Crear guía de identidad con activos confirmados | Responsable de comunicación por asignar | Activos oficiales publicados | Usos, colores, tipografías, tono y formatos documentados |
 | PR-07 | P2 | Crear plan de contenidos y plantillas iniciales | Responsable de comunicación por asignar | AH-12 y PR-06 | Flujo editorial y plantillas reutilizables aprobados |
 | PR-08 | P0 | Corregir zona horaria de la hoja de control a `Atlantic/Canary` | Iván o administrador de Sheets | Confirmación de impacto y copia de seguridad | Zona horaria verificada y fechas existentes conciliadas |
 | PR-09 | P0 | Aprobar usuarios, roles, autenticación, permisos y retención del control deportivo | Iván y dirección deportiva | `docs/malibu-control-system.md` | Matriz nominal aprobada y prueba de acceso no autorizado superada |

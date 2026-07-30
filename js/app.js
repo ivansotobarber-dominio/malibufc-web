@@ -20,7 +20,7 @@
     const status = document.createElement("aside");
     status.className = "site-status";
     status.setAttribute("role", "status");
-    status.textContent = "Web en preparación. Los contenidos, contactos y productos todavía no están confirmados.";
+    status.textContent = "Web en preparación. La identidad visual y las fotografías son oficiales; los contactos, precios y condiciones todavía no están confirmados.";
     document.body.prepend(status);
   }
 
@@ -64,7 +64,7 @@
 
   const productGrid = $("#product-grid");
   if (productGrid) {
-    const products = Array.isArray(config.products) ? config.products.filter((product) => product.active === true) : [];
+    const products = Array.isArray(config.products) ? config.products.filter((product) => product.published === true) : [];
     if (!products.length) {
       const empty = document.createElement("p");
       empty.className = "empty-state";
@@ -80,8 +80,8 @@
         image.src = text(product.image);
         image.alt = text(product.name, "Producto del Malibú FC");
         image.loading = "lazy";
-        image.width = 1200;
-        image.height = 900;
+        image.width = 900;
+        image.height = 1200;
 
         const content = document.createElement("div");
         content.className = "product-content";
@@ -104,13 +104,13 @@
         const order = document.createElement("a");
         order.className = "button button-primary product-order";
         const message = `Hola, quiero información para pedir: ${text(product.name, "producto del Malibú FC")}.`;
-        if (hasWhatsApp) {
+        if (hasWhatsApp && product.orderEnabled === true) {
           order.href = buildWhatsAppUrl(message);
           order.target = "_blank";
           order.rel = "noopener";
           order.textContent = "Pedir por WhatsApp";
         } else {
-          setDisabledLink(order, "WhatsApp pendiente");
+          setDisabledLink(order, "Pedidos pendientes");
         }
 
         content.append(meta, description, details, order);
