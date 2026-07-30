@@ -10,6 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://malibufc.es/">
   <meta property="og:image" content="https://malibufc.es/assets/images/equipo/equipo-malibu-fc.webp">
+  <link rel="canonical" href="https://malibufc.es/">
   <title>Malibú FC | Web oficial</title>
   <link rel="icon" href="assets/images/club/favicon-malibu-fc.png" type="image/png">
   <link rel="stylesheet" href="css/styles.css">
@@ -22,21 +23,19 @@
 
   <header class="site-header" id="inicio">
     <div class="container nav-wrap">
-      <a class="brand" href="#inicio" aria-label="Malibú FC, inicio">
+      <a class="brand" href="/" aria-label="Malibú FC, inicio">
         <img src="assets/images/club/escudo-malibu-fc.png" alt="Escudo oficial del Malibú FC" width="48" height="52">
         <span>Malibú FC</span>
       </a>
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
       <nav id="menu-principal" class="main-nav" aria-label="Navegación principal">
-        <a href="#club">Club</a>
-        <a href="#historia">Historia</a>
-        <a href="#plantilla">Plantilla</a>
-        <a href="#equipos">Equipo</a>
-        <a href="#calendario">Calendario</a>
-        <a href="#productos">Equipación</a>
-        <a href="#liga">Liga</a>
-        <a href="#alianzas">Alianzas</a>
-        <a href="#redes">Redes</a>
+        <a href="/#club">Club</a>
+        <a href="/plantilla/">Plantilla</a>
+        <a href="/calendario/">Calendario</a>
+        <a href="/tienda/">Tienda</a>
+        <a href="/#liga">Liga</a>
+        <a href="/#alianzas">Alianzas</a>
+        <a href="/#redes">Redes</a>
       </nav>
     </div>
   </header>
@@ -50,8 +49,8 @@
           <h1>Fútbol desde<br><span>Tenerife.</span></h1>
           <p class="lead">La casa digital del Malibú FC. Equipo, identidad, equipación y actualidad del club.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#equipos">Ver al equipo</a>
-            <a class="button button-secondary" href="#liga">Nuestra liga</a>
+            <a class="button button-primary" href="/plantilla/">Ver la plantilla</a>
+            <a class="button button-secondary" href="/calendario/">Próximos partidos</a>
           </div>
         </div>
         <div class="hero-card" aria-label="Escudo oficial del Malibú FC">
@@ -91,16 +90,26 @@
       </div>
     </section>
 
-    <section class="section squad-section" id="plantilla">
+    <section class="section portal-section" aria-labelledby="club-portals-title">
       <div class="container">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Primer equipo</p>
-            <h2>Plantilla del Malibú FC</h2>
+            <p class="eyebrow">Área deportiva</p>
+            <h2 id="club-portals-title">Toda la información del Malibú FC</h2>
           </div>
-          <p>La estructura está preparada para publicar jugadores, dorsales, posiciones y fotografías cuando el club confirme los datos y permisos de imagen.</p>
+          <p>Consulta la plantilla, los próximos partidos y la equipación oficial en sus páginas propias.</p>
         </div>
-        <div id="squad-content" aria-live="polite"></div>
+        <div class="portal-grid">
+          <a class="portal-card portal-squad" href="/plantilla/">
+            <span>Primer equipo</span><strong>Plantilla</strong><small>Jugadores, dorsales y posiciones</small>
+          </a>
+          <a class="portal-card portal-calendar" href="/calendario/">
+            <span>Competición</span><strong>Calendario</strong><small>Partidos, resultados y entradas</small>
+          </a>
+          <a class="portal-card portal-store" href="/tienda/">
+            <span>Equipación oficial</span><strong>Tienda</strong><small>Catálogo y pedidos por WhatsApp</small>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -122,46 +131,6 @@
             <figcaption>Una imagen para la historia del club</figcaption>
           </figure>
         </div>
-      </div>
-    </section>
-
-    <section class="section calendar-section" id="calendario">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Partidos y entradas</p>
-            <h2>Calendario del equipo</h2>
-          </div>
-          <p>Los partidos oficiales se publicarán aquí. La entrada gratuita mostrada actualmente es una demostración y no genera una reserva real.</p>
-        </div>
-        <div id="calendar-grid" class="calendar-grid" aria-live="polite"></div>
-      </div>
-    </section>
-
-    <section class="section" id="productos">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Catálogo oficial</p>
-            <h2>Productos del Malibú FC</h2>
-          </div>
-          <p>Ya puedes conocer la equipación oficial. El precio, las variantes, la disponibilidad y las condiciones de pedido siguen pendientes.</p>
-        </div>
-        <div id="product-grid" class="product-grid" aria-live="polite"></div>
-        <noscript><p>Activa JavaScript para consultar el estado del catálogo.</p></noscript>
-      </div>
-    </section>
-
-    <section class="section section-accent" id="pedidos">
-      <div class="container">
-        <p class="eyebrow">Proceso previsto</p>
-        <h2>Pedido sencillo, sin registros ni pasarelas</h2>
-        <ol class="steps">
-          <li><span>1</span><div><strong>Elige el producto</strong><p>Revisa modelo, talla y personalización.</p></div></li>
-          <li><span>2</span><div><strong>Escribe por WhatsApp</strong><p>El mensaje se abre con el producto seleccionado.</p></div></li>
-          <li><span>3</span><div><strong>Confirmamos el pedido</strong><p>Validamos disponibilidad, importe y forma de entrega.</p></div></li>
-          <li><span>4</span><div><strong>Pago por Bizum</strong><p>Los datos de pago se facilitan de forma privada tras confirmar.</p></div></li>
-        </ol>
       </div>
     </section>
 
@@ -212,7 +181,7 @@
           <p>El Instagram oficial ya está disponible. WhatsApp y correo se activarán después de su confirmación.</p>
         </div>
         <div class="contact-actions">
-          <a class="button button-light whatsapp-general" href="#productos">WhatsApp pendiente</a>
+          <a class="button button-light whatsapp-general" href="/tienda/">WhatsApp pendiente</a>
           <a class="button button-outline-light instagram-link" href="#redes">Instagram</a>
           <a class="button button-outline-light email-link" href="#contacto">Correo pendiente</a>
         </div>

@@ -178,3 +178,25 @@ Decisión: la web pública tendrá secciones de plantilla, calendario y entradas
 Restricción: la hoja privada no se expondrá directamente desde GitHub Pages y no se copiarán al repositorio nombres, observaciones, estados internos ni otros datos personales.
 
 Origen: instrucción expresa de Iván y reglas de privacidad confirmadas del proyecto.
+
+
+### D-022. Arquitectura multipágina de la web pública
+
+Fecha: 2026-07-30.
+
+Decisión: la portada funcionará como resumen del club y enlazará páginas independientes para plantilla, calendario y tienda en las rutas `/plantilla/`, `/calendario/` y `/tienda/`. Todas compartirán identidad visual, navegación, configuración y publicación mediante GitHub Pages.
+
+Restricción: la separación en páginas no modifica el estado de los datos. La plantilla, el calendario, las entradas y los pedidos seguirán sujetos a sus confirmaciones y autorizaciones pendientes.
+
+Origen: instrucción expresa de Iván.
+
+
+### D-023. Ampliación del catálogo previsto
+
+Fecha: 2026-07-30.
+
+Decisión: la tienda mostrará como productos previstos la segunda equipación negra con letras blancas, bufanda, chaqueta retro, chándal, mochila, brazalete de capitán, llavero y pizarra táctica personalizada. La fotografía del brazalete aportada por Iván queda autorizada para su publicación.
+
+Restricción: la inclusión en el catálogo no confirma fabricación, diseño final, precio, tallas, stock ni disponibilidad. Los pedidos permanecerán desactivados hasta validar las condiciones comerciales de cada producto. La segunda equipación utilizará una visualización conceptual identificada expresamente como tal. Los artículos sin fotografía autorizada usarán una presentación gráfica identificada como «Imagen pendiente».
+
+Origen: instrucción expresa de Iván.

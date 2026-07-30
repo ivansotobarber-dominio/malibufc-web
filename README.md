@@ -4,7 +4,7 @@ Fuente de verdad técnica y documental de la web oficial del Malibú FC. La solu
 
 ## Estado
 
-El repositorio público, GitHub Pages, el dominio y HTTPS están activos. El escudo, la equipación y las primeras imágenes oficiales ya están incorporados, y `www.malibufc.es` redirige al dominio principal. La web todavía no está autorizada para indexación ni venta de productos; los bloqueos vigentes se mantienen en `docs/BACKLOG.md`.
+El repositorio público, GitHub Pages, el dominio y HTTPS están activos. La portada y las páginas independientes de plantilla, calendario y tienda están publicadas. El escudo, la equipación y las primeras imágenes oficiales ya están incorporados, y `www.malibufc.es` redirige al dominio principal. La web todavía no está autorizada para indexación ni venta de productos; los bloqueos vigentes se mantienen en `docs/BACKLOG.md`.
 
 ## Documentación principal
 

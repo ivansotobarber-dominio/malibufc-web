@@ -34,7 +34,7 @@ Los patrocinadores confirmados son Giroenviro y La Laguna Gran Hotel. Los colabo
 
 ## Arquitectura actual
 
-`index.html` contiene la portada. `css/styles.css` y `css/review.css` contienen el sistema visual, los puntos de ruptura responsive y los ajustes de accesibilidad. `js/config.js` contiene los datos operativos. `js/app.js` genera catálogo, alianzas y redes sociales, configura los enlaces de contacto y controla el menú móvil.
+`index.html` contiene la portada y actúa como acceso resumido al ecosistema público. `plantilla/index.html`, `calendario/index.html` y `tienda/index.html` contienen páginas independientes con URL propia. `css/styles.css` y `css/review.css` contienen el sistema visual compartido, los puntos de ruptura responsive y los ajustes de accesibilidad. `js/config.js` contiene los datos operativos. `js/app.js` genera catálogo, alianzas y redes sociales, configura los enlaces de contacto y controla el menú móvil.
 
 `aviso-legal.html`, `privacidad.html` y `condiciones-pedido.html` son borradores. El escudo oficial, el favicon derivado, la fotografía de la equipación y tres imágenes del equipo están optimizados en `assets/images/` y publicados con autorización expresa de Iván. Los archivos provisionales se conservan temporalmente, pero ya no se utilizan en la portada.
 

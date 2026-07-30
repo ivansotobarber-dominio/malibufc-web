@@ -112,7 +112,7 @@
           const card = document.createElement("article");
           card.className = "player-card";
           const image = document.createElement("img");
-          image.src = text(player.image, "assets/images/club/escudo-malibu-fc.png");
+          image.src = text(player.image, "/assets/images/club/escudo-malibu-fc.png");
           image.alt = text(player.name, "Jugador del Malibú FC");
           image.loading = "lazy";
           const data = document.createElement("div");
@@ -160,7 +160,7 @@
           const team = document.createElement("div");
           if (text(teamName).toLowerCase().includes("malibú")) {
             const crest = document.createElement("img");
-            crest.src = "assets/images/club/escudo-malibu-fc.png";
+            crest.src = "/assets/images/club/escudo-malibu-fc.png";
             crest.alt = "";
             team.appendChild(crest);
           }
@@ -221,13 +221,28 @@
         const article = document.createElement("article");
         article.className = "product-card";
 
-        const image = document.createElement("img");
-        image.className = "product-image";
-        image.src = text(product.image);
-        image.alt = text(product.name, "Producto del Malibú FC");
-        image.loading = "lazy";
-        image.width = 900;
-        image.height = 1200;
+        let media;
+        if (text(product.image)) {
+          media = document.createElement("img");
+          media.className = "product-image";
+          media.src = text(product.image);
+          media.alt = text(product.name, "Producto del Malibú FC");
+          media.loading = "lazy";
+          media.width = 900;
+          media.height = 1200;
+        } else {
+          media = document.createElement("div");
+          media.className = "product-placeholder";
+          media.setAttribute("role", "img");
+          media.setAttribute("aria-label", "Imagen pendiente de " + text(product.name, "producto"));
+          const category = document.createElement("span");
+          category.textContent = text(product.category, "Malibú FC");
+          const visual = document.createElement("strong");
+          visual.textContent = text(product.visualLabel, "MFC");
+          const pending = document.createElement("small");
+          pending.textContent = "Imagen pendiente";
+          media.append(category, visual, pending);
+        }
 
         const content = document.createElement("div");
         content.className = "product-content";
@@ -259,8 +274,14 @@
           setDisabledLink(order, "Pedidos pendientes");
         }
 
+        if (text(product.statusLabel)) {
+          const status = document.createElement("span");
+          status.className = "product-status";
+          status.textContent = text(product.statusLabel);
+          content.appendChild(status);
+        }
         content.append(meta, description, details, order);
-        article.append(image, content);
+        article.append(media, content);
         productGrid.appendChild(article);
       });
     }

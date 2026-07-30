@@ -1,6 +1,6 @@
 # Backlog del ecosistema digital Malibú FC
 
-Fecha de revisión: 2026-07-29.
+Fecha de revisión: 2026-07-30.
 
 Este documento contiene únicamente trabajo ejecutable. La estrategia se mantiene en `docs/MASTER_PLAN.md` y la secuencia de fases en `docs/ROADMAP.md`.
 

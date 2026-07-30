@@ -16,6 +16,8 @@ Aportado y autorizado por Iván el 2026-07-30:
 - Escudo oficial en PNG con transparencia.
 - Fotografía de la equipación oficial.
 - Dos fotografías de grupo y un cartel conmemorativo del equipo.
+- Fotografía del brazalete de capitán personalizado.
+- Catálogo previsto: segunda equipación negra con letras blancas, bufanda, chaqueta retro, chándal, mochila, brazalete, llavero y pizarra táctica personalizada.
 - Autorización expresa para publicar estos cinco archivos en la web oficial.
 - Patrocinadores confirmados: Giroenviro y La Laguna Gran Hotel.
 - Colaboradores confirmados: Envite Canario y Peakland.
@@ -56,6 +58,7 @@ Para cada producto:
 7. Recogida, entrega y posibles gastos.
 8. Política de cambios, devoluciones y productos personalizados.
 9. Canal y plazo para incidencias.
+10. Aportar fotografías autorizadas o diseños finales de los productos que todavía muestran «Imagen pendiente» y sustituir la visualización conceptual de la segunda equipación cuando exista una fotografía real.
 
 También debe confirmarse el texto exacto del mensaje inicial de WhatsApp y quién valida cada pedido antes de solicitar el pago.
 

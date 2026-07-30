@@ -333,3 +333,68 @@ h2 { font-weight: 950; text-transform: uppercase; letter-spacing: -.045em; }
   .match-versus { padding-block: 2px; }
   .ticket-box { width: 100%; justify-content: space-between; }
 }
+
+
+/* Arquitectura multipágina */
+.main-nav a[aria-current="page"] { color: var(--gold); }
+.main-nav a[aria-current="page"]::after { transform: scaleX(1); }
+
+.portal-section { background: var(--cream); }
+.portal-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.portal-card { position: relative; display: flex; min-height: 330px; flex-direction: column; justify-content: flex-end; padding: 30px; overflow: hidden; color: white; background: var(--navy); border-bottom: 6px solid var(--gold); text-decoration: none; box-shadow: var(--shadow); isolation: isolate; }
+.portal-card::before { content: ""; position: absolute; inset: 0; z-index: -2; background-size: cover; background-position: center; transition: transform .35s ease; }
+.portal-card::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(3,20,38,.08), rgba(3,20,38,.95)); }
+.portal-card:hover::before, .portal-card:focus-visible::before { transform: scale(1.04); }
+.portal-squad::before { background-image: url("../assets/images/equipo/equipo-malibu-fc.webp"); }
+.portal-calendar::before { background-image: url("../assets/images/equipo/equipo-malibu-fc-campo.webp"); }
+.portal-store::before { background-image: url("../assets/images/productos/equipacion-oficial-malibu-fc.webp"); }
+.portal-card span { margin-bottom: 8px; color: var(--gold); font-size: .75rem; font-weight: 900; text-transform: uppercase; letter-spacing: .1em; }
+.portal-card strong { font-family: var(--display); font-size: clamp(2rem, 4vw, 3.2rem); line-height: .95; text-transform: uppercase; }
+.portal-card small { margin-top: 12px; color: rgba(255,255,255,.75); font-size: .9rem; }
+
+.inner-hero { position: relative; min-height: 440px; display: flex; align-items: flex-end; overflow: hidden; color: white; background: var(--navy); isolation: isolate; }
+.inner-hero::before { content: ""; position: absolute; inset: 0; z-index: -2; background-size: cover; background-position: center 38%; }
+.inner-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(3,20,38,.96) 0%, rgba(3,20,38,.68) 52%, rgba(3,20,38,.25) 100%); }
+.inner-hero-squad::before { background-image: url("../assets/images/equipo/equipo-malibu-fc.webp"); }
+.inner-hero-calendar::before { background-image: url("../assets/images/equipo/equipo-malibu-fc-campo.webp"); }
+.inner-hero-store::before { background-image: url("../assets/images/productos/equipacion-oficial-malibu-fc.webp"); background-position: center 35%; }
+.inner-hero-content { padding-block: 88px 66px; }
+.inner-hero h1 { margin: 0 0 12px; color: white; font-size: clamp(3.8rem, 10vw, 7.5rem); line-height: .86; text-transform: uppercase; }
+.inner-hero-content > p:last-child { max-width: 620px; margin: 0; color: rgba(255,255,255,.76); font-size: 1.12rem; }
+.team-banner-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr); align-items: center; gap: 48px; }
+.team-banner-grid img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-bottom: 6px solid var(--gold); }
+.team-banner-grid p:not(.eyebrow) { margin-bottom: 24px; color: rgba(255,255,255,.68); }
+.ticket-info .button { margin-top: 12px; }
+.store-safety { background: #e9e5da; }
+.text-link { color: var(--navy); font-weight: 900; text-decoration-thickness: 2px; text-underline-offset: 5px; }
+
+@media (max-width: 900px) {
+  .portal-grid { grid-template-columns: 1fr; }
+  .portal-card { min-height: 270px; }
+  .team-banner-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .inner-hero { min-height: 390px; }
+  .inner-hero::after { background: linear-gradient(180deg, rgba(3,20,38,.35), rgba(3,20,38,.96)); }
+  .inner-hero-content { padding-block: 70px 48px; }
+  .inner-hero h1 { font-size: clamp(3.5rem, 20vw, 5.2rem); }
+  .portal-card { min-height: 230px; padding: 24px; }
+}
+
+
+.product-placeholder { position: relative; display: flex; aspect-ratio: 3 / 4; flex-direction: column; justify-content: flex-end; padding: 28px; overflow: hidden; color: white; background: linear-gradient(145deg, #0d2b4d, var(--navy)); isolation: isolate; }
+.product-placeholder::before { content: "MALIBÚ"; position: absolute; top: 10%; right: -8%; z-index: -1; color: rgba(255,255,255,.045); font-family: var(--display); font-size: clamp(4.6rem, 12vw, 8rem); line-height: .8; letter-spacing: -.08em; transform: rotate(90deg); }
+.product-placeholder::after { content: ""; position: absolute; top: 24px; left: 28px; width: 54px; height: 5px; background: var(--gold); }
+.product-placeholder span { margin-bottom: 8px; color: var(--gold); font-size: .72rem; font-weight: 900; text-transform: uppercase; letter-spacing: .09em; }
+.product-placeholder strong { font-family: var(--display); font-size: clamp(3.2rem, 8vw, 5.8rem); line-height: .85; text-transform: uppercase; }
+.product-placeholder small { margin-top: 12px; color: rgba(255,255,255,.58); font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
+
+
+/* Catálogo ampliado */
+.product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 1000px) { .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .product-grid { grid-template-columns: 1fr; } }
+
+.product-card { position: relative; }
+.product-status { position: absolute; top: 18px; left: 18px; z-index: 2; padding: 7px 10px; color: #60440d; background: #fff0c7; box-shadow: 0 6px 18px rgba(3,20,38,.18); font-size: .68rem; font-weight: 900; text-transform: uppercase; letter-spacing: .07em; }
