@@ -63,9 +63,9 @@ window.MALIBU_CONFIG = {
       visualLabel: "2ª",
       price: "Precio por confirmar",
       description: "Versión negra de la equipación del Malibú FC, con letras blancas.",
-      details: "La imagen es una visualización conceptual; diseño final, tallas, disponibilidad y condiciones pendientes de confirmación.",
-      image: "/assets/images/productos/segunda-equipacion-malibu-fc-concepto.png",
-      statusLabel: "Visualización conceptual",
+      details: "Diseño final, tallas, disponibilidad y condiciones pendientes de confirmación.",
+      image: "/assets/images/productos/segunda-equipacion-malibu-fc.webp",
+      statusLabel: "Diseño de referencia",
       published: true,
       orderEnabled: false
     },
@@ -76,7 +76,8 @@ window.MALIBU_CONFIG = {
       price: "Precio por confirmar",
       description: "Bufanda del Malibú FC.",
       details: "Diseño, medidas, material y disponibilidad pendientes de confirmación.",
-      image: "",
+      image: "/assets/images/productos/bufanda-malibu-fc.webp",
+      statusLabel: "Diseño de referencia",
       published: true,
       orderEnabled: false
     },
@@ -87,7 +88,8 @@ window.MALIBU_CONFIG = {
       price: "Precio por confirmar",
       description: "Chaqueta retro del Malibú FC.",
       details: "Diseño, tallas, material y disponibilidad pendientes de confirmación.",
-      image: "",
+      image: "/assets/images/productos/chaqueta-retro-malibu-fc.webp",
+      statusLabel: "Diseño de referencia",
       published: true,
       orderEnabled: false
     },
@@ -98,7 +100,8 @@ window.MALIBU_CONFIG = {
       price: "Precio por confirmar",
       description: "Chándal del Malibú FC.",
       details: "Diseño, tallas, composición y disponibilidad pendientes de confirmación.",
-      image: "",
+      image: "/assets/images/productos/chandal-malibu-fc.webp",
+      statusLabel: "Diseño de referencia",
       published: true,
       orderEnabled: false
     },
@@ -109,7 +112,8 @@ window.MALIBU_CONFIG = {
       price: "Precio por confirmar",
       description: "Mochila personalizada del Malibú FC.",
       details: "Diseño, capacidad, materiales y disponibilidad pendientes de confirmación.",
-      image: "",
+      image: "/assets/images/productos/mochila-malibu-fc.webp",
+      statusLabel: "Diseño de referencia",
       published: true,
       orderEnabled: false
     },
@@ -120,7 +124,7 @@ window.MALIBU_CONFIG = {
       price: "Precio por confirmar",
       description: "Brazalete de capitán personalizado del Malibú FC.",
       details: "Medidas, unidades disponibles y condiciones de pedido pendientes de confirmación.",
-      image: "/assets/images/productos/brazalete-capitan-malibu-fc.png",
+      image: "/assets/images/productos/brazalete-capitan-malibu-fc.webp",
       published: true,
       orderEnabled: false
     },
@@ -131,7 +135,8 @@ window.MALIBU_CONFIG = {
       price: "Precio por confirmar",
       description: "Llavero personalizado del Malibú FC.",
       details: "Diseño, material, formato y disponibilidad pendientes de confirmación.",
-      image: "",
+      image: "/assets/images/productos/llavero-malibu-fc.webp",
+      statusLabel: "Diseño de referencia",
       published: true,
       orderEnabled: false
     },
@@ -142,7 +147,8 @@ window.MALIBU_CONFIG = {
       price: "Precio por confirmar",
       description: "Pizarra táctica personalizada para el Malibú FC.",
       details: "Formato, medidas, accesorios y disponibilidad pendientes de confirmación.",
-      image: "",
+      image: "/assets/images/productos/pizarra-tactica-malibu-fc.webp",
+      statusLabel: "Diseño de referencia",
       published: true,
       orderEnabled: false
     }

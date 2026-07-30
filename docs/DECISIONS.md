@@ -200,3 +200,14 @@ Decisión: la tienda mostrará como productos previstos la segunda equipación n
 Restricción: la inclusión en el catálogo no confirma fabricación, diseño final, precio, tallas, stock ni disponibilidad. Los pedidos permanecerán desactivados hasta validar las condiciones comerciales de cada producto. La segunda equipación utilizará una visualización conceptual identificada expresamente como tal. Los artículos sin fotografía autorizada usarán una presentación gráfica identificada como «Imagen pendiente».
 
 Origen: instrucción expresa de Iván.
+
+
+### D-024. Imágenes de referencia del catálogo
+
+Fecha: 2026-07-31.
+
+Decisión: las imágenes aportadas por Iván para la segunda equipación, chaqueta retro, mochila, bufanda, chándal, llavero y pizarra táctica quedan autorizadas para su publicación en la tienda y sustituyen la visualización conceptual anterior y las tarjetas «Imagen pendiente» de esos productos.
+
+Restricción: las imágenes se identificarán como «Diseño de referencia» y no acreditan por sí solas fabricación, marca contractual, diseño final, stock o disponibilidad. Los pedidos seguirán desactivados hasta confirmar condiciones comerciales.
+
+Origen: aportación e instrucción expresa de Iván.
