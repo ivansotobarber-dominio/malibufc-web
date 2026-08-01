@@ -409,4 +409,49 @@
     }
     link.href = `mailto:${text(config.email)}`;
   });
+
+  const matchday = config.calendar?.events?.[0];
+  const matchdayStatus = $("#matchday-status");
+  const matchdayMeta = $("#matchday-meta");
+  const matchdayDate = $("#matchday-date");
+  const matchdayOpponent = $("#matchday-opponent");
+  const matchdayVenue = $("#matchday-venue");
+  const matchdayToggle = $("#matchday-toggle");
+  const matchdayDetails = $("#matchday-details");
+  if (matchday && matchdayStatus) {
+    const home = text(matchday.home, "Malibú FC");
+    const away = text(matchday.away, "Rival por confirmar");
+    matchdayStatus.textContent = `${home}  ·  ${away}`;
+    matchdayMeta.textContent = text(matchday.competition, "Liga de la Amistad");
+    if (matchdayDate) matchdayDate.textContent = text(matchday.dateLabel, "Por confirmar");
+    if (matchdayOpponent) matchdayOpponent.textContent = away;
+    if (matchdayVenue) matchdayVenue.textContent = text(matchday.venue, "Por confirmar");
+    const fanMatchCopy = $("#fan-match-copy");
+    if (fanMatchCopy) fanMatchCopy.textContent = `${home} · ${away} · ${text(matchday.dateLabel, "Fecha por confirmar")}`;
+  }
+  if (matchdayToggle && matchdayDetails) {
+    matchdayToggle.addEventListener("click", () => {
+      const isOpen = matchdayToggle.getAttribute("aria-expanded") === "true";
+      matchdayToggle.setAttribute("aria-expanded", String(!isOpen));
+      matchdayDetails.hidden = isOpen;
+      matchdayToggle.innerHTML = isOpen ? "Ver detalles <span aria-hidden=\"true\">+</span>" : "Ocultar detalles <span aria-hidden=\"true\">−</span>";
+    });
+  }
+
+  const fanTabs = $$(".fan-tab");
+  const fanPanels = $$(".fan-panel");
+  fanTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      fanTabs.forEach((item) => {
+        const selected = item === tab;
+        item.classList.toggle("is-active", selected);
+        item.setAttribute("aria-selected", String(selected));
+      });
+      fanPanels.forEach((panel) => {
+        const visible = panel.id === tab.getAttribute("aria-controls");
+        panel.classList.toggle("is-visible", visible);
+        panel.hidden = !visible;
+      });
+    });
+  });
 })();

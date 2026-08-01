@@ -13,6 +13,9 @@
   <link rel="canonical" href="https://malibufc.es/">
   <title>Malibú FC | Web oficial</title>
   <link rel="icon" href="assets/images/club/favicon-malibu-fc.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/review.css">
   <script defer src="js/config.js"></script>
@@ -62,6 +65,22 @@
       </div>
     </section>
 
+    <section class="matchday-strip" aria-label="Próximo partido">
+      <div class="container matchday-inner">
+        <div class="matchday-label"><span class="live-dot" aria-hidden="true"></span><span>Jornada Malibú FC</span></div>
+        <div class="matchday-summary">
+          <strong id="matchday-status">Próximo partido pendiente de confirmar</strong>
+          <span id="matchday-meta">Liga de la Amistad · Tenerife</span>
+        </div>
+        <button class="matchday-toggle" id="matchday-toggle" type="button" aria-expanded="false" aria-controls="matchday-details">Ver detalles <span aria-hidden="true">+</span></button>
+      </div>
+      <div class="container matchday-details" id="matchday-details" hidden>
+        <div><span>Fecha</span><strong id="matchday-date">Por confirmar</strong></div>
+        <div><span>Rival</span><strong id="matchday-opponent">Por confirmar</strong></div>
+        <div><span>Campo</span><strong id="matchday-venue">Por confirmar</strong></div>
+        <a class="button button-primary" href="/calendario/">Ver calendario</a>
+      </div>
+    </section>
     <section class="section club-section" id="club">
       <div class="container split">
         <div>
@@ -113,6 +132,24 @@
       </div>
     </section>
 
+    <section class="section fan-zone" aria-labelledby="fan-zone-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">Zona del club</p><h2 id="fan-zone-title">Sigue el pulso del Malibú</h2></div>
+          <p>Accede rápidamente a lo que está pasando: partidos, tienda y redes oficiales.</p>
+        </div>
+        <div class="fan-tabs" role="tablist" aria-label="Información rápida del club">
+          <button class="fan-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="fan-panel-matches" id="fan-tab-matches">Partidos</button>
+          <button class="fan-tab" type="button" role="tab" aria-selected="false" aria-controls="fan-panel-shop" id="fan-tab-shop">Equipación</button>
+          <button class="fan-tab" type="button" role="tab" aria-selected="false" aria-controls="fan-panel-social" id="fan-tab-social">Redes</button>
+        </div>
+        <div class="fan-panels">
+          <div class="fan-panel is-visible" role="tabpanel" id="fan-panel-matches" aria-labelledby="fan-tab-matches"><strong>Próxima cita</strong><p id="fan-match-copy">El calendario se publicará cuando estén confirmados los partidos.</p><a href="/calendario/" class="text-link">Abrir calendario <span aria-hidden="true">→</span></a></div>
+          <div class="fan-panel" role="tabpanel" id="fan-panel-shop" aria-labelledby="fan-tab-shop" hidden><strong>Viste los colores</strong><p>Consulta la equipación, accesorios y diseños de referencia del club.</p><a href="/tienda/" class="text-link">Entrar en la tienda <span aria-hidden="true">→</span></a></div>
+          <div class="fan-panel" role="tabpanel" id="fan-panel-social" aria-labelledby="fan-tab-social" hidden><strong>El partido continúa fuera del campo</strong><p>Resultados, imágenes y novedades en el Instagram oficial del equipo.</p><a href="#redes" class="text-link">Ver redes oficiales <span aria-hidden="true">→</span></a></div>
+        </div>
+      </div>
+    </section>
     <section class="section section-dark" id="equipos">
       <div class="container">
         <p class="eyebrow">Días de fútbol</p>
