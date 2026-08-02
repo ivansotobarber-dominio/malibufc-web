@@ -429,6 +429,26 @@
     const fanMatchCopy = $("#fan-match-copy");
     if (fanMatchCopy) fanMatchCopy.textContent = `${home} · ${away} · ${text(matchday.dateLabel, "Fecha por confirmar")}`;
   }
+  const matchdayCountdown = $("#matchday-countdown");
+  const matchDate = matchday?.dateISO || matchday?.date;
+  if (matchdayCountdown) {
+    if (!matchDate) {
+      matchdayCountdown.textContent = "Jornada por confirmar";
+    } else {
+      const targetDate = new Date(matchDate);
+      const updateCountdown = () => {
+        const remaining = targetDate.getTime() - Date.now();
+        if (Number.isNaN(targetDate.getTime()) || remaining <= 0) {
+          matchdayCountdown.textContent = remaining <= 0 ? "Jornada en curso" : "Jornada por confirmar";
+          return;
+        }
+        const days = Math.ceil(remaining / 86400000);
+        matchdayCountdown.textContent = `${days} ${days === 1 ? "día" : "días"}`;
+      };
+      updateCountdown();
+      window.setInterval(updateCountdown, 3600000);
+    }
+  }
   if (matchdayToggle && matchdayDetails) {
     matchdayToggle.addEventListener("click", () => {
       const isOpen = matchdayToggle.getAttribute("aria-expanded") === "true";
@@ -438,6 +458,20 @@
     });
   }
 
+  const revealItems = $$(".section, .matchday-strip, .portal-card, .gallery-card, .partner-card, .social-card");
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    }, { rootMargin: "0px 0px -10% 0px", threshold: 0.08 });
+    revealItems.forEach((item) => {
+      item.classList.add("reveal-item");
+      revealObserver.observe(item);
+    });
+  }
   const fanTabs = $$(".fan-tab");
   const fanPanels = $$(".fan-panel");
   fanTabs.forEach((tab) => {
