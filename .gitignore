@@ -11,3 +11,7 @@ node_modules/
 # Archivos del sistema
 .DS_Store
 Thumbs.db
+
+# OAuth YouTube, siempre fuera del repositorio
+private-data/youtube/
+
