@@ -358,7 +358,7 @@
   if (socialGrid) {
     const socialItems = [
       { name: "Instagram", detail: "@malibufc__", url: config.instagramUrl },
-      { name: "YouTube", detail: config.youtubeUrl ? "Canal oficial" : "Canal en construcción", url: config.youtubeUrl }
+      { name: "YouTube", detail: config.youtubeUrl ? "Canal oficial" : (config.youtubeLabel || "Canal pendiente de crear"), url: config.youtubeUrl }
     ];
 
     socialItems.forEach((item) => {

@@ -15,6 +15,7 @@ window.MALIBU_CONFIG = {
 
   instagramUrl: "https://www.instagram.com/malibufc__/?hl=es",
   youtubeUrl: "",
+  youtubeLabel: "Canal de Malibú FC pendiente de crear",
   email: "",
 
   competition: {
