@@ -4,7 +4,9 @@ Estado: estructura operativa preparada; nombres, administradores y enlaces concr
 
 ## Recomendación ejecutiva
 
-No se puede crear una cuenta de WhatsApp sólo con correo. WhatsApp Business exige un número que pueda recibir un código por SMS o llamada. La recomendación es usar el mismo teléfono de Iván, pero con una línea móvil o eSIM exclusiva del club, registrarla en WhatsApp Business y mantener el WhatsApp personal como respaldo administrativo. WhatsApp Business permite trabajar desde el mismo dispositivo con su propio número; no conviene mezclar ambos usos en el mismo número.\n\nSi Iván decide utilizar el mismo número personal, habrá que migrarlo a WhatsApp Business: se conservará la cuenta empresarial en ese número, pero dejará de ser una cuenta personal separada. Es una opción válida para el piloto, no la arquitectura final recomendada.
+Decisión operativa: el Malibú FC utilizará el WhatsApp normal de Iván, porque es un equipo de amigos y no una empresa comercial. El mismo teléfono podrá utilizar WhatsApp Business con otro número para Envite Canario y el resto de negocios. WhatsApp Business permite trabajar desde el mismo dispositivo con su propio número.
+
+No se migrará el número del Malibú FC a WhatsApp Business. La gestión de convocatorias se apoyará en encuestas nativas, Sheets y Apps Script, con revisión humana. No se usarán bots no oficiales ni automatización de sesiones de WhatsApp normal.
 
 La solución inicial no necesita WhatsApp Business Platform ni un bot. WhatsApp Business App es gratuita y suficiente para el uso diario, perfiles, respuestas rápidas, etiquetas y gestión de grupos. La automatización debe vivir en Google Sheets privado + Apps Script: recoge disponibilidad, calcula el borrador, registra quién respondió y genera el mensaje que un administrador revisa y pega en el grupo.
 

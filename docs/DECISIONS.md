@@ -221,3 +221,13 @@ Decision: la cuenta `ivansotobarber@gmail.com` sera la cuenta administradora de 
 Restriccion: cada operacion debe verificar el canal seleccionado y su `channel_id` canonico. No se publicara desde el canal personal ni desde Envite Canario por error.
 
 Origen: instruccion expresa de Ivan.
+
+### D-026. WhatsApp normal para Malibú FC y Business para negocios
+
+Fecha: 2026-08-10.
+
+Decision: Malibú FC utilizará el WhatsApp normal de Iván para la comunidad y sus grupos, porque es un equipo de amigos y no una empresa comercial. WhatsApp Business se reservará para Envite Canario y otros negocios, con otro número en el mismo teléfono cuando proceda.
+
+Restriccion: las convocatorias se automatizarán mediante encuestas, Google Sheets y Apps Script con revisión humana. No se usarán bots no oficiales ni automatización de sesiones de WhatsApp normal.
+
+Origen: instrucción expresa de Iván.
