@@ -44,21 +44,20 @@ Cada equipo debe tener responsable y suplente. Nadie debe depender de una sola p
 
 ## 4. Rutina semanal base
 
-La semana se organiza alrededor de la hora de cada partido. Si el partido cambia de día, se desplazan los hitos manteniendo las mismas distancias.
+Los partidos se disputan entre el lunes y el jueves. La convocatoria de cada partido se cierra y se publica el sábado anterior. Después del sábado sólo se admiten cambios excepcionales, fechados y validados por la cúpula.
 
-### Lunes, cierre y aprendizaje
+### Lunes, revisión y partidos
 
-- Dirección deportiva cierra el resultado, asistencia e incidencias del fin de semana.
-- Comunicación selecciona fotos y vídeos con permiso de publicación.
-- Se registra qué contenido se publica y qué queda pendiente.
-- Se revisan errores de convocatoria y faltantes de datos.
+- Se ejecutan los partidos previstos para lunes, si los hay.
+- El responsable registra cambios, asistencia e incidencias del evento.
+- Si procede, se publica el contenido autorizado del partido anterior.
 
-### Martes, planificación
+### Martes, planificación de la siguiente jornada
 
-- Responsables confirman partidos, entrenamientos, rival, campo y hora.
+- Responsables confirman partidos de lunes a jueves, rival, campo y hora.
 - Se crean los eventos de `first` y `second` en Sheets.
-- Se define el objetivo de convocatoria y la fecha límite de respuesta.
-- Comunicación reserva el paquete de contenidos de la semana.
+- Se comprueba que cada evento tiene responsable y hora límite de respuesta.
+- Se cierran en Sheets los eventos ya celebrados.
 
 ### Miércoles, apertura de disponibilidad
 
@@ -67,29 +66,43 @@ La semana se organiza alrededor de la hora de cada partido. Si el partido cambia
 - El mensaje incluye evento, fecha, hora límite y respuestas permitidas: `sí`, `no`, `duda`.
 - No se solicitan diagnósticos ni información médica en el grupo.
 
-### Jueves, seguimiento
+### Jueves, seguimiento y partidos
 
 - El responsable revisa no respuestas y dudas.
 - Se envía un recordatorio sólo a quienes no han respondido, si es posible sin exponer datos.
 - Las incidencias se resumen en la cúpula con el formato `EQUIPO · HECHO · IMPACTO · ACCIÓN · RESPONSABLE`.
 - Apps Script recalcula disponibles, no disponibles, dudas y déficit.
+- Se registran asistencia y cambios de los partidos celebrados.
 
-### Viernes, cierre y borrador
+### Viernes, cierre de datos y validación
 
 - Se cierra la encuesta a la hora definida.
 - Se revisan elegibilidad, duplicados, bajas y cupo.
 - Se genera el borrador de convocatoria para cada equipo.
 - Dirección deportiva valida excepciones.
-- El responsable envía la convocatoria final al grupo correcto.
+- Se prepara el mensaje final para publicar el sábado.
 
-### Día de partido
+### Sábado, cierre de convocatorias
+
+- Dirección deportiva aprueba las convocatorias de ambos equipos.
+- El responsable publica la convocatoria final en `Convocatorias 1ª` y `Convocatorias 2ª`.
+- Se fija la hora de citación y se solicita confirmación de recepción.
+- La hoja cambia el evento a `callup_published` y conserva quién aprobó y cuándo.
+- Desde este momento sólo se aceptan sustituciones o cambios excepcionales, siempre registrados.
+
+### Domingo, recordatorio logístico
+
+- Se envía un recordatorio breve de hora, campo, equipación y transporte cuando aplique.
+- No se reabre la encuesta salvo decisión expresa de la cúpula.
+
+### Día de partido, lunes a jueves
 
 - Se registran cambios de última hora en la cúpula.
 - Se evita editar mensajes antiguos sin dejar una corrección fechada.
 - El responsable registra llegada, asistencia y cualquier incidencia operativa.
 - Comunicación captura material sólo con autorización.
 
-### Día posterior
+### Día posterior al partido
 
 - Se cierra asistencia y resultado en Sheets.
 - Se calculan indicadores sin mezclar equipos.

@@ -231,3 +231,11 @@ Decision: Malibú FC utilizará el WhatsApp normal de Iván para la comunidad y 
 Restriccion: las convocatorias se automatizarán mediante encuestas, Google Sheets y Apps Script con revisión humana. No se usarán bots no oficiales ni automatización de sesiones de WhatsApp normal.
 
 Origen: instrucción expresa de Iván.
+
+### D-027. Cierre semanal de convocatorias el sábado
+
+Fecha: 2026-08-10.
+
+Decision: los partidos del Malibú FC se disputan normalmente entre lunes y jueves y las convocatorias de ambos equipos se cierran y publican el sábado anterior. El domingo queda para recordatorio logístico y desde el cierre sólo se admiten cambios excepcionales registrados.
+
+Origen: instrucción expresa de Iván.

@@ -64,13 +64,14 @@ La cúpula usa un formato breve: `FECHA · EQUIPO · TIPO · HECHO · IMPACTO ·
 
 | Momento | Acción | Responsable | Salida |
 | --- | --- | --- | --- |
-| T-72 h | Publicar encuesta de disponibilidad en el grupo del equipo | Responsable deportivo | respuestas sí, no o duda |
-| T-48 h | Cerrar encuesta y revisar incidencias | Responsable deportivo | lista de disponibles y alertas |
-| T-36 h | Generar borrador de convocatoria desde Sheets | Sistema privado | texto sin publicar |
-| T-24 h | Validar excepciones en la cúpula | Dirección deportiva | convocatoria aprobada |
-| T-24/T-12 h | Pegar convocatoria en el grupo correcto | Administrador | confirmaciones finales |
-| Día de partido | Registrar cambios y asistencia | Responsable de partido | acta interna |
-| T+1 | Cerrar asistencia, resultado y contenido autorizado | Dirección deportiva y comunicación | histórico y paquete de redes |
+| Martes | Crear eventos de lunes a jueves y confirmar responsables | Responsable deportivo | calendario operativo |
+| Miércoles | Publicar encuestas de disponibilidad de ambos equipos | Responsable deportivo | respuestas sí, no o duda |
+| Jueves | Revisar no respuestas, dudas e incidencias | Responsable deportivo | lista depurada |
+| Viernes | Generar borradores y validar excepciones | Sistema y dirección deportiva | convocatorias listas |
+| Sábado | Cerrar y publicar convocatorias de la semana siguiente | Administrador autorizado | convocatorias aprobadas |
+| Domingo | Recordatorio logístico sin reabrir encuesta | Responsable de equipo | confirmaciones finales |
+| Lunes a jueves | Registrar cambios, asistencia y resultado | Responsable de partido | acta interna |
+| Día posterior | Cerrar datos y contenido autorizado | Dirección deportiva y comunicación | histórico y paquete de redes |
 
 ## Modelo privado mínimo
 
