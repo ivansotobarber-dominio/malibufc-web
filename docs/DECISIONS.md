@@ -211,3 +211,13 @@ Decisión: las imágenes aportadas por Iván para la segunda equipación, chaque
 Restricción: las imágenes se identificarán como «Diseño de referencia» y no acreditan por sí solas fabricación, marca contractual, diseño final, stock o disponibilidad. Los pedidos seguirán desactivados hasta confirmar condiciones comerciales.
 
 Origen: aportación e instrucción expresa de Iván.
+
+### D-025. Arquitectura de canales de YouTube bajo una cuenta Google
+
+Fecha: 2026-08-10.
+
+Decision: la cuenta `ivansotobarber@gmail.com` sera la cuenta administradora de los canales de Ivan Soto, Envite Canario y Malibu FC. Malibu FC tendra un canal independiente, preferiblemente vinculado a una cuenta de marca, y nunca se tratara como un canal anidado dentro de otro.
+
+Restriccion: cada operacion debe verificar el canal seleccionado y su `channel_id` canonico. No se publicara desde el canal personal ni desde Envite Canario por error.
+
+Origen: instruccion expresa de Ivan.

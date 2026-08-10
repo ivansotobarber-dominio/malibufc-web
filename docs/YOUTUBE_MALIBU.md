@@ -2,8 +2,12 @@
 
 Estado: Fase 1 preparada, pendiente de autorización OAuth del titular.
 Cuenta autorizada prevista: `ivansotobarber@gmail.com`.
-Canal objetivo: `Malibú FC`.
+Canal objetivo: `Malibú FC`, independiente de los canales `Iván Soto` y `Envite Canario`.
 Modo actual: lectura únicamente, sin publicación, modificación, borrado ni acceso de escritura.
+
+## Arquitectura de cuenta
+
+La cuenta Google puede gestionar varios canales, pero los canales no se anidan unos dentro de otros. Malibú FC se creará como canal separado, preferiblemente vinculado a una cuenta de marca, dentro de la misma cuenta Google de Iván. Nunca se debe usar el canal personal o el de Envite como identidad de publicación de Malibú FC. Antes de cada operación se debe comprobar el selector de canal y el `channel_id` canónico.
 
 ## Objetivo y límites
 
