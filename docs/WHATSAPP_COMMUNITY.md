@@ -2,9 +2,25 @@
 
 Estado: estructura operativa preparada; nombres, administradores y enlaces concretos pendientes de validación, 2026-08-10.
 
+## Recomendación ejecutiva
+
+No se puede crear una cuenta de WhatsApp sólo con correo. WhatsApp Business exige un número que pueda recibir un código por SMS o llamada. La recomendación es contratar una línea móvil o eSIM exclusiva del club, registrarla en WhatsApp Business y mantener el WhatsApp personal de Iván como respaldo administrativo, no como único punto de continuidad.
+
+La solución inicial no necesita WhatsApp Business Platform ni un bot. WhatsApp Business App es gratuita y suficiente para el uso diario, perfiles, respuestas rápidas, etiquetas y gestión de grupos. La automatización debe vivir en Google Sheets privado + Apps Script: recoge disponibilidad, calcula el borrador, registra quién respondió y genera el mensaje que un administrador revisa y pega en el grupo.
+
+La API oficial de WhatsApp se reservará para mensajes directos y procesos de atención cuando el volumen lo justifique. No se debe diseñar como si pudiera leer y moderar automáticamente las conversaciones de los grupos existentes.
+
 ## Estructura recomendada
 
 La comunidad existente puede ser la contenedora. No se crea un grupo adicional de avisos oficiales porque duplicaría el grupo general.
+
+Los tres grupos ya creados son suficientes para empezar:
+
+- `General`, conversación y vida social.
+- `Convocatorias 1ª`, disponibilidad y convocatorias del primer equipo.
+- `Convocatorias 2ª`, disponibilidad y convocatorias del segundo equipo.
+
+La cúpula deportiva debe mantenerse como grupo privado de administradores, dentro o fuera de la comunidad según la configuración disponible, pero no se mezcla con jugadores.
 
 | Espacio | Audiencia | Uso | Permiso recomendado |
 | --- | --- | --- | --- |
@@ -41,6 +57,27 @@ La cúpula usa un formato breve: `FECHA · EQUIPO · TIPO · HECHO · IMPACTO ·
 - Fase 1, manual con plantillas y encuestas nativas de WhatsApp.
 - Fase 2, consolidación en Google Sheets privado y Apps Script, sin leer mensajes de WhatsApp automáticamente.
 - Fase 3, integración oficial sólo si el volumen justifica coste, permisos, mantenimiento y cumplimiento.
+
+## Flujo recomendado de convocatorias
+
+| Momento | Acción | Responsable | Salida |
+| --- | --- | --- | --- |
+| T-72 h | Publicar encuesta de disponibilidad en el grupo del equipo | Responsable deportivo | respuestas sí, no o duda |
+| T-48 h | Cerrar encuesta y revisar incidencias | Responsable deportivo | lista de disponibles y alertas |
+| T-36 h | Generar borrador de convocatoria desde Sheets | Sistema privado | texto sin publicar |
+| T-24 h | Validar excepciones en la cúpula | Dirección deportiva | convocatoria aprobada |
+| T-24/T-12 h | Pegar convocatoria en el grupo correcto | Administrador | confirmaciones finales |
+| Día de partido | Registrar cambios y asistencia | Responsable de partido | acta interna |
+| T+1 | Cerrar asistencia, resultado y contenido autorizado | Dirección deportiva y comunicación | histórico y paquete de redes |
+
+## Modelo privado mínimo
+
+La hoja de control debe separar `personas`, `equipos`, `eventos`, `disponibilidad`, `convocatorias`, `asistencia`, `incidencias` y `registro_mensajes`. Los grupos sólo reciben el resultado necesario; no se publica la hoja ni se almacenan datos sensibles en WhatsApp.
+
+## Coste y decisión
+
+- Opción recomendada ahora: WhatsApp Business App + línea del club + Google Sheets/Apps Script. Coste de software de WhatsApp: cero; queda el coste de la línea móvil.
+- Opción posterior: WhatsApp Business Platform/Cloud API. Requiere número, Meta Business y configuración técnica; el coste depende de conversaciones y proveedor. No aporta valor suficiente mientras las convocatorias sean de dos grupos y se puedan revisar manualmente.
 
 No se usarán bots no oficiales, scraping de WhatsApp, sesiones clonadas ni credenciales compartidas.
 
