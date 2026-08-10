@@ -44,6 +44,7 @@ Prioridades: P0 bloquea un hito comprometido, P1 aporta valor inmediato, P2 mejo
 | PR-17 | P1 | Definir perfil, plantillas y calendario editorial de Instagram | Iván y responsable de comunicación | PR-06, PR-07 | Bio, destacados, pilares, formatos, cadencia y aprobador confirmados |
 | PR-18 | P1 | Asignar línea telefónica exclusiva para WhatsApp Business del club | Iván y directiva | Decisión de continuidad y titularidad | Número verificado, recuperación documentada y perfil del club configurado |
 | PR-19 | P1 | Pilotar convocatorias de primer y segundo equipo con Sheets + Apps Script | Codex y dirección deportiva | PR-08 a PR-12, WHATSAPP_COMMUNITY.md | Un ciclo completo de disponibilidad, convocatoria y asistencia cerrado sin errores críticos |
+| PR-20 | P1 | Ejecutar la primera semana operativa según docs/OPERATING_WEEK.md | Iván, responsables de equipo y Codex | Responsables, zona horaria y datos de prueba | Resumen semanal cerrado con incidencias, tiempos y mejoras registradas |
 
 ## Más adelante
 

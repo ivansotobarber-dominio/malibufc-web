@@ -18,6 +18,7 @@ No ampliar el alcance por iniciativa propia. Toda capacidad nueva debe responder
 8. `docs/malibu-control-system.md`, arquitectura y operación del control deportivo.
 9. `docs/malibu-sheets-data-model.md`, modelo canónico de datos internos.
 10. `docs/DOMAIN_AND_DEPLOYMENT.md`, configuración de dominio, DNS, Pages y HTTPS.
+11. docs/OPERATING_WEEK.md, procedimiento semanal de convocatorias, asistencia y contenidos.
 
 No duplicar contenido entre documentos. Actualizar el archivo propietario de cada información y usar referencias desde los demás.
 
