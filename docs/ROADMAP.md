@@ -1,12 +1,12 @@
 # Hoja de ruta del ecosistema digital Malibú FC
 
-Fecha de revisión: 2026-07-29.
+Fecha de revisión: 2026-08-16.
 
 Este documento establece la secuencia de evolución y los criterios de salida. Las tareas concretas se mantienen exclusivamente en `docs/BACKLOG.md`.
 
 ## Estado actual
 
-La fase 0 está en curso. Existe una web estática revisada y `malibufc.es` está confirmado, pero la web no está publicada. Continúan bloqueados datos, contactos, catálogo, contenidos legales e indexación; la delegación DNS y GitHub Pages tampoco están activos.
+La fase 0 está completada en lo técnico y documental. El repositorio remoto, GitHub Pages, `malibufc.es`, `www.malibufc.es` y HTTPS están operativos. La fase 1 está en validación pública: la web funciona, pero la indexación, la venta y los datos deportivos continúan bloqueados hasta cerrar los P0 de `docs/BACKLOG.md`.
 
 ## Fase 0. Fundaciones
 

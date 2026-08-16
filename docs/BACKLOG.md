@@ -1,8 +1,12 @@
 # Backlog del ecosistema digital Malibú FC
 
-Fecha de revisión: 2026-07-30.
+Fecha de revisión: 2026-08-16.
 
 Este documento contiene únicamente trabajo ejecutable. La estrategia se mantiene en `docs/MASTER_PLAN.md` y la secuencia de fases en `docs/ROADMAP.md`.
+
+## Trabajo completado en la auditoría 2026-08-16
+
+Se ha auditado el inventario del repositorio, corregido el estado histórico del roadmap, separado PR-13 y PR-14, creado el canon operativo, el registro de riesgos, el registro de assets, la Visual Bible, el Design System, los workflows y la ficha histórica. La revisión de publicación, los datos públicos y la integración real de la operación deportiva siguen siendo tareas pendientes, no se marcan como cerradas.
 
 Prioridades: P0 bloquea un hito comprometido, P1 aporta valor inmediato, P2 mejora una capacidad existente y P3 requiere validación previa.
 
@@ -38,7 +42,8 @@ Prioridades: P0 bloquea un hito comprometido, P1 aporta valor inmediato, P2 mejo
 | PR-10 | P1 | Aprobar catálogos y modelo canónico del control deportivo | Responsable deportivo por asignar | `docs/malibu-sheets-data-model.md` | Campos, estados, claves y reglas de integridad confirmados |
 | PR-11 | P1 | Migrar Google Sheets y completar Apps Script fase 2 | Codex y responsable deportivo | PR-08 a PR-10 | Copia, migración conciliada, API validada y auditoría activa |
 | PR-12 | P1 | Pilotar el ciclo evento, disponibilidad, convocatoria y asistencia | Responsable deportivo por asignar | PR-11 | Un ciclo real autorizado cerrado sin errores críticos y con conciliación manual |
-| PR-13 | P1 | Conectar y reconciliar el cuadro de mando con Google Sheets | Codex y responsable deportivo | PR-08 a PR-11 | Métricas agregadas coinciden con la hoja, aplican filtros y no exponen datos restringidos || PR-14 | P1 | Aprobar la arquitectura operativa de agentes, canales y comunidad | Iván y directiva | docs/AGENT_SYSTEM_MALIBU.md, docs/SOCIAL_CHANNEL_ARCHITECTURE.md, docs/WHATSAPP_COMMUNITY.md | Responsables, suplencias, grupos y reglas de publicación confirmados |
+| PR-13 | P1 | Conectar y reconciliar el cuadro de mando con Google Sheets | Codex y responsable deportivo | PR-08 a PR-11 | Métricas agregadas coinciden con la hoja, aplican filtros y no exponen datos restringidos |
+| PR-14 | P1 | Aprobar la arquitectura operativa de agentes, canales y comunidad | Iván y directiva | docs/AGENT_SYSTEM_MALIBU.md, docs/SOCIAL_CHANNEL_ARCHITECTURE.md, docs/WHATSAPP_COMMUNITY.md | Responsables, suplencias, grupos y reglas de publicación confirmados |
 | PR-15 | P1 | Ejecutar rediseño editorial de portada y páginas públicas | Codex | docs/WEB_REDESIGN_BRIEF.md, AH-04 | Nueva jerarquía visual probada en móvil y escritorio, sin placeholders presentados como hechos |
 | PR-16 | P1 | Crear y verificar el canal oficial de YouTube Malibú FC | Iván y Codex | Verificación avanzada de YouTube | Canal creado, URL e ID canónico confirmados y documentados |
 | PR-17 | P1 | Definir perfil, plantillas y calendario editorial de Instagram | Iván y responsable de comunicación | PR-06, PR-07 | Bio, destacados, pilares, formatos, cadencia y aprobador confirmados |

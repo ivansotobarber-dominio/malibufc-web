@@ -19,6 +19,14 @@ No ampliar el alcance por iniciativa propia. Toda capacidad nueva debe responder
 9. `docs/malibu-sheets-data-model.md`, modelo canónico de datos internos.
 10. `docs/DOMAIN_AND_DEPLOYMENT.md`, configuración de dominio, DNS, Pages y HTTPS.
 11. docs/OPERATING_WEEK.md, procedimiento semanal de convocatorias, asistencia y contenidos.
+12. `docs/CANON.md`, clasificación de hechos, decisiones y pendientes.
+13. `docs/REPOSITORY_AUDIT.md`, inventario y contradicciones detectadas.
+14. `docs/RISKS.md`, riesgos y controles del ecosistema.
+15. `docs/ASSET_REGISTER.md`, procedencia y autorización de assets.
+16. `docs/VISUAL_BIBLE.md`, reglas visuales y fotográficas.
+17. `docs/DESIGN_SYSTEM.md`, componentes, estados y reglas de interfaz.
+18. `docs/WORKFLOWS.md`, flujos operativos y creativos.
+19. `docs/HISTORY.md`, memoria histórica en construcción.
 
 No duplicar contenido entre documentos. Actualizar el archivo propietario de cada información y usar referencias desde los demás.
 
