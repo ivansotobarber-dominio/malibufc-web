@@ -246,6 +246,6 @@ Fecha: 2026-08-18.
 
 Decisión: el primer equipo se denomina públicamente «Malibú Hacendado». Alianza BIM y Envite Canario se publicarán como patrocinadores de la segunda equipación. Los logotipos de Alianza BIM, Envite Canario, Giroenviro y La Laguna Gran Hotel se integran en la web con sus enlaces oficiales.
 
-Restricción: no se asigna Giroenviro ni La Laguna Gran Hotel a una equipación concreta hasta confirmar ubicación, vigencia y condiciones de uso.
+Decisión complementaria: Giroenviro y La Laguna Gran Hotel corresponden a la primera equipación. La confirmación no acredita por sí sola vigencia contractual ni condiciones comerciales.
 
 Origen: instrucción expresa de Iván y archivos aportados o recibidos por Gmail.

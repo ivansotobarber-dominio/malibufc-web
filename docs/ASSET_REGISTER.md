@@ -14,7 +14,7 @@ Fecha: 2026-08-16.
 | Accesorios y prendas | `assets/images/productos/` | Referencias autorizadas | Catálogo, etiquetadas como diseño de referencia |
 | Logo Alianza BIM | `assets/images/patrocinadores/alianza-bim.png` | Recibido por Gmail y autorizado para integración | Patrocinador segunda equipación |
 | Logo Envite Canario | `assets/images/patrocinadores/envite-canario.png` | Aportado por Iván y autorizado para integración | Patrocinador segunda equipación |
-| Logo Giroenviro | `assets/images/patrocinadores/giroenviro.png` | Aportado por Iván y autorizado para integración | Patrocinador, ubicación pendiente |
-| Logo La Laguna Gran Hotel | `assets/images/patrocinadores/la-laguna-gran-hotel.png` | Recibido por Gmail y autorizado para integración | Patrocinador, ubicación pendiente |
+| Logo Giroenviro | `assets/images/patrocinadores/giroenviro.png` | Aportado por Iván y autorizado para integración | Patrocinador primera equipación |
+| Logo La Laguna Gran Hotel | `assets/images/patrocinadores/la-laguna-gran-hotel.png` | Recibido por Gmail y autorizado para integración | Patrocinador primera equipación |
 
-Los archivos sin procedencia, permiso o estado no se publican. Los cuatro logotipos recibidos quedan integrados en la portada con enlace; la asignación de Giroenviro y La Laguna Gran Hotel se mantiene explícitamente pendiente.
+Los archivos sin procedencia, permiso o estado no se publican. Los cuatro logotipos recibidos quedan integrados en la portada con enlace y asignados a su equipación correspondiente; la vigencia contractual sigue siendo un dato interno pendiente.

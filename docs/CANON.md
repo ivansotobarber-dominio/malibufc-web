@@ -13,7 +13,7 @@ Este documento clasifica el conocimiento operativo. El detalle y la evidencia pe
 - Los pedidos se inician por WhatsApp y el pago se confirma por Bizum fuera de la web.
 - El primer equipo se denomina públicamente Malibú Hacendado.
 - Alianza BIM y Envite Canario son patrocinadores confirmados de la segunda equipación.
-- Giroenviro y La Laguna Gran Hotel han aportado logotipos para la web, con ubicación y vigencia aún pendientes.
+- Giroenviro y La Laguna Gran Hotel son patrocinadores confirmados de la primera equipación.
 - Peakland es colaborador confirmado.
 - El Instagram del equipo es `@malibufc__`.
 - La competición enlazada es la Liga de la Amistad.

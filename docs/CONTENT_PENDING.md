@@ -23,6 +23,7 @@ Aportado y autorizado por Iván el 2026-07-30:
 - Primer equipo: nombre público confirmado, Malibú Hacendado.
 - Patrocinadores de la segunda equipación confirmados: Alianza BIM y Envite Canario.
 - Logotipos recibidos para publicar: Alianza BIM, Envite Canario, Giroenviro y La Laguna Gran Hotel.
+- Asignación confirmada: Giroenviro y La Laguna Gran Hotel, primera equipación; Alianza BIM y Envite Canario, segunda equipación.
 - Peakland se mantiene como colaborador.
 - Instagram oficial del equipo: `https://www.instagram.com/malibufc__/?hl=es`.
 - Identidad territorial y deportiva: equipo de fútbol de Tenerife, Canarias.
@@ -35,7 +36,7 @@ Continúa pendiente:
 3. Confirmar o corregir municipio concreto, modalidad de fútbol, número de equipos, categoría, ascenso, temporada y lema.
 4. Aportar un texto institucional breve del club.
 5. Desarrollar la historia del equipo con orígenes, cronología, temporadas, hitos y fuentes verificables.
-6. Confirmar la ubicación, vigencia y condiciones de uso de Giroenviro y La Laguna Gran Hotel, y si deben aparecer también en una equipación concreta.
+6. Confirmar vigencia contractual y condiciones de uso de los cuatro patrocinios, sin pendiente de asignación de equipación.
 7. Confirmar qué jugadores pueden publicarse y aportar para cada uno nombre público, dorsal, posición, fotografía y autorización de imagen.
 8. Confirmar el calendario público: fecha, hora, rival, lugar, jornada, condición local o visitante y estado de cada partido.
 9. Definir si las entradas gratuitas serán solo informativas o requerirán una reserva, límite de aforo, identificación y confirmación.

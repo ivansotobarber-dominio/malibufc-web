@@ -157,13 +157,13 @@ window.MALIBU_CONFIG = {
   ],
 
   sponsors: [
-    { name: "Giroenviro", url: "https://giroenviro.com/", logo: "/assets/images/patrocinadores/giroenviro.png", active: true },
-    { name: "La Laguna Gran Hotel", url: "https://lalagunagranhotel.com/", logo: "/assets/images/patrocinadores/la-laguna-gran-hotel.png", active: true }
+    { name: "Giroenviro", url: "https://giroenviro.com/", logo: "/assets/images/patrocinadores/giroenviro.png", team: "Malibú Hacendado", kit: "Primera equipación", active: true },
+    { name: "La Laguna Gran Hotel", url: "https://lalagunagranhotel.com/", logo: "/assets/images/patrocinadores/la-laguna-gran-hotel.png", team: "Malibú Hacendado", kit: "Primera equipación", active: true }
   ],
 
   secondKitSponsors: [
-    { name: "Alianza BIM", url: "https://alianzabim.com/", logo: "/assets/images/patrocinadores/alianza-bim.png", active: true },
-    { name: "Envite Canario", url: "https://envitecanario.es/", logo: "/assets/images/patrocinadores/envite-canario.png", active: true }
+    { name: "Alianza BIM", url: "https://alianzabim.com/", logo: "/assets/images/patrocinadores/alianza-bim.png", team: "Malibú FC", kit: "Segunda equipación", active: true },
+    { name: "Envite Canario", url: "https://envitecanario.es/", logo: "/assets/images/patrocinadores/envite-canario.png", team: "Malibú FC", kit: "Segunda equipación", active: true }
   ],
 
   collaborators: [
