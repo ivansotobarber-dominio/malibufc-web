@@ -26,6 +26,7 @@ Aportado y autorizado por Iván el 2026-07-30:
 - Asignación confirmada: Giroenviro y La Laguna Gran Hotel, primera equipación; Alianza BIM y Envite Canario, segunda equipación.
 - Peakland se mantiene como colaborador.
 - Instagram oficial del equipo: `https://www.instagram.com/malibufc__/?hl=es`.
+- Correo oficial de contacto: `info@malibufc.es`.
 - Identidad territorial y deportiva: equipo de fútbol de Tenerife, Canarias.
 - Competición: Liga de la Amistad, con web, Instagram y Facebook oficiales enlazados.
 

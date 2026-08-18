@@ -16,7 +16,7 @@ Prioridades: P0 bloquea un hito comprometido, P1 aporta valor inmediato, P2 mejo
 |---|---|---|---|---|---|
 | AH-03 | P0 | Confirmar responsable de la web y vendedor | Iván y directiva | Datos legales | Identidad y datos mínimos disponibles para textos legales |
 | AH-04 | P0 | Validar información deportiva y corporativa existente | Iván y directiva | Fuente autorizada | Cada dato pendiente de `PROJECT_CONTEXT.md` queda confirmado, corregido o retirado |
-| AH-06 | P0 | Confirmar WhatsApp y decisión sobre correo | Iván | Canales oficiales | Enlaces configurados y probados |
+| AH-06 | P1 | Confirmar número de WhatsApp y probar correo oficial | Iván | Canales oficiales | WhatsApp configurado y `info@malibufc.es` probado |
 | AH-07 | P0 | Definir productos y condiciones comerciales | Iván y directiva | Proveedor y operativa | Precio, impuestos, variantes, disponibilidad, entrega, cambios e incidencias confirmados |
 | AH-08 | P0 | Completar aviso legal, privacidad y condiciones de pedido | Responsable legal por confirmar | AH-03 y AH-07 | Textos sin marcadores pendientes y coherentes con la operación |
 | AH-09 | P0 | Sustituir placeholders y activar datos públicos confirmados | Codex | AH-04 a AH-08 | La web solo muestra información confirmada |

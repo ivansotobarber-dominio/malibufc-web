@@ -16,6 +16,7 @@ Este documento clasifica el conocimiento operativo. El detalle y la evidencia pe
 - Giroenviro y La Laguna Gran Hotel son patrocinadores confirmados de la primera equipación.
 - Peakland es colaborador confirmado.
 - El Instagram del equipo es `@malibufc__`.
+- El correo oficial de contacto es `info@malibufc.es`.
 - La competición enlazada es la Liga de la Amistad.
 - WhatsApp normal se reserva para Malibú FC y WhatsApp Business para otros negocios.
 - Los partidos suelen disputarse de lunes a jueves y las convocatorias ordinarias se cierran el sábado anterior.

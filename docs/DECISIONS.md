@@ -249,3 +249,13 @@ Decisión: el primer equipo se denomina públicamente «Malibú Hacendado». Ali
 Decisión complementaria: Giroenviro y La Laguna Gran Hotel corresponden a la primera equipación. La confirmación no acredita por sí sola vigencia contractual ni condiciones comerciales.
 
 Origen: instrucción expresa de Iván y archivos aportados o recibidos por Gmail.
+
+### D-029. Correo oficial del club
+
+Fecha: 2026-08-18.
+
+Decisión: `info@malibufc.es` será el correo público de contacto del Malibú FC y se gestionará desde Outlook de escritorio. La firma oficial se mantendrá en `docs/EMAIL_SIGNATURE_OUTLOOK.html`.
+
+Restricción: no se publicarán teléfonos personales, datos de Bizum ni credenciales en la firma o en el repositorio.
+
+Origen: instrucción expresa de Iván.
