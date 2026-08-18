@@ -9,6 +9,7 @@ window.MALIBU_CONFIG = {
   season: "",
   domain: "",
   firstTeamName: "Malibú Hacendado",
+  kitTeams: ["Malibú Hacendado", "Malibú FC"],
 
   // Formato internacional, solo números. Ejemplo España: 34600111222
   whatsappNumber: "",
@@ -53,7 +54,7 @@ window.MALIBU_CONFIG = {
       category: "Primera equipación",
       visualLabel: "1ª",
       price: "Precio por confirmar",
-      description: "Camiseta de manga larga color crema con detalles negros y pantalón negro.",
+      description: "Equipación compartida por Malibú Hacendado y Malibú FC: camiseta de manga larga color crema con detalles negros y pantalón negro.",
       details: "Precio, tallas, personalización, disponibilidad y plazo pendientes de confirmación.",
       image: "/assets/images/productos/equipacion-oficial-malibu-fc.webp",
       published: true,
@@ -64,7 +65,7 @@ window.MALIBU_CONFIG = {
       category: "Equipación",
       visualLabel: "2ª",
       price: "Precio por confirmar",
-      description: "Versión negra de la equipación del Malibú FC, con letras blancas.",
+      description: "Segunda equipación compartida por Malibú Hacendado y Malibú FC, con base negra y letras blancas.",
       details: "Diseño final, tallas, disponibilidad y condiciones pendientes de confirmación.",
       image: "/assets/images/productos/segunda-equipacion-malibu-fc.webp",
       statusLabel: "Diseño de referencia",

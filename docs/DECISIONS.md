@@ -259,3 +259,11 @@ Decisión: `info@malibufc.es` será el correo público de contacto del Malibú F
 Restricción: no se publicarán teléfonos personales, datos de Bizum ni credenciales en la firma o en el repositorio.
 
 Origen: instrucción expresa de Iván.
+
+### D-030. Equipaciones compartidas por ambos equipos
+
+Fecha: 2026-08-18.
+
+Decisión: Malibú Hacendado y Malibú FC utilizarán las mismas equipaciones y el mismo catálogo de productos. La asignación de patrocinadores se mantiene por equipación, no por catálogo separado.
+
+Origen: instrucción expresa de Iván.

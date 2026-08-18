@@ -21,6 +21,7 @@ Aportado y autorizado por Iván el 2026-07-30:
 - Imágenes de referencia de segunda equipación, chaqueta retro, mochila, bufanda, chándal, llavero y pizarra táctica, aportadas el 2026-07-31.
 - Autorización expresa para publicar los archivos aportados en la web oficial.
 - Primer equipo: nombre público confirmado, Malibú Hacendado.
+- Equipaciones: son las mismas para Malibú Hacendado y Malibú FC.
 - Patrocinadores de la segunda equipación confirmados: Alianza BIM y Envite Canario.
 - Logotipos recibidos para publicar: Alianza BIM, Envite Canario, Giroenviro y La Laguna Gran Hotel.
 - Asignación confirmada: Giroenviro y La Laguna Gran Hotel, primera equipación; Alianza BIM y Envite Canario, segunda equipación.

@@ -12,6 +12,7 @@ Este documento clasifica el conocimiento operativo. El detalle y la evidencia pe
 - La web usa HTML, CSS y JavaScript puro, GitHub Pages y coste fijo mínimo.
 - Los pedidos se inician por WhatsApp y el pago se confirma por Bizum fuera de la web.
 - El primer equipo se denomina públicamente Malibú Hacendado.
+- Malibú Hacendado y Malibú FC utilizan las mismas equipaciones y catálogo.
 - Alianza BIM y Envite Canario son patrocinadores confirmados de la segunda equipación.
 - Giroenviro y La Laguna Gran Hotel son patrocinadores confirmados de la primera equipación.
 - Peakland es colaborador confirmado.
@@ -23,7 +24,7 @@ Este documento clasifica el conocimiento operativo. El detalle y la evidencia pe
 
 ## Decisiones
 
-Las decisiones normativas están en `docs/DECISIONS.md`. No se duplican aquí: D-001 a D-028 son la referencia vigente.
+Las decisiones normativas están en `docs/DECISIONS.md`. No se duplican aquí: D-001 a D-030 son la referencia vigente.
 
 ## Pendiente de confirmar
 
