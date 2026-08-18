@@ -127,6 +127,7 @@ h3 { font-size: 1.45rem; line-height: 1.15; letter-spacing: -.03em; }
 .partner-card { min-height: 160px; display: flex; flex-direction: column; justify-content: space-between; gap: 28px; padding: 28px; border: 1px solid var(--line); background: var(--surface); border-radius: var(--radius); text-decoration: none; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
 .partner-card:hover { transform: translateY(-3px); border-color: var(--gold); box-shadow: 0 16px 38px rgba(3, 20, 38, .08); }
 .partner-name { font-size: 1.35rem; font-weight: 900; letter-spacing: -.03em; }
+.partner-logo { width: min(100%, 220px); height: 72px; object-fit: contain; object-position: left center; background: #fff; border-radius: 6px; padding: 8px; }
 .partner-action { color: var(--muted); font-size: .9rem; font-weight: 750; }
 .social-heading { margin-bottom: 38px; }
 .social-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }

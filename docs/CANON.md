@@ -11,8 +11,10 @@ Este documento clasifica el conocimiento operativo. El detalle y la evidencia pe
 - La cuenta propietaria de GitHub es `ivansotobarber-dominio` y el repositorio es `malibufc-web`.
 - La web usa HTML, CSS y JavaScript puro, GitHub Pages y coste fijo mínimo.
 - Los pedidos se inician por WhatsApp y el pago se confirma por Bizum fuera de la web.
-- Giroenviro y La Laguna Gran Hotel son patrocinadores confirmados.
-- Envite Canario y Peakland son colaboradores confirmados.
+- El primer equipo se denomina públicamente Malibú Hacendado.
+- Alianza BIM y Envite Canario son patrocinadores confirmados de la segunda equipación.
+- Giroenviro y La Laguna Gran Hotel han aportado logotipos para la web, con ubicación y vigencia aún pendientes.
+- Peakland es colaborador confirmado.
 - El Instagram del equipo es `@malibufc__`.
 - La competición enlazada es la Liga de la Amistad.
 - WhatsApp normal se reserva para Malibú FC y WhatsApp Business para otros negocios.
@@ -20,7 +22,7 @@ Este documento clasifica el conocimiento operativo. El detalle y la evidencia pe
 
 ## Decisiones
 
-Las decisiones normativas están en `docs/DECISIONS.md`. No se duplican aquí: D-001 a D-027 son la referencia vigente.
+Las decisiones normativas están en `docs/DECISIONS.md`. No se duplican aquí: D-001 a D-028 son la referencia vigente.
 
 ## Pendiente de confirmar
 

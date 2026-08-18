@@ -20,8 +20,10 @@ Aportado y autorizado por Iván el 2026-07-30:
 - Catálogo previsto: segunda equipación negra con letras blancas, bufanda, chaqueta retro, chándal, mochila, brazalete, llavero y pizarra táctica personalizada.
 - Imágenes de referencia de segunda equipación, chaqueta retro, mochila, bufanda, chándal, llavero y pizarra táctica, aportadas el 2026-07-31.
 - Autorización expresa para publicar los archivos aportados en la web oficial.
-- Patrocinadores confirmados: Giroenviro y La Laguna Gran Hotel.
-- Colaboradores confirmados: Envite Canario y Peakland.
+- Primer equipo: nombre público confirmado, Malibú Hacendado.
+- Patrocinadores de la segunda equipación confirmados: Alianza BIM y Envite Canario.
+- Logotipos recibidos para publicar: Alianza BIM, Envite Canario, Giroenviro y La Laguna Gran Hotel.
+- Peakland se mantiene como colaborador.
 - Instagram oficial del equipo: `https://www.instagram.com/malibufc__/?hl=es`.
 - Identidad territorial y deportiva: equipo de fútbol de Tenerife, Canarias.
 - Competición: Liga de la Amistad, con web, Instagram y Facebook oficiales enlazados.
@@ -33,7 +35,7 @@ Continúa pendiente:
 3. Confirmar o corregir municipio concreto, modalidad de fútbol, número de equipos, categoría, ascenso, temporada y lema.
 4. Aportar un texto institucional breve del club.
 5. Desarrollar la historia del equipo con orígenes, cronología, temporadas, hitos y fuentes verificables.
-6. Aportar los logotipos autorizados de patrocinadores y colaboradores si se desea sustituir las tarjetas de texto, e identificar vigencia y condiciones de uso.
+6. Confirmar la ubicación, vigencia y condiciones de uso de Giroenviro y La Laguna Gran Hotel, y si deben aparecer también en una equipación concreta.
 7. Confirmar qué jugadores pueden publicarse y aportar para cada uno nombre público, dorsal, posición, fotografía y autorización de imagen.
 8. Confirmar el calendario público: fecha, hora, rival, lugar, jornada, condición local o visitante y estado de cada partido.
 9. Definir si las entradas gratuitas serán solo informativas o requerirán una reserva, límite de aforo, identificación y confirmación.

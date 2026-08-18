@@ -304,6 +304,15 @@
       const element = item.url ? document.createElement("a") : document.createElement("div");
       element.className = "partner-card";
 
+      if (item.logo) {
+        const logo = document.createElement("img");
+        logo.className = "partner-logo";
+        logo.src = text(item.logo);
+        logo.alt = `Logotipo de ${text(item.name)}`;
+        logo.loading = "lazy";
+        element.appendChild(logo);
+      }
+
       const name = document.createElement("span");
       name.className = "partner-name";
       name.textContent = text(item.name);
@@ -324,6 +333,7 @@
   };
 
   renderPartnerGrid("#sponsor-grid", config.sponsors, "Los patrocinadores se incorporarán cuando estén confirmados y autorizados.");
+  renderPartnerGrid("#second-kit-sponsor-grid", config.secondKitSponsors, "Los patrocinadores de la segunda equipación se incorporarán cuando estén confirmados y autorizados.");
   renderPartnerGrid("#collaborator-grid", config.collaborators, "Los colaboradores se incorporarán cuando estén confirmados y autorizados.");
 
   const competitionLinks = $("#competition-links");

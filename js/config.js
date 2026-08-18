@@ -8,6 +8,7 @@ window.MALIBU_CONFIG = {
   siteReady: false,
   season: "",
   domain: "",
+  firstTeamName: "Malibú Hacendado",
 
   // Formato internacional, solo números. Ejemplo España: 34600111222
   whatsappNumber: "",
@@ -48,7 +49,7 @@ window.MALIBU_CONFIG = {
 
   products: [
     {
-      name: "Equipación oficial Malibú FC",
+      name: "Equipación oficial Malibú Hacendado",
       category: "Primera equipación",
       visualLabel: "1ª",
       price: "Precio por confirmar",
@@ -156,12 +157,16 @@ window.MALIBU_CONFIG = {
   ],
 
   sponsors: [
-    { name: "Giroenviro", url: "https://giroenviro.com/", active: true },
-    { name: "La Laguna Gran Hotel", url: "https://lalagunagranhotel.com/", active: true }
+    { name: "Giroenviro", url: "https://giroenviro.com/", logo: "/assets/images/patrocinadores/giroenviro.png", active: true },
+    { name: "La Laguna Gran Hotel", url: "https://lalagunagranhotel.com/", logo: "/assets/images/patrocinadores/la-laguna-gran-hotel.png", active: true }
+  ],
+
+  secondKitSponsors: [
+    { name: "Alianza BIM", url: "https://alianzabim.com/", logo: "/assets/images/patrocinadores/alianza-bim.png", active: true },
+    { name: "Envite Canario", url: "https://envitecanario.es/", logo: "/assets/images/patrocinadores/envite-canario.png", active: true }
   ],
 
   collaborators: [
-    { name: "Envite Canario", url: "https://envitecanario.es/", active: true },
     { name: "Peakland", url: "https://www.instagram.com/peakland_/?hl=es", active: true }
   ]
 };
