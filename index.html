@@ -221,10 +221,19 @@
           <h2>Contacto directo con el club</h2>
           <p>El Instagram oficial ya está disponible. Para contacto general, escribe a info@malibufc.es.</p>
         </div>
-        <div class="contact-actions">
-          <a class="button button-light whatsapp-general" href="/tienda/">WhatsApp pendiente</a>
-          <a class="button button-outline-light instagram-link" href="#redes">Instagram</a>
-          <a class="button button-outline-light email-link" href="mailto:info@malibufc.es">Escribir por correo</a>
+        <div>
+          <form class="contact-form" id="contact-form">
+            <label for="contact-name">Nombre</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" required>
+            <label for="contact-email">Correo electrónico</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" required>
+            <label for="contact-subject">Asunto</label>
+            <input id="contact-subject" name="subject" type="text" required>
+            <label for="contact-message">Mensaje</label>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
+            <button class="button button-light" type="submit">Preparar correo</button>
+            <p class="form-note">Se abrirá tu aplicación de correo con el mensaje preparado. La web no almacena los datos.</p>
+          </form>
         </div>
       </div>
     </section>

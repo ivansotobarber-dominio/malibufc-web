@@ -139,6 +139,12 @@ h3 { font-size: 1.45rem; line-height: 1.15; letter-spacing: -.03em; }
 .social-card-disabled span { color: var(--muted); }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 70px; }
 .contact-actions { justify-content: flex-end; margin-top: 0; }
+.contact-form { display: grid; gap: 10px; max-width: 560px; padding: 26px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); border-radius: 14px; }
+.contact-form label { color: rgba(255,255,255,.8); font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 12px 14px; color: var(--dark); background: #fff; border: 1px solid transparent; border-radius: 7px; font: inherit; }
+.contact-form textarea { resize: vertical; }
+.contact-form input:focus, .contact-form textarea:focus { outline: 3px solid rgba(216,165,36,.55); }
+.form-note { margin: 0; color: rgba(255,255,255,.66); font-size: .78rem; }
 .site-footer { padding-block: 28px; border-top: 1px solid var(--line); font-size: .86rem; }
 .footer-grid { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 30px; }
 .footer-grid p { margin: 0; text-align: center; color: var(--muted); }

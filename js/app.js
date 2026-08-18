@@ -420,6 +420,20 @@
     link.href = `mailto:${text(config.email)}`;
   });
 
+  const contactForm = $("#contact-form");
+  if (contactForm && config.email) {
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const formData = new FormData(contactForm);
+      const name = String(formData.get("name") || "").trim();
+      const sender = String(formData.get("email") || "").trim();
+      const subject = String(formData.get("subject") || "Contacto desde malibufc.es").trim();
+      const message = String(formData.get("message") || "").trim();
+      const body = `Nombre: ${name}\nCorreo: ${sender}\n\n${message}`;
+      window.location.href = `mailto:${text(config.email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  }
+
   const matchday = config.calendar?.events?.[0];
   const matchdayStatus = $("#matchday-status");
   const matchdayMeta = $("#matchday-meta");

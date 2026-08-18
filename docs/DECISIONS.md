@@ -267,3 +267,11 @@ Fecha: 2026-08-18.
 Decisión: Malibú Hacendado y Malibú FC utilizarán las mismas equipaciones y el mismo catálogo de productos. La asignación de patrocinadores se mantiene por equipación, no por catálogo separado.
 
 Origen: instrucción expresa de Iván.
+
+### D-031. Formulario de contacto sin backend
+
+Fecha: 2026-08-18.
+
+Decisión: la web incorpora un formulario que prepara un correo dirigido a `info@malibufc.es` mediante `mailto:`. No se almacenan formularios, mensajes ni datos personales en la web.
+
+Origen: instrucción expresa de Iván.

@@ -24,7 +24,7 @@ Este documento clasifica el conocimiento operativo. El detalle y la evidencia pe
 
 ## Decisiones
 
-Las decisiones normativas están en `docs/DECISIONS.md`. No se duplican aquí: D-001 a D-030 son la referencia vigente.
+Las decisiones normativas están en `docs/DECISIONS.md`. No se duplican aquí: D-001 a D-031 son la referencia vigente.
 
 ## Pendiente de confirmar
 
