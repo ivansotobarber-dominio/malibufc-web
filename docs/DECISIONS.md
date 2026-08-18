@@ -240,7 +240,7 @@ Decision: los partidos del Malibú FC se disputan normalmente entre lunes y juev
 
 Origen: instrucción expresa de Iván.
 
-### D-028. Nombre del primer equipo y patrocinadores de la segunda equipación
+### D-028. Nombre del primer equipo y patrocinadores de las equipaciones
 
 Fecha: 2026-08-18.
 
