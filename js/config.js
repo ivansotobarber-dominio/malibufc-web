@@ -200,7 +200,7 @@ window.MALIBU_CONFIG = {
 
   sponsors: [
     { name: "Giroenviro", url: "https://giroenviro.com/", logo: "/assets/images/patrocinadores/giroenviro.png", team: "Malibú Hacendado", kit: "Primera equipación", active: true },
-    { name: "La Laguna Gran Hotel", url: "https://lalagunagranhotel.com/", logo: "/assets/images/patrocinadores/la-laguna-gran-hotel.png", team: "Malibú Hacendado", kit: "Primera equipación", active: true }
+    { name: "La Laguna Gran Hotel", url: "https://lalagunagranhotel.com/", logo: "/assets/images/patrocinadores/la-laguna-gran-hotel.png?v=20260911-2", team: "Malibú Hacendado", kit: "Primera equipación", active: true }
   ],
 
   secondKitSponsors: [
