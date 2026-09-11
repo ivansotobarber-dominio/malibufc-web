@@ -450,7 +450,8 @@
     });
   }
 
-  const matchday = config.calendar?.events?.[0];
+  const matchdays = Array.isArray(config.calendar?.events) ? config.calendar.events : [];
+  const matchday = matchdays[0];
   const matchdayStatus = $("#matchday-status");
   const matchdayMeta = $("#matchday-meta");
   const matchdayDate = $("#matchday-date");
@@ -459,15 +460,16 @@
   const matchdayToggle = $("#matchday-toggle");
   const matchdayDetails = $("#matchday-details");
   if (matchday && matchdayStatus) {
+    const fixtureCopy = (event) => `${text(event.home, "Malibú FC")} · ${text(event.away, "Rival por confirmar")} · ${text(event.dateLabel, "Fecha por confirmar")}`;
     const home = text(matchday.home, "Malibú FC");
     const away = text(matchday.away, "Rival por confirmar");
-    matchdayStatus.textContent = `${home}  ·  ${away}`;
-    matchdayMeta.textContent = text(matchday.competition, "Liga de la Amistad");
-    if (matchdayDate) matchdayDate.textContent = text(matchday.dateLabel, "Por confirmar");
-    if (matchdayOpponent) matchdayOpponent.textContent = away;
-    if (matchdayVenue) matchdayVenue.textContent = text(matchday.venue, "Por confirmar");
+    matchdayStatus.textContent = matchdays.length > 1 ? matchdays.map(fixtureCopy).join("  |  ") : `${home}  ·  ${away}`;
+    matchdayMeta.textContent = matchdays.length > 1 ? `${text(matchday.competition, "Liga de la Amistad")} · ${matchdays.length} partidos esta semana` : text(matchday.competition, "Liga de la Amistad");
+    if (matchdayDate) matchdayDate.textContent = matchdays.map((event) => text(event.dateLabel, "Por confirmar")).join(" / ");
+    if (matchdayOpponent) matchdayOpponent.textContent = matchdays.map((event) => text(event.away, "Rival por confirmar")).join(" / ");
+    if (matchdayVenue) matchdayVenue.textContent = matchdays.map((event) => text(event.venue, "Por confirmar")).join(" / ");
     const fanMatchCopy = $("#fan-match-copy");
-    if (fanMatchCopy) fanMatchCopy.textContent = `${home} · ${away} · ${text(matchday.dateLabel, "Fecha por confirmar")}`;
+    if (fanMatchCopy) fanMatchCopy.textContent = matchdays.map(fixtureCopy).join(" | ");
   }
   const matchdayCountdown = $("#matchday-countdown");
   const matchDate = matchday?.dateISO || matchday?.date;
