@@ -25,6 +25,7 @@ Prioridades: P0 bloquea un hito comprometido, P1 aporta valor inmediato, P2 mejo
 | AH-12 | P1 | Asignar responsables funcionales y aprobador final | Directiva | Acuerdo organizativo | Responsables y suplencias documentados |
 | AH-13 | P0 | Confirmar plantilla publicable y permisos de imagen | Iván y directiva | Consentimientos y datos deportivos | Solo aparecen jugadores autorizados con nombre, dorsal, posición y fotografía validados |
 | AH-14 | P0 | Confirmar calendario público y operativa de entradas gratuitas | Iván y responsable deportivo | Calendario oficial y decisión de aforo | Partidos trazables y entradas sin promesas ni reservas ficticias |
+| AH-16 | P0 | Cerrar y publicar el calendario de la jornada de arranque, semana del 14 al 20 de septiembre de 2026 | Iván y responsable deportivo | Fixture oficial de Malibú Hacendado y Malibú FC, con fecha, hora, rival, campo, jornada y condición local o visitante | Calendario público sustituye la demostración y queda listo antes del primer partido |
 
 ## Próximo
 

@@ -33,6 +33,8 @@ Aportado y autorizado por Iván el 2026-07-30:
 
 Continúa pendiente:
 
+0. **Arranque de liga:** Iván confirma que la liga comienza la próxima semana, tomando como referencia operativa la semana del 14 al 20 de septiembre de 2026. Falta recibir el calendario oficial de cada equipo para publicar fechas, horas, rivales y campos.
+
 1. Confirmar si el favicon debe diferenciarse del escudo; mientras tanto se utiliza una versión derivada.
 2. Identificar autor y fecha aproximada de cada fotografía para completar el archivo histórico.
 3. Confirmar o corregir municipio concreto, modalidad de fútbol, número de equipos, categoría, ascenso, temporada y lema.
