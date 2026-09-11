@@ -104,7 +104,7 @@
       heading.textContent = "Jugadores";
       const list = document.createElement("ul");
       list.className = "squad-name-list";
-      players.forEach((player) => {
+      [...players].sort((a, b) => Number(a.number || 999) - Number(b.number || 999)).forEach((player) => {
         const item = document.createElement("li");
         const number = player.number ? `#${text(player.number)} ` : "";
         const position = player.position ? ` · ${text(player.position)}` : "";
