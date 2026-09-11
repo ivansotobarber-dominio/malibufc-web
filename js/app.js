@@ -106,7 +106,9 @@
       list.className = "squad-name-list";
       players.forEach((player) => {
         const item = document.createElement("li");
-        item.textContent = text(player.name, "Jugador");
+        const number = player.number ? `#${text(player.number)} ` : "";
+        const position = player.position ? ` · ${text(player.position)}` : "";
+        item.textContent = `${number}${text(player.name, "Jugador")}${position}`;
         list.appendChild(item);
       });
       section.append(heading, list);
