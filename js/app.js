@@ -329,20 +329,24 @@
         element.appendChild(logo);
       }
 
+      const info = document.createElement("div");
+      info.className = "partner-info";
       const name = document.createElement("span");
       name.className = "partner-name";
       name.textContent = text(item.name);
-      element.appendChild(name);
+      info.appendChild(name);
 
       if (item.url) {
         const action = document.createElement("span");
         action.className = "partner-action";
         action.textContent = "Visitar enlace ↗";
-        element.appendChild(action);
+        info.appendChild(action);
         element.href = text(item.url);
         element.target = "_blank";
         element.rel = "noopener noreferrer";
       }
+
+      element.appendChild(info);
 
       grid.appendChild(element);
     });
