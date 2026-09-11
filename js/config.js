@@ -28,8 +28,33 @@ window.MALIBU_CONFIG = {
   },
 
   squad: {
-    published: false,
-    players: []
+    published: true,
+    namesOnly: true,
+    players: [
+      { name: "Bruno", published: true },
+      { name: "Pizzi", published: true },
+      { name: "Pedro", published: true },
+      { name: "Batista", published: true },
+      { name: "Eric", published: true },
+      { name: "Pitu", published: true },
+      { name: "Baute", published: true },
+      { name: "Dani Martín", published: true },
+      { name: "Dani Chamo", published: true },
+      { name: "Edu Jordán", published: true },
+      { name: "Noel", published: true },
+      { name: "Anto Daroca", published: true },
+      { name: "Pablo", published: true },
+      { name: "Alberto", published: true },
+      { name: "Nay Arias", published: true },
+      { name: "Ale Cartaya", published: true },
+      { name: "Nacho Pasqua", published: true },
+      { name: "Fele", published: true },
+      { name: "DRS", published: true },
+      { name: "Azael", published: true },
+      { name: "Juanma", published: true },
+      { name: "Colino", published: true },
+      { name: "Javi PdlR", published: true }
+    ]
   },
 
   calendar: {

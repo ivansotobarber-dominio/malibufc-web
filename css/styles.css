@@ -307,6 +307,8 @@ h2 { font-weight: 950; text-transform: uppercase; letter-spacing: -.045em; }
 .player-card > div span { grid-row: 1 / span 2; color: var(--gold); font-size: 2.3rem; font-weight: 950; }
 .player-card > div strong, .player-card > div small { display: block; }
 .player-card > div small { color: rgba(255,255,255,.6); }
+.squad-name-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.squad-name-list li { padding: 16px 18px; background: var(--navy); color: white; border-left: 4px solid var(--gold); font-weight: 800; }
 
 .calendar-section { background: var(--cream); }
 .calendar-grid { display: grid; gap: 20px; }
@@ -328,11 +330,13 @@ h2 { font-weight: 950; text-transform: uppercase; letter-spacing: -.045em; }
 
 @media (max-width: 900px) {
   .squad-placeholder-grid, .squad-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .squad-name-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 600px) {
   .squad-pending { align-items: flex-start; flex-direction: column; }
   .squad-placeholder-grid, .squad-grid { grid-template-columns: 1fr; }
+  .squad-name-list { grid-template-columns: 1fr; }
   .squad-line-card { min-height: 160px; }
   .match-meta, .match-footer { align-items: flex-start; flex-direction: column; }
   .match-teams { grid-template-columns: 1fr; gap: 14px; padding-block: 32px; }

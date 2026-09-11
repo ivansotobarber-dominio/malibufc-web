@@ -97,6 +97,20 @@
         placeholderGrid.appendChild(card);
       });
       squadContent.appendChild(placeholderGrid);
+    } else if (squad.namesOnly === true) {
+      const section = document.createElement("section");
+      section.className = "squad-group squad-names-only";
+      const heading = document.createElement("h3");
+      heading.textContent = "Jugadores";
+      const list = document.createElement("ul");
+      list.className = "squad-name-list";
+      players.forEach((player) => {
+        const item = document.createElement("li");
+        item.textContent = text(player.name, "Jugador");
+        list.appendChild(item);
+      });
+      section.append(heading, list);
+      squadContent.appendChild(section);
     } else {
       const groups = ["Porteros", "Defensas", "Centrocampistas", "Delanteros"];
       groups.forEach((group) => {

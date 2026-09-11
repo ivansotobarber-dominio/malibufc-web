@@ -41,7 +41,7 @@ Continúa pendiente:
 4. Aportar un texto institucional breve del club.
 5. Desarrollar la historia del equipo con orígenes, cronología, temporadas, hitos y fuentes verificables.
 6. Confirmar vigencia contractual y condiciones de uso de los cuatro patrocinios, sin pendiente de asignación de equipación.
-7. Confirmar qué jugadores pueden publicarse y aportar para cada uno nombre público, dorsal, posición, fotografía y autorización de imagen.
+7. **Plantilla parcialmente publicada (2026-09-11):** se han autorizado los nombres públicos iniciales y se muestran sin fotografía ni asignación a equipo. Quedan pendientes dorsales, posiciones, fotografías y permisos de imagen individualizados.
 8. **Calendario parcialmente confirmado (2026-09-11):** Malibú Hacendado juega el lunes 14 de septiembre a las 20:30 en Santa María del Mar contra Porto Restaurante Altagay; Malibú FC juega el jueves 17 de septiembre a las 20:30 en Las Delicias contra Mil Leches. Falta confirmar jornada, condición local o visitante y estado de cada partido.
 9. Definir si las entradas gratuitas serán solo informativas o requerirán una reserva, límite de aforo, identificación y confirmación.
 
