@@ -452,22 +452,22 @@
 
   const matchdays = Array.isArray(config.calendar?.events) ? config.calendar.events : [];
   const matchday = matchdays[0];
-  const matchdayStatus = $("#matchday-status");
-  const matchdayMeta = $("#matchday-meta");
-  const matchdayDate = $("#matchday-date");
-  const matchdayOpponent = $("#matchday-opponent");
-  const matchdayVenue = $("#matchday-venue");
-  const matchdayToggle = $("#matchday-toggle");
-  const matchdayDetails = $("#matchday-details");
-  if (matchday && matchdayStatus) {
+  const matchdayFixtures = $("#matchday-fixtures");
+  if (matchdayFixtures && matchdays.length) {
     const fixtureCopy = (event) => `${text(event.home, "Malibú FC")} · ${text(event.away, "Rival por confirmar")} · ${text(event.dateLabel, "Fecha por confirmar")}`;
-    const home = text(matchday.home, "Malibú FC");
-    const away = text(matchday.away, "Rival por confirmar");
-    matchdayStatus.textContent = matchdays.length > 1 ? matchdays.map(fixtureCopy).join("  |  ") : `${home}  ·  ${away}`;
-    matchdayMeta.textContent = matchdays.length > 1 ? `${text(matchday.competition, "Liga de la Amistad")} · ${matchdays.length} partidos esta semana` : text(matchday.competition, "Liga de la Amistad");
-    if (matchdayDate) matchdayDate.textContent = matchdays.map((event) => text(event.dateLabel, "Por confirmar")).join(" / ");
-    if (matchdayOpponent) matchdayOpponent.textContent = matchdays.map((event) => text(event.away, "Rival por confirmar")).join(" / ");
-    if (matchdayVenue) matchdayVenue.textContent = matchdays.map((event) => text(event.venue, "Por confirmar")).join(" / ");
+    matchdayFixtures.replaceChildren();
+    matchdays.forEach((event) => {
+      const card = document.createElement("article");
+      card.className = "matchday-fixture";
+      const team = document.createElement("strong");
+      team.textContent = text(event.home, "Malibú FC");
+      const opponent = document.createElement("span");
+      opponent.textContent = `vs ${text(event.away, "Rival por confirmar")}`;
+      const details = document.createElement("small");
+      details.textContent = `${text(event.dateLabel, "Fecha por confirmar")} · ${text(event.venue, "Campo por confirmar")}`;
+      card.append(team, opponent, details);
+      matchdayFixtures.appendChild(card);
+    });
     const fanMatchCopy = $("#fan-match-copy");
     if (fanMatchCopy) fanMatchCopy.textContent = matchdays.map(fixtureCopy).join(" | ");
   }
