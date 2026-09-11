@@ -33,15 +33,25 @@ window.MALIBU_CONFIG = {
   },
 
   calendar: {
-    demoMode: true,
+    demoMode: false,
     events: [
       {
-        id: "demo-match",
-        dateLabel: "Fecha por confirmar",
+        id: "2026-09-14-malibu-hacendado",
+        dateLabel: "Lunes 14 de septiembre · 20:30",
+        competition: "Liga de la Amistad",
+        home: "Malibú Hacendado",
+        away: "Porto Restaurante Altagay",
+        venue: "Santa María del Mar",
+        ticketPrice: "0 €",
+        ticketEnabled: false
+      },
+      {
+        id: "2026-09-17-malibu-fc",
+        dateLabel: "Jueves 17 de septiembre · 20:30",
         competition: "Liga de la Amistad",
         home: "Malibú FC",
-        away: "Rival por confirmar",
-        venue: "Lugar por confirmar",
+        away: "Mil Leches",
+        venue: "Las Delicias",
         ticketPrice: "0 €",
         ticketEnabled: false
       }
