@@ -187,7 +187,8 @@
           if (index === 0) {
             const versus = document.createElement("span");
             versus.className = "match-versus";
-            versus.textContent = "VS";
+            versus.textContent = text(event.resultLabel, "VS");
+            if (event.resultLabel) versus.classList.add("match-result");
             match.appendChild(versus);
           }
         });

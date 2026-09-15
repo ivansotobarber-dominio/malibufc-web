@@ -73,6 +73,14 @@ window.MALIBU_CONFIG = {
         home: "Malibú Hacendado",
         away: "Porto Restaurante Altagay",
         venue: "Santa María del Mar",
+        resultLabel: "3–1",
+        statusLabel: "Final",
+        report: {
+          crack: "Bruno",
+          scorer: "Pitu",
+          debuts: "Marcos y Lemai",
+          text: "Partido duro y dominado por Malibú. El equipo falló mucho, se puso 2–0 y un desajuste defensivo permitió el 2–1, casi detenido por Bruno. El portero salvó además dos goles claros y Pitu firmó la tranquilidad con el 3–1."
+        },
         ticketPrice: "0 €",
         ticketEnabled: false
       },

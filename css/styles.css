@@ -327,7 +327,20 @@ h2 { font-weight: 950; text-transform: uppercase; letter-spacing: -.045em; }
 .match-teams > div img { width: 64px; height: 70px; object-fit: contain; }
 .match-teams > div strong { font-size: clamp(1.2rem, 3vw, 2rem); line-height: 1.05; }
 .match-versus { color: var(--gold); font-weight: 950; }
+.match-result { color: var(--navy); font-size: 1.5rem; }
 .match-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 24px; color: var(--muted); background: #f5f4ef; }
+
+.report-card { background: var(--navy); color: #fff; padding: clamp(28px, 5vw, 56px); position: relative; overflow: hidden; }
+.report-card::after { content: "3–1"; position: absolute; right: 3%; top: -18%; font: 900 clamp(8rem, 24vw, 20rem)/1 var(--display); color: rgba(255,255,255,.05); pointer-events: none; }
+.report-heading, .report-lead, .report-awards { position: relative; z-index: 1; }
+.report-heading h2 { max-width: 760px; margin-bottom: 18px; }
+.report-lead { max-width: 850px; color: rgba(255,255,255,.82); font-size: 1.12rem; line-height: 1.7; }
+.report-awards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 32px; }
+.report-awards > div { border-top: 3px solid var(--gold); padding-top: 14px; display: grid; gap: 4px; }
+.report-awards span { color: var(--gold); font: 800 .78rem var(--display); text-transform: uppercase; letter-spacing: .12em; }
+.report-awards strong { font: 800 1.7rem var(--display); text-transform: uppercase; }
+.report-awards small { color: rgba(255,255,255,.68); line-height: 1.45; }
+@media (max-width: 700px) { .report-awards { grid-template-columns: 1fr; } }
 .ticket-box { display: flex; align-items: center; gap: 14px; }
 .ticket-box > strong { color: var(--navy); font-size: 1.55rem; }
 .ticket-action { display: inline-flex; align-items: center; min-height: 42px; padding: 0 15px; color: rgba(255,255,255,.62); background: var(--navy); font-size: .78rem; font-weight: 900; text-decoration: none; text-transform: uppercase; letter-spacing: .05em; }
