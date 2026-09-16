@@ -329,6 +329,29 @@ h2 { font-weight: 950; text-transform: uppercase; letter-spacing: -.045em; }
 .match-versus { color: var(--gold); font-weight: 950; }
 .match-result { color: var(--navy); font-size: 1.5rem; }
 .match-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 24px; color: var(--muted); background: #f5f4ef; }
+.match-report-link { display: block; margin: 0 24px 20px; color: var(--navy); font-weight: 900; text-decoration-thickness: 2px; text-underline-offset: 5px; }
+.matchday-report-link { display: inline-block; margin-top: 8px; color: var(--gold); font-weight: 900; text-decoration: none; }
+.latest-news-section { background: #f5f4ef; }
+.latest-news-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 18px; }
+.latest-news-card { padding: 28px; background: white; border-top: 5px solid var(--gold); box-shadow: var(--shadow); }
+.latest-news-card h3 { max-width: 600px; margin: 8px 0 14px; font-family: var(--display); font-size: clamp(1.7rem, 3vw, 2.7rem); line-height: .95; text-transform: uppercase; }
+.latest-news-card p:not(.eyebrow) { color: var(--muted); line-height: 1.6; }
+.latest-news-card .text-link { display: inline-block; margin-top: 12px; }
+.stats-section { background: var(--cream); }
+.season-stats { display: grid; gap: 24px; }
+.season-stat-card { padding: clamp(24px, 4vw, 44px); background: white; border-top: 6px solid var(--navy); box-shadow: var(--shadow); }
+.season-stat-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.season-stat-heading h2 { margin: 0; font-family: var(--display); font-size: clamp(2.4rem, 6vw, 4.5rem); text-transform: uppercase; }
+.season-stat-meta { margin: 4px 0 28px; color: var(--muted); font-weight: 800; }
+.season-stat-metrics { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+.season-stat-metrics > div { padding: 18px 12px; background: var(--navy); color: white; text-align: center; }
+.season-stat-metrics strong { display: block; color: var(--gold); font: 900 2.4rem/1 var(--display); }
+.season-stat-metrics span { display: block; margin-top: 8px; color: rgba(255,255,255,.7); font-size: .72rem; font-weight: 900; text-transform: uppercase; letter-spacing: .05em; }
+.season-stat-leaders { margin-top: 28px; }
+.season-stat-leaders h3 { margin-bottom: 12px; font-size: 1rem; text-transform: uppercase; }
+.leader-row { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.leader-row span { color: var(--muted); }
+.season-stat-note { margin: 22px 0 0; color: var(--muted); font-size: .9rem; line-height: 1.55; }
 
 .report-card { background: var(--navy); color: #fff; padding: clamp(28px, 5vw, 56px); position: relative; overflow: hidden; }
 .report-card::after { content: "3–1"; position: absolute; right: 3%; top: -18%; font: 900 clamp(8rem, 24vw, 20rem)/1 var(--display); color: rgba(255,255,255,.05); pointer-events: none; }
@@ -391,6 +414,7 @@ h2 { font-weight: 950; text-transform: uppercase; letter-spacing: -.045em; }
 .inner-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(3,20,38,.96) 0%, rgba(3,20,38,.68) 52%, rgba(3,20,38,.25) 100%); }
 .inner-hero-squad::before { background-image: url("../assets/images/equipo/equipo-malibu-fc.webp"); }
 .inner-hero-calendar::before { background-image: url("../assets/images/equipo/equipo-malibu-fc-campo.webp"); }
+.inner-hero-stats::before { background-image: url("../assets/images/equipo/equipo-malibu-fc.webp"); }
 .inner-hero-store::before { background-image: url("../assets/images/productos/equipacion-oficial-malibu-fc.webp"); background-position: center 35%; }
 .inner-hero-content { padding-block: 88px 66px; }
 .inner-hero h1 { margin: 0 0 12px; color: white; font-size: clamp(3.8rem, 10vw, 7.5rem); line-height: .86; text-transform: uppercase; }
@@ -406,6 +430,8 @@ h2 { font-weight: 950; text-transform: uppercase; letter-spacing: -.045em; }
   .portal-grid { grid-template-columns: 1fr; }
   .portal-card { min-height: 270px; }
   .team-banner-grid { grid-template-columns: 1fr; }
+  .season-stat-metrics { grid-template-columns: repeat(3, 1fr); }
+  .latest-news-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 600px) {
@@ -414,6 +440,9 @@ h2 { font-weight: 950; text-transform: uppercase; letter-spacing: -.045em; }
   .inner-hero-content { padding-block: 70px 48px; }
   .inner-hero h1 { font-size: clamp(3.5rem, 20vw, 5.2rem); }
   .portal-card { min-height: 230px; padding: 24px; }
+  .season-stat-heading { align-items: flex-start; flex-direction: column; }
+  .season-stat-metrics { grid-template-columns: repeat(2, 1fr); }
+  .leader-row { align-items: flex-start; flex-direction: column; }
 }
 
 

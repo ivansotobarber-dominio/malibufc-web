@@ -213,6 +213,14 @@
         ticket.append(price, button);
         footer.append(venue, ticket);
 
+        if (event.report && event.reportAnchor) {
+          const reportLink = document.createElement("a");
+          reportLink.className = "match-report-link";
+          reportLink.href = text(event.reportAnchor);
+          reportLink.textContent = "Leer la crónica de este partido →";
+          card.appendChild(reportLink);
+        }
+
         if (calendar.demoMode) {
           const demo = document.createElement("span");
           demo.className = "demo-label";
@@ -471,10 +479,75 @@
       const details = document.createElement("small");
       details.textContent = `${text(event.dateLabel, "Fecha por confirmar")} · ${text(event.venue, "Campo por confirmar")}`;
       card.append(team, opponent, details);
+      if (event.report && event.reportAnchor) {
+        const reportLink = document.createElement("a");
+        reportLink.className = "matchday-report-link";
+        reportLink.href = text(event.reportAnchor);
+        reportLink.textContent = "Ver crónica →";
+        card.appendChild(reportLink);
+      }
       matchdayFixtures.appendChild(card);
     });
     const fanMatchCopy = $("#fan-match-copy");
     if (fanMatchCopy) fanMatchCopy.textContent = matchdays.map(fixtureCopy).join(" | ");
+  }
+
+  const statsRoot = $("#season-stats");
+  if (statsRoot) {
+    const seasons = Array.isArray(config.statistics?.seasons) ? config.statistics.seasons : [];
+    if (!seasons.length) {
+      const empty = document.createElement("p");
+      empty.className = "empty-state";
+      empty.textContent = "El histórico se publicará cuando existan actas de temporada validadas.";
+      statsRoot.appendChild(empty);
+    } else {
+      seasons.forEach((season) => {
+        const article = document.createElement("article");
+        article.className = "season-stat-card";
+        const heading = document.createElement("div");
+        heading.className = "season-stat-heading";
+        const title = document.createElement("h2");
+        title.textContent = `Temporada ${text(season.label)}`;
+        const status = document.createElement("span");
+        status.className = "status-pill";
+        status.textContent = text(season.status, "Estado pendiente");
+        heading.append(title, status);
+        const meta = document.createElement("p");
+        meta.className = "season-stat-meta";
+        meta.textContent = `${text(season.team, "Malibú FC")} · ${text(season.competition, "Competición pendiente")}`;
+        const metrics = document.createElement("div");
+        metrics.className = "season-stat-metrics";
+        [["Partidos", season.matches], ["Victorias", season.wins], ["Empates", season.draws], ["Derrotas", season.losses], ["Goles a favor", season.goalsFor], ["Goles en contra", season.goalsAgainst]].forEach(([label, value]) => {
+          const metric = document.createElement("div");
+          const valueEl = document.createElement("strong");
+          valueEl.textContent = text(value, "—");
+          const labelEl = document.createElement("span");
+          labelEl.textContent = label;
+          metric.append(valueEl, labelEl);
+          metrics.appendChild(metric);
+        });
+        const leaders = document.createElement("div");
+        leaders.className = "season-stat-leaders";
+        const leadersTitle = document.createElement("h3");
+        leadersTitle.textContent = "Producción ofensiva confirmada";
+        leaders.appendChild(leadersTitle);
+        (Array.isArray(season.playerLeaders) ? season.playerLeaders : []).forEach((leader) => {
+          const row = document.createElement("div");
+          row.className = "leader-row";
+          const name = document.createElement("strong");
+          name.textContent = text(leader.name, "Jugador");
+          const numbers = document.createElement("span");
+          numbers.textContent = `${text(leader.goals, 0)} goles · ${text(leader.assists, 0)} asistencias`;
+          row.append(name, numbers);
+          leaders.appendChild(row);
+        });
+        const note = document.createElement("p");
+        note.className = "season-stat-note";
+        note.textContent = text(season.note);
+        article.append(heading, meta, metrics, leaders, note);
+        statsRoot.appendChild(article);
+      });
+    }
   }
   const matchdayCountdown = $("#matchday-countdown");
   const matchDate = matchday?.dateISO || matchday?.date;

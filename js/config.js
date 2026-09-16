@@ -81,6 +81,7 @@ window.MALIBU_CONFIG = {
           debuts: "Marcos y Lemai",
           text: "Partido duro y dominado por Malibú. El equipo falló mucho, se puso 2–0 y un desajuste defensivo permitió el 2–1, casi detenido por Bruno. El portero salvó además dos goles claros y Pitu firmó la tranquilidad con el 3–1."
         },
+        reportAnchor: "/#cronica-jornada-1",
         ticketPrice: "0 €",
         ticketEnabled: false
       },
@@ -93,6 +94,30 @@ window.MALIBU_CONFIG = {
         venue: "Las Delicias",
         ticketPrice: "0 €",
         ticketEnabled: false
+      }
+    ]
+  },
+
+  // Histórico público: solo datos confirmados, sin minutos ni valoraciones individuales.
+  statistics: {
+    seasons: [
+      {
+        id: "2026-27",
+        label: "2026/27",
+        competition: "Liga de la Amistad",
+        status: "Parcial, una jornada registrada",
+        team: "Malibú Hacendado",
+        matches: 1,
+        wins: 1,
+        draws: 0,
+        losses: 0,
+        goalsFor: 3,
+        goalsAgainst: 1,
+        playerLeaders: [
+          { name: "Pitu", goals: 2, assists: 0 },
+          { name: "Fele", goals: 1, assists: 1 }
+        ],
+        note: "Registro inicial confirmado tras Malibú Hacendado 3–1 Porto Restaurante Altagay. El histórico se ampliará con cada acta validada."
       }
     ]
   },

@@ -62,6 +62,23 @@ La lista de vídeos usa la playlist de subidas indicada por `contentDetails.rela
 - Verificar `status`, `videos` y `playlists`.
 - No activar subidas, edición, analítica avanzada ni automatizaciones hasta cerrar la revisión de permisos y el flujo de confirmación.
 
+## Personalización preparada
+
+Estos valores están preparados para aplicarlos únicamente al canal independiente **Malibú FC**, nunca al canal personal «Iván Soto» ni a «Envite Canario».
+
+| Campo | Valor preparado |
+| --- | --- |
+| Nombre | `Malibú FC` |
+| Identificador | `@malibufc`, sujeto a disponibilidad en YouTube |
+| Imagen de perfil | Escudo oficial, `assets/images/club/escudo-malibu-fc.png` |
+| Descripción | `Canal oficial del Malibú FC, equipo de fútbol 7 de Tenerife. Partidos completos grabados con Veo Go, resúmenes, goles, clips y vida del equipo. Fútbol, amigos y pasión desde Canarias.` |
+| Enlace web | `https://malibufc.es/` |
+| Instagram | `https://www.instagram.com/malibufc__/?hl=es` |
+
+### Banner pendiente de aplicar
+
+YouTube recomienda un banner de 2048 × 1152 px, con zona segura central de 1235 × 338 px y máximo 6 MB. La propuesta visual es fondo azul noche, escudo a la izquierda, texto «Malibú FC», subtítulo «Fútbol 7 · Tenerife · Amigos · Pasión» y acentos dorados. No se publicará hasta disponer del canal correcto y revisar la previsualización en escritorio, móvil y televisión.
+
 ## Seguridad operativa
 
 No guardar `client_secret.json`, `token.json`, `channel.json` ni archivos `.env` en commits. Si se sospecha una exposición, revocar el acceso desde la cuenta de Google y volver a ejecutar `auth`. El conector no modifica DNS, GitHub Pages, WhatsApp ni el contenido de YouTube.
