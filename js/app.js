@@ -169,6 +169,12 @@
         const competition = document.createElement("span");
         competition.textContent = text(event.competition);
         meta.append(date, competition);
+        if (event.statusLabel) {
+          const status = document.createElement("span");
+          status.className = "match-status";
+          status.textContent = text(event.statusLabel);
+          meta.appendChild(status);
+        }
 
         const match = document.createElement("div");
         match.className = "match-teams";
@@ -199,18 +205,24 @@
         venue.textContent = text(event.venue, "Lugar por confirmar");
         const ticket = document.createElement("div");
         ticket.className = "ticket-box";
-        const price = document.createElement("strong");
-        price.textContent = text(event.ticketPrice, "0 €");
-        const button = document.createElement(event.ticketEnabled && event.ticketUrl ? "a" : "span");
-        button.className = "ticket-action";
-        if (event.ticketEnabled && event.ticketUrl) {
-          button.href = text(event.ticketUrl);
-          button.textContent = "Obtener entrada";
+        if (event.statusLabel === "Final") {
+          const finalStatus = document.createElement("strong");
+          finalStatus.textContent = "Partido disputado";
+          ticket.appendChild(finalStatus);
         } else {
-          button.textContent = calendar.demoMode ? "Entrada demo" : "Próximamente";
-          button.setAttribute("aria-disabled", "true");
+          const price = document.createElement("strong");
+          price.textContent = text(event.ticketPrice, "0 €");
+          const button = document.createElement(event.ticketEnabled && event.ticketUrl ? "a" : "span");
+          button.className = "ticket-action";
+          if (event.ticketEnabled && event.ticketUrl) {
+            button.href = text(event.ticketUrl);
+            button.textContent = "Obtener entrada";
+          } else {
+            button.textContent = calendar.demoMode ? "Entrada demo" : "Próximamente";
+            button.setAttribute("aria-disabled", "true");
+          }
+          ticket.append(price, button);
         }
-        ticket.append(price, button);
         footer.append(venue, ticket);
 
         if (event.report && event.reportAnchor) {
@@ -467,7 +479,9 @@
   const matchday = matchdays[0];
   const matchdayFixtures = $("#matchday-fixtures");
   if (matchdayFixtures && matchdays.length) {
-    const fixtureCopy = (event) => `${text(event.home, "Malibú FC")} · ${text(event.away, "Rival por confirmar")} · ${text(event.dateLabel, "Fecha por confirmar")}`;
+    const fixtureCopy = (event) => event.resultLabel
+      ? `${text(event.home, "Malibú FC")} ${text(event.resultLabel)} ${text(event.away, "Rival por confirmar")}`
+      : `${text(event.home, "Malibú FC")} vs ${text(event.away, "Rival por confirmar")}`;
     matchdayFixtures.replaceChildren();
     matchdays.forEach((event) => {
       const card = document.createElement("article");
@@ -476,9 +490,16 @@
       team.textContent = text(event.home, "Malibú FC");
       const opponent = document.createElement("span");
       opponent.textContent = `vs ${text(event.away, "Rival por confirmar")}`;
+      if (event.resultLabel) {
+        const score = document.createElement("span");
+        score.className = "matchday-score";
+        score.textContent = text(event.resultLabel);
+        card.appendChild(score);
+      }
       const details = document.createElement("small");
       details.textContent = `${text(event.dateLabel, "Fecha por confirmar")} · ${text(event.venue, "Campo por confirmar")}`;
-      card.append(team, opponent, details);
+      card.prepend(team, opponent);
+      card.appendChild(details);
       if (event.report && event.reportAnchor) {
         const reportLink = document.createElement("a");
         reportLink.className = "matchday-report-link";
@@ -490,6 +511,73 @@
     });
     const fanMatchCopy = $("#fan-match-copy");
     if (fanMatchCopy) fanMatchCopy.textContent = matchdays.map(fixtureCopy).join(" | ");
+  }
+
+  const matchReports = (Array.isArray(config.calendar?.events) ? config.calendar.events : [])
+    .filter((event) => event.report && event.reportId && event.reportAnchor)
+    .sort((a, b) => new Date(b.dateISO || 0) - new Date(a.dateISO || 0));
+  const matchReportList = $("#match-report-list");
+  const latestMatchNews = $("#latest-match-news");
+  if (matchReports.length && matchReportList) {
+    matchReports.forEach((event, index) => {
+      const report = event.report;
+      const article = document.createElement("article");
+      article.className = "report-card";
+      article.id = text(event.reportId);
+      article.dataset.score = text(event.resultLabel, "MFC");
+
+      const heading = document.createElement("div");
+      heading.className = "report-heading";
+      const eyebrow = document.createElement("p");
+      eyebrow.className = "eyebrow";
+      eyebrow.textContent = `${text(event.competition)} · ${text(event.dateLabel)}`;
+      const title = document.createElement("h2");
+      title.textContent = text(report.title, `${text(event.home)} ${text(event.resultLabel)} ${text(event.away)}`);
+      heading.append(eyebrow, title);
+
+      const lead = document.createElement("p");
+      lead.className = "report-lead";
+      lead.textContent = text(report.text);
+
+      const awards = document.createElement("div");
+      awards.className = "report-awards";
+      awards.setAttribute("aria-label", "Protagonistas de la jornada");
+      (Array.isArray(report.awards) ? report.awards : []).forEach((award) => {
+        const item = document.createElement("div");
+        const label = document.createElement("span");
+        label.textContent = text(award.label);
+        const player = document.createElement("strong");
+        player.textContent = text(award.player);
+        item.append(label, player);
+        if (award.detail) {
+          const detail = document.createElement("small");
+          detail.textContent = text(award.detail);
+          item.appendChild(detail);
+        }
+        awards.appendChild(item);
+      });
+
+      article.append(heading, lead, awards);
+      matchReportList.appendChild(article);
+
+      if (latestMatchNews) {
+        const card = document.createElement("article");
+        card.className = `latest-news-card${index === 0 ? " latest-news-feature" : ""}`;
+        const newsEyebrow = document.createElement("p");
+        newsEyebrow.className = "eyebrow";
+        newsEyebrow.textContent = `${text(event.dateLabel)} · Resultado final`;
+        const newsTitle = document.createElement("h3");
+        newsTitle.textContent = `${text(event.home)} ${text(event.resultLabel)} ${text(event.away)}`;
+        const summary = document.createElement("p");
+        summary.textContent = text(report.text);
+        const link = document.createElement("a");
+        link.className = "text-link";
+        link.href = text(event.reportAnchor);
+        link.textContent = "Leer la crónica →";
+        card.append(newsEyebrow, newsTitle, summary, link);
+        latestMatchNews.appendChild(card);
+      }
+    });
   }
 
   const statsRoot = $("#season-stats");
@@ -537,7 +625,10 @@
           const name = document.createElement("strong");
           name.textContent = text(leader.name, "Jugador");
           const numbers = document.createElement("span");
-          numbers.textContent = `${text(leader.goals, 0)} goles · ${text(leader.assists, 0)} asistencias`;
+          const goalCount = Number(leader.goals) || 0;
+          const goalLabel = goalCount === 1 ? "gol" : "goles";
+          const assists = leader.assists == null ? "asistencias sin dato" : `${text(leader.assists, 0)} ${Number(leader.assists) === 1 ? "asistencia" : "asistencias"}`;
+          numbers.textContent = `${goalCount} ${goalLabel} · ${assists}`;
           row.append(name, numbers);
           leaders.appendChild(row);
         });
@@ -569,15 +660,6 @@
       window.setInterval(updateCountdown, 3600000);
     }
   }
-  if (matchdayToggle && matchdayDetails) {
-    matchdayToggle.addEventListener("click", () => {
-      const isOpen = matchdayToggle.getAttribute("aria-expanded") === "true";
-      matchdayToggle.setAttribute("aria-expanded", String(!isOpen));
-      matchdayDetails.hidden = isOpen;
-      matchdayToggle.innerHTML = isOpen ? "Ver detalles <span aria-hidden=\"true\">+</span>" : "Ocultar detalles <span aria-hidden=\"true\">−</span>";
-    });
-  }
-
   const revealItems = $$(".section, .matchday-strip, .portal-card, .gallery-card, .partner-card, .social-card");
   if ("IntersectionObserver" in window) {
     const revealObserver = new IntersectionObserver((entries, observer) => {

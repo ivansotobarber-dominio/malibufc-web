@@ -19,3 +19,9 @@ Cada hito futuro debe registrar fecha o periodo, fuente, personas relacionadas, 
 ## Pendientes
 
 Iván o la directiva deben aportar la cronología, temporadas, hitos, camisetas históricas, fotografías y documentos que puedan publicarse.
+
+## Resultados registrados
+
+- 2026-09-14: Malibú Hacendado 3–1 Porto Restaurante Altagay. Fuente: confirmación de Iván en la conversación del proyecto.
+- 2026-09-17: Malibú FC 11–1 Mil Leches. Goles confirmados: Gimeno 1, Fele 5, Rubén 2 y Fer Rizo 3. Debutaron Martín Álamo y Fer Rizo. Reconocimientos indicados por Iván: crack, Fele; goleador, Gimeno; caballo, Azael. Fuente: confirmación de Iván en la conversación del proyecto.
+- Para el segundo partido no se han comunicado asistencias. No inferirlas ni asignarlas.

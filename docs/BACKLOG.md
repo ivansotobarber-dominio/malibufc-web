@@ -1,6 +1,6 @@
 # Backlog del ecosistema digital Malibú FC
 
-Fecha de revisión: 2026-08-16.
+Fecha de revisión: 2026-09-18.
 
 Este documento contiene únicamente trabajo ejecutable. La estrategia se mantiene en `docs/MASTER_PLAN.md` y la secuencia de fases en `docs/ROADMAP.md`.
 
@@ -25,7 +25,7 @@ Prioridades: P0 bloquea un hito comprometido, P1 aporta valor inmediato, P2 mejo
 | AH-12 | P1 | Asignar responsables funcionales y aprobador final | Directiva | Acuerdo organizativo | Responsables y suplencias documentados |
 | AH-13 | P0 | Confirmar plantilla publicable y permisos de imagen | Iván y directiva | Consentimientos y datos deportivos | Solo aparecen jugadores autorizados con nombre, dorsal, posición y fotografía validados |
 | AH-14 | P0 | Confirmar calendario público y operativa de entradas gratuitas | Iván y responsable deportivo | Calendario oficial y decisión de aforo | Partidos trazables y entradas sin promesas ni reservas ficticias |
-| AH-16 | P0 | Cerrar y publicar el calendario de la jornada de arranque, semana del 14 al 20 de septiembre de 2026 | Iván y responsable deportivo | Fixture oficial de Malibú Hacendado y Malibú FC, con fecha, hora, rival, campo, jornada y condición local o visitante | Calendario público sustituye la demostración y queda listo antes del primer partido |
+| AH-16 | P0 | Completar los metadatos oficiales de la jornada del 14 al 20 de septiembre de 2026 | Iván y responsable deportivo | Fixture oficial de ambos equipos | Resultados 3–1 y 11–1 ya registrados; quedan número oficial de jornada y condición local o visitante. No bloquear la publicación de resultados confirmados cuando se habilite el despliegue |
 
 ## Próximo
 

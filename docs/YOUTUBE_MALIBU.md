@@ -1,13 +1,14 @@
 # Integración de YouTube, Malibú FC
 
-Estado: Fase 1 preparada, pendiente de autorización OAuth del titular.
+Estado del canal: creado por Iván; foto de perfil cargada por Iván (confirmación del 17-09-2026).
+Estado de la integración API: pendiente de autorización OAuth del titular.
 Cuenta autorizada prevista: `ivansotobarber@gmail.com`.
 Canal objetivo: `Malibú FC`, independiente de los canales `Iván Soto` y `Envite Canario`.
 Modo actual: lectura únicamente, sin publicación, modificación, borrado ni acceso de escritura.
 
 ## Arquitectura de cuenta
 
-La cuenta Google puede gestionar varios canales, pero los canales no se anidan unos dentro de otros. Malibú FC se creará como canal separado, preferiblemente vinculado a una cuenta de marca, dentro de la misma cuenta Google de Iván. Nunca se debe usar el canal personal o el de Envite como identidad de publicación de Malibú FC. Antes de cada operación se debe comprobar el selector de canal y el `channel_id` canónico.
+La cuenta Google gestiona varios canales. Malibú FC es un canal separado dentro de la cuenta de Iván; no se debe usar el canal personal ni Envite Canario como identidad de publicación. Antes de cada operación se debe comprobar el selector de canal y el `channel_id` canónico. Canal e identificador comprobados en Studio el 17-09-2026: `UCv_TUzgGJb4Xyi16DcKBRcA` y `@malibufc_tenerife`.
 
 ## Objetivo y límites
 
@@ -54,30 +55,43 @@ Todas las consultas autenticadas ejecutan `channels.list(part="snippet,contentDe
 
 La lista de vídeos usa la playlist de subidas indicada por `contentDetails.relatedPlaylists.uploads`; la API oficial documenta que `playlistItems.list` permite recuperar los vídeos de esa playlist. Las consultas se limitan al canal canónico confirmado.
 
-## Pendientes de Fase 1
+## Pendientes de integración API
 
-- Crear el proyecto y cliente OAuth en Google Cloud.
-- Ejecutar `auth` y confirmar el canal correcto.
-- Registrar el `channel_id` confirmado en el entorno local, si se desea además fijarlo mediante `MALIBU_FC_CHANNEL_ID`.
-- Verificar `status`, `videos` y `playlists`.
+- Crear el proyecto y cliente OAuth en Google Cloud si se decide activar la integración API.
+- Ejecutar `auth` y confirmar el canal correcto antes de usar el conector.
+- Verificar `status`, `videos` y `playlists` desde la integración.
 - No activar subidas, edición, analítica avanzada ni automatizaciones hasta cerrar la revisión de permisos y el flujo de confirmación.
 
-## Personalización preparada
+## Personalización del canal
 
 Estos valores están preparados para aplicarlos únicamente al canal independiente **Malibú FC**, nunca al canal personal «Iván Soto» ni a «Envite Canario».
 
 | Campo | Valor preparado |
 | --- | --- |
 | Nombre | `Malibú FC` |
-| Identificador | `@malibufc`, sujeto a disponibilidad en YouTube |
-| Imagen de perfil | Escudo oficial, `assets/images/club/escudo-malibu-fc.png` |
-| Descripción | `Canal oficial del Malibú FC, equipo de fútbol 7 de Tenerife. Partidos completos grabados con Veo Go, resúmenes, goles, clips y vida del equipo. Fútbol, amigos y pasión desde Canarias.` |
-| Enlace web | `https://malibufc.es/` |
-| Instagram | `https://www.instagram.com/malibufc__/?hl=es` |
+| Identificador | `@malibufc_tenerife`, verificado en Studio el 17-09-2026 |
+| ID del canal | `UCv_TUzgGJb4Xyi16DcKBRcA`, verificado en Studio el 17-09-2026 |
+| Imagen de perfil | Cargada por Iván, según confirmación; archivo oficial `assets/images/club/escudo-malibu-fc.png` |
+| Descripción | Configurada por Iván; verificada en el canal público: `Canal oficial del Malibú FC, equipo de fútbol 7 de Tenerife. Aquí compartimos partidos grabados con Veo Go, goles, resúmenes y momentos del equipo. Fútbol, amistad y pasión desde Canarias.` |
+| Enlace web | `https://malibufc.es/`, guardado y visible en el canal público |
+| Instagram | `https://www.instagram.com/malibufc__/?hl=es`, guardado en el perfil del canal |
+| Correo de contacto | `info@malibufc.es`, configurado en Studio |
+| Pestaña Inicio | Activada y guardada el 17-09-2026; las secciones se poblarán al publicar contenido |
 
-### Banner pendiente de aplicar
+### Banner y marca de agua
 
-YouTube recomienda un banner de 2048 × 1152 px, con zona segura central de 1235 × 338 px y máximo 6 MB. La propuesta visual es fondo azul noche, escudo a la izquierda, texto «Malibú FC», subtítulo «Fútbol 7 · Tenerife · Amigos · Pasión» y acentos dorados. No se publicará hasta disponer del canal correcto y revisar la previsualización en escritorio, móvil y televisión.
+Los archivos preparados en este repositorio fueron cargados por Iván, según su confirmación del 17-09-2026. El banner mide 2560 × 1440 px y pesa menos de 6 MB; la marca de agua es PNG transparente de 150 × 150 px y menos de 1 MB. El banner usa el escudo oficial y el texto «MALIBÚ FC» y «FÚTBOL 7 · TENERIFE · CANARIAS».
+
+| Pieza | Archivo | Estado |
+|---|---|---|
+| Banner | `assets/images/youtube/banner-malibu-fc.png` | Cargado por Iván, según confirmación; falta revisión visual por dispositivo |
+| Marca de agua | `assets/images/youtube/marca-agua-malibu-fc.png` | Cargada por Iván, según confirmación; Studio indica que se muestra durante todo el vídeo |
+
+La configuración se guardó desde YouTube Studio en el canal correcto y la página pública fue comprobada. La revisión visual del banner por dispositivo queda pendiente. Especificaciones oficiales: [personalizar la marca del canal](https://support.google.com/youtube/answer/10456525?hl=es).
+
+### Próximo paso editorial
+
+La portada está activa, pero al 17-09-2026 el canal aún no tiene vídeos publicados. Cuando Iván aporte la grabación Veo Go, preparar título, descripción, miniatura, visibilidad y lista de reproducción antes de publicar. No hacer público un vídeo sin revisar el corte final y confirmar su visibilidad.
 
 ## Seguridad operativa
 

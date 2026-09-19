@@ -332,7 +332,8 @@ h2 { font-weight: 950; text-transform: uppercase; letter-spacing: -.045em; }
 .match-report-link { display: block; margin: 0 24px 20px; color: var(--navy); font-weight: 900; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 .matchday-report-link { display: inline-block; margin-top: 8px; color: var(--gold); font-weight: 900; text-decoration: none; }
 .latest-news-section { background: #f5f4ef; }
-.latest-news-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 18px; }
+.latest-news-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
+.latest-match-news { display: contents; }
 .latest-news-card { padding: 28px; background: white; border-top: 5px solid var(--gold); box-shadow: var(--shadow); }
 .latest-news-card h3 { max-width: 600px; margin: 8px 0 14px; font-family: var(--display); font-size: clamp(1.7rem, 3vw, 2.7rem); line-height: .95; text-transform: uppercase; }
 .latest-news-card p:not(.eyebrow) { color: var(--muted); line-height: 1.6; }
@@ -354,16 +355,18 @@ h2 { font-weight: 950; text-transform: uppercase; letter-spacing: -.045em; }
 .season-stat-note { margin: 22px 0 0; color: var(--muted); font-size: .9rem; line-height: 1.55; }
 
 .report-card { background: var(--navy); color: #fff; padding: clamp(28px, 5vw, 56px); position: relative; overflow: hidden; }
-.report-card::after { content: "3–1"; position: absolute; right: 3%; top: -18%; font: 900 clamp(8rem, 24vw, 20rem)/1 var(--display); color: rgba(255,255,255,.05); pointer-events: none; }
+.report-card::after { content: attr(data-score); position: absolute; right: 3%; top: -18%; font: 900 clamp(8rem, 24vw, 20rem)/1 var(--display); color: rgba(255,255,255,.05); pointer-events: none; }
+.report-list { display: grid; gap: 24px; }
 .report-heading, .report-lead, .report-awards { position: relative; z-index: 1; }
 .report-heading h2 { max-width: 760px; margin-bottom: 18px; }
 .report-lead { max-width: 850px; color: rgba(255,255,255,.82); font-size: 1.12rem; line-height: 1.7; }
-.report-awards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 32px; }
+.report-awards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 32px; }
 .report-awards > div { border-top: 3px solid var(--gold); padding-top: 14px; display: grid; gap: 4px; }
 .report-awards span { color: var(--gold); font: 800 .78rem var(--display); text-transform: uppercase; letter-spacing: .12em; }
 .report-awards strong { font: 800 1.7rem var(--display); text-transform: uppercase; }
 .report-awards small { color: rgba(255,255,255,.68); line-height: 1.45; }
-@media (max-width: 700px) { .report-awards { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .latest-news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .report-awards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 700px) { .latest-news-grid, .report-awards { grid-template-columns: 1fr; } }
 .video-news-card { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(280px, .95fr); gap: clamp(28px, 6vw, 88px); align-items: center; border: 1px solid rgba(6,26,51,.16); border-left: 7px solid var(--gold); padding: clamp(28px, 5vw, 52px); background: #f5f4ef; }
 .video-news-copy { display: grid; gap: 12px; }
 .video-news-copy p { margin: 0; color: var(--muted); line-height: 1.65; }

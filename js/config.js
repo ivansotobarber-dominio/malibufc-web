@@ -16,8 +16,8 @@ window.MALIBU_CONFIG = {
   whatsappGeneralMessage: "Hola, contacto con el Malibú FC desde la web.",
 
   instagramUrl: "https://www.instagram.com/malibufc__/?hl=es",
-  youtubeUrl: "",
-  youtubeLabel: "Canal de Malibú FC pendiente de crear",
+  youtubeUrl: "https://www.youtube.com/@malibufc_tenerife",
+  youtubeLabel: "Canal oficial Malibú FC",
   email: "info@malibufc.es",
 
   competition: {
@@ -68,6 +68,7 @@ window.MALIBU_CONFIG = {
     events: [
       {
         id: "2026-09-14-malibu-hacendado",
+        dateISO: "2026-09-14T20:30:00+01:00",
         dateLabel: "Lunes 14 de septiembre · 20:30",
         competition: "Liga de la Amistad",
         home: "Malibú Hacendado",
@@ -76,22 +77,41 @@ window.MALIBU_CONFIG = {
         resultLabel: "3–1",
         statusLabel: "Final",
         report: {
-          crack: "Bruno",
-          scorer: "Pitu",
-          debuts: "Marcos y Lemai",
-          text: "Partido duro y dominado por Malibú. El equipo falló mucho, se puso 2–0 y un desajuste defensivo permitió el 2–1, casi detenido por Bruno. El portero salvó además dos goles claros y Pitu firmó la tranquilidad con el 3–1."
+          title: "Bruno sostuvo al equipo y Pitu cerró la victoria",
+          text: "Partido duro y dominado por Malibú. El equipo falló mucho, se puso 2–0 y un desajuste defensivo permitió el 2–1, casi detenido por Bruno. El portero salvó además dos goles claros y Pitu firmó la tranquilidad con el 3–1.",
+          awards: [
+            { label: "El crack", player: "Bruno", detail: "Dos paradas decisivas y seguridad bajo palos." },
+            { label: "El goleador", player: "Pitu", detail: "Doblete para cerrar el partido." },
+            { label: "Los debuts", player: "Marcos · Lemai", detail: "Primer partido con el equipo." }
+          ]
         },
+        reportId: "cronica-jornada-1",
         reportAnchor: "/#cronica-jornada-1",
         ticketPrice: "0 €",
         ticketEnabled: false
       },
       {
         id: "2026-09-17-malibu-fc",
+        dateISO: "2026-09-17T20:30:00+01:00",
         dateLabel: "Jueves 17 de septiembre · 20:30",
         competition: "Liga de la Amistad",
         home: "Malibú FC",
         away: "Mil Leches",
         venue: "Las Delicias",
+        resultLabel: "11–1",
+        statusLabel: "Final",
+        report: {
+          title: "Once goles y dos debuts para el Malibú FC",
+          text: "Malibú FC cerró su partido de Segunda ante Mil Leches con un 11–1. Fele fue el máximo goleador con cinco tantos; Fer Rizo marcó tres, Rubén dos y Gimeno uno. El encuentro dejó además los debuts de Martín Álamo y Fer. En los reconocimientos de la jornada, Fele fue el crack, Gimeno el goleador y Azael, el caballo.",
+          awards: [
+            { label: "El crack", player: "Fele", detail: "Cinco goles en el triunfo del Malibú FC." },
+            { label: "El goleador", player: "Gimeno", detail: "Un tanto en la victoria ante Mil Leches." },
+            { label: "El caballo", player: "Azael", detail: "Reconocimiento de la jornada." },
+            { label: "Los debuts", player: "Martín Álamo · Fer Rizo", detail: "Primer partido con el equipo." }
+          ]
+        },
+        reportId: "cronica-jornada-2",
+        reportAnchor: "/#cronica-jornada-2",
         ticketPrice: "0 €",
         ticketEnabled: false
       }
@@ -105,7 +125,7 @@ window.MALIBU_CONFIG = {
         id: "2026-27",
         label: "2026/27",
         competition: "Liga de la Amistad",
-        status: "Parcial, una jornada registrada",
+        status: "Parcial, un partido registrado",
         team: "Malibú Hacendado",
         matches: 1,
         wins: 1,
@@ -117,7 +137,27 @@ window.MALIBU_CONFIG = {
           { name: "Pitu", goals: 2, assists: 0 },
           { name: "Fele", goals: 1, assists: 1 }
         ],
-        note: "Registro inicial confirmado tras Malibú Hacendado 3–1 Porto Restaurante Altagay. El histórico se ampliará con cada acta validada."
+        note: "Registro parcial confirmado tras Malibú Hacendado 3–1 Porto Restaurante Altagay. El histórico se ampliará con cada acta validada."
+      },
+      {
+        id: "2026-27-malibu-fc",
+        label: "2026/27",
+        competition: "Liga de la Amistad",
+        status: "Parcial, un partido registrado",
+        team: "Malibú FC",
+        matches: 1,
+        wins: 1,
+        draws: 0,
+        losses: 0,
+        goalsFor: 11,
+        goalsAgainst: 1,
+        playerLeaders: [
+          { name: "Fele", goals: 5, assists: null },
+          { name: "Fer Rizo", goals: 3, assists: null },
+          { name: "Rubén (Pitu)", goals: 2, assists: null },
+          { name: "Gimeno", goals: 1, assists: null }
+        ],
+        note: "Registro parcial confirmado tras Malibú FC 11–1 Mil Leches. Las asistencias de este partido no se han proporcionado y quedan sin dato."
       }
     ]
   },

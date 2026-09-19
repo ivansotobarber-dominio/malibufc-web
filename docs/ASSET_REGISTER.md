@@ -1,6 +1,6 @@
 # Registro de assets
 
-Fecha: 2026-08-16.
+Fecha: 2026-09-17.
 
 | Asset | Ruta | Estado | Uso autorizado |
 |---|---|---|---|
@@ -16,5 +16,7 @@ Fecha: 2026-08-16.
 | Logo Envite Canario | `assets/images/patrocinadores/envite-canario.png` | Aportado por Iván y autorizado para integración | Patrocinador segunda equipación |
 | Logo Giroenviro | `assets/images/patrocinadores/giroenviro.png` | Aportado por Iván y autorizado para integración | Patrocinador primera equipación |
 | Logo La Laguna Gran Hotel | `assets/images/patrocinadores/la-laguna-gran-hotel.png` | Recibido por Gmail y autorizado para integración | Patrocinador primera equipación |
+| Banner del canal Malibú FC | `assets/images/youtube/banner-malibu-fc.png` | Cargado por Iván, según confirmación del 17-09-2026; escudo oficial y fondo generado | Canal YouTube Malibú FC; pendiente revisión visual por dispositivo |
+| Marca de agua del canal Malibú FC | `assets/images/youtube/marca-agua-malibu-fc.png` | Cargada por Iván, según confirmación del 17-09-2026; PNG transparente derivado del escudo oficial | Canal YouTube Malibú FC; se muestra durante todo el vídeo según Studio |
 
 Los archivos sin procedencia, permiso o estado no se publican. Los cuatro logotipos recibidos quedan integrados en la portada con enlace y asignados a su equipación correspondiente; la vigencia contractual sigue siendo un dato interno pendiente.

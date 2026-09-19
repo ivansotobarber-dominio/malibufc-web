@@ -16,10 +16,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css?v=20260915-2">
-    <link rel="stylesheet" href="css/review.css?v=20260911-2">
-    <script defer src="js/config.js?v=20260915-1"></script>
-    <script defer src="js/app.js?v=20260915-1"></script>
+    <link rel="stylesheet" href="css/styles.css?v=20260918-2">
+    <link rel="stylesheet" href="css/review.css?v=20260918-2">
+    <script defer src="js/config.js?v=20260918-2"></script>
+    <script defer src="js/app.js?v=20260918-2"></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -67,9 +67,9 @@
       </div>
     </section>
 
-    <section class="matchday-strip" aria-label="Próximos partidos">
+    <section class="matchday-strip" aria-label="Resultados recientes">
       <div class="container matchday-inner">
-        <div class="matchday-label"><span class="live-dot" aria-hidden="true"></span><span>Jornada Malibú FC</span></div>
+        <div class="matchday-label"><span class="live-dot" aria-hidden="true"></span><span>Resultados de la semana</span></div>
         <div class="matchday-fixtures" id="matchday-fixtures" aria-live="polite"><p>Próximos partidos pendientes de confirmar.</p></div>
         <a class="button button-primary matchday-calendar-link" href="/calendario/">Ver calendario</a>
       </div>
@@ -106,25 +106,14 @@
       <div class="container">
         <div class="section-heading"><div><p class="eyebrow">Actualidad del club</p><h2 id="latest-news-title">Últimas noticias</h2></div><p>Crónicas, novedades y contenidos confirmados del Malibú FC.</p></div>
         <div class="latest-news-grid">
-          <article class="latest-news-card latest-news-feature"><p class="eyebrow">Jornada 1 · Resultado final</p><h3>Malibú Hacendado 3–1 Porto Restaurante Altagay</h3><p>Bruno fue el crack, Pitu firmó el doblete y Marcos y Lemai debutaron con el equipo.</p><a class="text-link" href="#cronica-jornada-1">Leer la crónica →</a></article>
+          <div id="latest-match-news" class="latest-match-news" aria-live="polite"></div>
           <article class="latest-news-card"><p class="eyebrow">Cobertura audiovisual</p><h3>Los partidos también se viven en vídeo</h3><p>Los encuentros se grabarán con Veo Go y los clips se compartirán en los canales del club.</p><a class="text-link" href="#novedades-video">Ver novedad →</a></article>
         </div>
       </div>
     </section>
 
-    <section class="section report-section" id="cronica-jornada-1" aria-labelledby="report-title">
-      <div class="container report-card">
-        <div class="report-heading">
-          <p class="eyebrow">Jornada 1 · Malibú Hacendado 3–1 Porto Restaurante Altagay</p>
-          <h2 id="report-title">El partido, contado desde dentro</h2>
-        </div>
-        <p class="report-lead">Partido duro y dominado por Malibú. El equipo falló mucho, se puso 2–0 y un desajuste defensivo permitió el 2–1, casi detenido por Bruno. El portero salvó además dos goles claros y Pitu firmó la tranquilidad con el 3–1.</p>
-        <div class="report-awards" aria-label="Protagonistas de la jornada">
-          <div><span>El crack</span><strong>Bruno</strong><small>Dos paradas decisivas y seguridad bajo palos.</small></div>
-          <div><span>El goleador</span><strong>Pitu</strong><small>Doblete para cerrar el partido.</small></div>
-          <div><span>Los debuts</span><strong>Marcos · Lemai</strong><small>Primer partido con el equipo.</small></div>
-        </div>
-      </div>
+    <section class="section report-section" id="cronicas" aria-label="Crónicas de los partidos">
+      <div class="container report-list" id="match-report-list"></div>
     </section>
 
     <section class="section video-news-section" id="novedades-video" aria-labelledby="video-news-title">
@@ -176,7 +165,7 @@
           <button class="fan-tab" type="button" role="tab" aria-selected="false" aria-controls="fan-panel-social" id="fan-tab-social">Redes</button>
         </div>
         <div class="fan-panels">
-          <div class="fan-panel is-visible" role="tabpanel" id="fan-panel-matches" aria-labelledby="fan-tab-matches"><strong>Próxima cita</strong><p id="fan-match-copy">El calendario se publicará cuando estén confirmados los partidos.</p><a href="/calendario/" class="text-link">Abrir calendario <span aria-hidden="true">→</span></a></div>
+          <div class="fan-panel is-visible" role="tabpanel" id="fan-panel-matches" aria-labelledby="fan-tab-matches"><strong>Resultados de la semana</strong><p id="fan-match-copy">Consulta los últimos resultados de los dos equipos.</p><a href="/calendario/" class="text-link">Abrir calendario <span aria-hidden="true">→</span></a></div>
           <div class="fan-panel" role="tabpanel" id="fan-panel-shop" aria-labelledby="fan-tab-shop" hidden><strong>Viste los colores</strong><p>Consulta la equipación, accesorios y diseños de referencia del club.</p><a href="/tienda/" class="text-link">Entrar en la tienda <span aria-hidden="true">→</span></a></div>
           <div class="fan-panel" role="tabpanel" id="fan-panel-social" aria-labelledby="fan-tab-social" hidden><strong>El partido continúa fuera del campo</strong><p>Resultados, imágenes y novedades en el Instagram oficial del equipo.</p><a href="#redes" class="text-link">Ver redes oficiales <span aria-hidden="true">→</span></a></div>
         </div>
@@ -239,7 +228,7 @@
           <p class="eyebrow">Redes sociales</p>
           <h2>Sigue al Malibú FC</h2>
         </div>
-        <p>Actualidad, imágenes y próximos contenidos del club. El canal de YouTube de Malibú FC se activará cuando se cree y confirme su URL oficial.</p>
+        <p>Actualidad, imágenes, partidos completos y clips del Malibú FC.</p>
       </div>
       <div class="container">
         <div id="social-grid" class="social-grid"></div>

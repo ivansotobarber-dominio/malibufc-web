@@ -33,7 +33,7 @@ Aportado y autorizado por Iván el 2026-07-30:
 
 Continúa pendiente:
 
-0. **Arranque de liga:** Iván confirma que la liga comienza la próxima semana, tomando como referencia operativa la semana del 14 al 20 de septiembre de 2026. Falta recibir el calendario oficial de cada equipo para publicar fechas, horas, rivales y campos.
+0. **Jornada del 14 al 20 de septiembre de 2026:** resultados confirmados por Iván: Malibú Hacendado 3–1 Porto Restaurante Altagay y Malibú FC 11–1 Mil Leches. Siguen pendientes los números oficiales de jornada y la condición local o visitante.
 
 1. Confirmar si el favicon debe diferenciarse del escudo; mientras tanto se utiliza una versión derivada.
 2. Identificar autor y fecha aproximada de cada fotografía para completar el archivo histórico.
@@ -42,7 +42,7 @@ Continúa pendiente:
 5. Desarrollar la historia del equipo con orígenes, cronología, temporadas, hitos y fuentes verificables.
 6. Confirmar vigencia contractual y condiciones de uso de los cuatro patrocinios, sin pendiente de asignación de equipación.
 7. **Plantilla parcialmente publicada (2026-09-11):** se muestran 18 nombres públicos con dorsal y posición, sin fotografía ni asignación a equipo. Quedan pendientes fotografías y permisos de imagen individualizados. Andoni Soto figura como entrenador jugador con dorsal 21, según confirmación de Iván.
-8. **Calendario parcialmente confirmado (2026-09-11):** Malibú Hacendado juega el lunes 14 de septiembre a las 20:30 en Santa María del Mar contra Porto Restaurante Altagay; Malibú FC juega el jueves 17 de septiembre a las 20:30 en Las Delicias contra Mil Leches. Falta confirmar jornada, condición local o visitante y estado de cada partido.
+8. **Jornada parcialmente confirmada (2026-09-18):** Malibú Hacendado ganó 3–1 a Porto Restaurante Altagay el lunes 14 de septiembre a las 20:30 en Santa María del Mar; Malibú FC ganó 11–1 a Mil Leches el jueves 17 de septiembre a las 20:30 en Las Delicias. Faltan el número oficial de jornada y la condición local o visitante. No se han aportado asistencias del partido de Segunda.
 9. Definir si las entradas gratuitas serán solo informativas o requerirán una reserva, límite de aforo, identificación y confirmación.
 
 ### Contacto
