@@ -159,7 +159,19 @@ window.MALIBU_CONFIG = {
         home: "Atco. Platense F7 Senior+",
         away: "Malibú Hacendado",
         venue: "Las Chumberas",
-        statusLabel: "Próximo",
+        resultLabel: "2–4",
+        statusLabel: "Final",
+        report: {
+          title: "Fele marca dos en una derrota de mucho nivel",
+          text: "Malibú Hacendado cayó 4–2 ante el Atco. Platense F7 Senior+, campeón histórico, en un partido competido y de buenas sensaciones. Fele firmó los dos goles del Malibú. Marcos cuajó una actuación espectacular, reconocida como la del mejor jugador de la liga, y Bruno fue infranqueable bajo palos.",
+          awards: [
+            { label: "El goleador", player: "Fele", detail: "Doblete ante el Platense." },
+            { label: "El crack", player: "Marcos", detail: "Actuación espectacular, mejor jugador de la liga." },
+            { label: "El portero", player: "Bruno", detail: "Infranqueable bajo palos." }
+          ]
+        },
+        reportId: "cronica-jornada-4",
+        reportAnchor: "/#cronica-jornada-4",
         ticketPrice: "0 €",
         ticketEnabled: false
       },
@@ -377,21 +389,21 @@ window.MALIBU_CONFIG = {
         id: "2026-27",
         label: "2026/27",
         competition: "Torneo Apertura · Liga de la Amistad",
-        status: "Parcial, dos partidos registrados",
+        status: "Parcial, tres partidos registrados",
         team: "Malibú Hacendado",
-        matches: 2,
+        matches: 3,
         wins: 2,
         draws: 0,
-        losses: 0,
-        goalsFor: 8,
-        goalsAgainst: 4,
+        losses: 1,
+        goalsFor: 10,
+        goalsAgainst: 8,
         playerLeaders: [
           { name: "Fer Rizo", goals: 3, assists: null },
           { name: "Pitu", goals: 2, assists: 0 },
-          { name: "Fele", goals: 2, assists: 1 },
+          { name: "Fele", goals: 4, assists: 1 },
           { name: "Javi Pérez de la Rosa", goals: 1, assists: null }
         ],
-        note: "Registro parcial confirmado tras Malibú Hacendado 5–3 Canary Island F7. Las asistencias del segundo partido no se han proporcionado y quedan sin dato."
+        note: "Registro parcial confirmado tras Malibú Hacendado 2–4 Atco. Platense F7 Senior+. Las asistencias de los partidos segundo y tercero no se han proporcionado y quedan sin dato."
       },
       {
         id: "2026-27-malibu-fc",
