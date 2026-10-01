@@ -409,7 +409,8 @@
   if (socialGrid) {
     const socialItems = [
       { name: "Instagram", detail: "@malibufc__", url: config.instagramUrl },
-      { name: "YouTube", detail: config.youtubeUrl ? "Canal oficial" : (config.youtubeLabel || "Canal pendiente de crear"), url: config.youtubeUrl }
+      { name: "YouTube", detail: config.youtubeUrl ? "Canal oficial" : (config.youtubeLabel || "Canal pendiente de crear"), url: config.youtubeUrl },
+      { name: "Veo", detail: config.veoUrl ? (config.veoLabel || "Archivo de partidos") : "Grabaciones pendientes", url: config.veoUrl }
     ];
 
     socialItems.forEach((item) => {

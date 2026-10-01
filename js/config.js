@@ -18,6 +18,8 @@ window.MALIBU_CONFIG = {
   instagramUrl: "https://www.instagram.com/malibufc__/?hl=es",
   youtubeUrl: "https://www.youtube.com/@malibufc_tenerife",
   youtubeLabel: "Canal oficial Malibú FC",
+  veoUrl: "https://app.veo.co/clubs/malibu-fc/teams/malibu-fc/recordings/",
+  veoLabel: "Archivo de partidos en Veo",
   email: "info@malibufc.es",
 
   competition: {
