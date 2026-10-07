@@ -344,6 +344,7 @@ h2 { font-weight: 950; text-transform: uppercase; letter-spacing: -.045em; }
 .season-stat-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .season-stat-heading h2 { margin: 0; font-family: var(--display); font-size: clamp(2.4rem, 6vw, 4.5rem); text-transform: uppercase; }
 .season-stat-meta { margin: 4px 0 28px; color: var(--muted); font-weight: 800; }
+.season-stat-source { display: inline-block; margin: -12px 0 24px; color: var(--navy); font-weight: 900; text-decoration: underline; text-underline-offset: 3px; }
 .season-stat-metrics { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
 .season-stat-metrics > div { padding: 18px 12px; background: var(--navy); color: white; text-align: center; }
 .season-stat-metrics strong { display: block; color: var(--gold); font: 900 2.4rem/1 var(--display); }

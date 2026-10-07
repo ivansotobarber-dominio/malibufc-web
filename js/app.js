@@ -604,6 +604,12 @@
         const meta = document.createElement("p");
         meta.className = "season-stat-meta";
         meta.textContent = `${text(season.team, "Malibú FC")} · ${text(season.competition, "Competición pendiente")}`;
+        const sourceLink = document.createElement("a");
+        sourceLink.className = "season-stat-source";
+        sourceLink.href = text(season.sourceUrl, "#");
+        sourceLink.textContent = text(season.sourceLabel, "Fuente oficial");
+        sourceLink.target = "_blank";
+        sourceLink.rel = "noopener noreferrer";
         const metrics = document.createElement("div");
         metrics.className = "season-stat-metrics";
         [["Partidos", season.matches], ["Victorias", season.wins], ["Empates", season.draws], ["Derrotas", season.losses], ["Goles a favor", season.goalsFor], ["Goles en contra", season.goalsAgainst]].forEach(([label, value]) => {
@@ -636,7 +642,7 @@
         const note = document.createElement("p");
         note.className = "season-stat-note";
         note.textContent = text(season.note);
-        article.append(heading, meta, metrics, leaders, note);
+        article.append(heading, meta, sourceLink, metrics, leaders, note);
         statsRoot.appendChild(article);
       });
     }
