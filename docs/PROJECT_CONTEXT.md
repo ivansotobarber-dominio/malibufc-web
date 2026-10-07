@@ -1,6 +1,6 @@
 # Contexto del proyecto Malibú FC
 
-Fecha de consolidación: 2026-07-30.
+Fecha de consolidación: 2026-10-07.
 
 ## Función de este documento
 
@@ -16,7 +16,7 @@ La primera versión debe permitir presentar el club y, cuando exista informació
 
 La web no formaliza automáticamente la venta, no almacena pedidos y no publica datos de pago. El seguimiento de pedidos y los datos personales deben mantenerse fuera del repositorio, en un entorno restringido.
 
-El primer equipo se denomina públicamente «Malibú Hacendado» y el otro equipo se identifica como «Malibú FC». Ambos utilizan las mismas equipaciones y el mismo catálogo de productos. Los patrocinadores confirmados de la primera equipación son Giroenviro y La Laguna Gran Hotel. Los patrocinadores confirmados de la segunda equipación son Alianza BIM y Envite Canario. Peakland permanece como colaborador. El correo oficial de contacto es `info@malibufc.es`. El canal social oficial confirmado es Instagram, en `https://www.instagram.com/malibufc__/?hl=es`; el espacio de YouTube se mostrará como «en construcción» hasta disponer de una URL oficial. El equipo juega en la Liga de la Amistad y se enlazan su web, Instagram y Facebook oficiales desde la portada. La web pública incorpora una estructura profesional para plantilla, calendario y entradas gratuitas; mientras falten datos autorizados, la plantilla permanecerá en preparación y las entradas se identificarán expresamente como demostración sin reserva real.
+El primer equipo se denomina públicamente «Malibú Hacendado» y el otro equipo se identifica como «Malibú FC». Ambos utilizan las mismas equipaciones y el mismo catálogo de productos. Los patrocinadores confirmados de la primera equipación son Giroenviro y La Laguna Gran Hotel. Los patrocinadores confirmados de la segunda equipación son Alianza BIM y Envite Canario. Peakland permanece como colaborador. El correo oficial de contacto es `info@malibufc.es`. Los canales confirmados son Instagram, en `https://www.instagram.com/malibufc__/?hl=es`, YouTube, en `https://www.youtube.com/@malibufc_tenerife`, y el archivo audiovisual de Veo, en `https://app.veo.co/clubs/malibu-fc/teams/malibu-fc/recordings/`. El equipo compite en MyGol dentro de `TORNEO - SENIOR + 1ª DIVISIÓN` como MALIBU HACENDADO, torneo 208, y `TORNEO - SENIOR + 2ª DIVISIÓN \"B\"` como MALIBU FC, torneo 250. El equipo juega en la Liga de la Amistad y se enlazan su web, Instagram y Facebook oficiales desde la portada. La web pública incorpora una estructura profesional para plantilla, calendario y entradas gratuitas; mientras falten datos autorizados, la plantilla permanecerá en preparación y las entradas se identificarán expresamente como demostración sin reserva real.
 
 ## Decisiones confirmadas
 
@@ -49,6 +49,8 @@ GitHub alojará el código y GitHub Pages servirá los archivos estáticos desde
 Cada producto con `orderEnabled: true` podrá abrir WhatsApp con un mensaje asociado. El club deberá confirmar disponibilidad, características, importe, plazo y entrega antes de facilitar los datos de Bizum por privado.
 
 ## Sistema interno de control deportivo
+
+MyGol es la fuente externa de verificación de competición para calendario, resultados, clasificación y estadísticas públicas. En la consulta del 2026-10-07, MyGol confirmó cuatro partidos, tres victorias, una derrota y balance 13–8 para Malibú Hacendado, y tres partidos, dos victorias, una derrota y balance 21–7 para Malibú FC. Las crónicas y reconocimientos editoriales pueden incorporar información aportada por Iván, pero los marcadores y calendarios deben contrastarse con MyGol cuando estén publicados.
 
 El club dispone de una hoja privada de Google Sheets como fuente operativa confirmada para plantilla, eventos, disponibilidad, convocatorias y asistencia. El Excel local asociado es una referencia privada y queda excluido del repositorio.
 
