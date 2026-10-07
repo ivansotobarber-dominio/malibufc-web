@@ -149,7 +149,19 @@ window.MALIBU_CONFIG = {
         home: "Racayo Santa Grow F7",
         away: "Malibú FC",
         venue: "Las Delicias II",
-        statusLabel: "Próximo",
+        resultLabel: "6–4",
+        statusLabel: "Final",
+        report: {
+          title: "Dani Martín lideró un partido de aprendizaje",
+          text: "Malibú FC cayó 6–4 ante un Racayo Santa Grow F7 muy férreo. La falta de compenetración, propia de las primeras jornadas y de un partido con muchos debuts, marcó el desarrollo del encuentro. Dani Martín firmó un doblete, y también marcaron Lemai y Ale Cartaya.",
+          awards: [
+            { label: "El crack", player: "Dani Chamo", detail: "Tiró del carro durante todo el partido." },
+            { label: "El goleador", player: "Dani Martín", detail: "Doblete y presencia constante en ataque." },
+            { label: "El debut", player: "Carlos González", detail: "Primer partido en la portería del Malibú FC." }
+          ]
+        },
+        reportId: "cronica-jornada-5",
+        reportAnchor: "/#cronica-jornada-5",
         ticketPrice: "0 €",
         ticketEnabled: false
       },
@@ -185,7 +197,19 @@ window.MALIBU_CONFIG = {
         home: "Malibú FC",
         away: "C.D. Cafetería Los Alfonso",
         venue: "El Tablero II",
-        statusLabel: "Próximo",
+        resultLabel: "6–0",
+        statusLabel: "Final",
+        report: {
+          title: "Dominio aplastante y resultado corto",
+          text: "Malibú FC dominó de principio a fin a C.D. Cafetería Los Alfonso y cerró la jornada con un 6–0 que incluso se quedó corto. Alberto marcó dos goles, Dani Fele otros dos, y completaron el marcador Martín y Gimeno.",
+          awards: [
+            { label: "El crack", player: "Alberto", detail: "Imparable en todas las acciones." },
+            { label: "El goleador", player: "Martín", detail: "Galopada y llegada por banda para marcar." },
+            { label: "La batuta", player: "Gimeno", detail: "Dirigió el juego del equipo." }
+          ]
+        },
+        reportId: "cronica-jornada-6",
+        reportAnchor: "/#cronica-jornada-6",
         ticketPrice: "0 €",
         ticketEnabled: false
       },
@@ -197,7 +221,19 @@ window.MALIBU_CONFIG = {
         home: "Malibú Hacendado",
         away: "Bayer De Los Caídos F7",
         venue: "Montaña Pacho VI",
-        statusLabel: "Próximo",
+        resultLabel: "3–0",
+        statusLabel: "Final",
+        report: {
+          title: "Bruno cerró la portería y Fer abrió el camino",
+          text: "Malibú Hacendado venció 3–0 a Bayer de Los Caídos F7 en un partido ante un rival muy sólido que apenas generó peligro. Marcaron Dani Fele, Rubén Pitu y Fer Rizo.",
+          awards: [
+            { label: "El crack", player: "Bruno", detail: "Infranqueable y con la portería a cero." },
+            { label: "El goleador", player: "Fer Rizo", detail: "Golazo para abrir la lata." },
+            { label: "El omnipresente", player: "Javi Pérez de la Rosa", detail: "Presencia constante en todas las zonas del campo." }
+          ]
+        },
+        reportId: "cronica-jornada-7",
+        reportAnchor: "/#cronica-jornada-7",
         ticketPrice: "0 €",
         ticketEnabled: false
       },
@@ -391,41 +427,46 @@ window.MALIBU_CONFIG = {
         id: "2026-27",
         label: "2026/27",
         competition: "Torneo Apertura · Liga de la Amistad",
-        status: "Parcial, tres partidos registrados",
+        status: "Parcial, cuatro partidos registrados",
         team: "Malibú Hacendado",
-        matches: 3,
-        wins: 2,
+        matches: 4,
+        wins: 3,
         draws: 0,
         losses: 1,
-        goalsFor: 10,
+        goalsFor: 13,
         goalsAgainst: 8,
         playerLeaders: [
-          { name: "Fer Rizo", goals: 3, assists: null },
-          { name: "Pitu", goals: 2, assists: 0 },
-          { name: "Fele", goals: 4, assists: 1 },
+          { name: "Fer Rizo", goals: 4, assists: null },
+          { name: "Fele", goals: 5, assists: 1 },
+          { name: "Pitu", goals: 3, assists: 0 },
           { name: "Javi Pérez de la Rosa", goals: 1, assists: null }
         ],
-        note: "Registro parcial confirmado tras Malibú Hacendado 2–4 Atco. Platense F7 Senior+. Las asistencias de los partidos segundo y tercero no se han proporcionado y quedan sin dato."
+        note: "Registro parcial confirmado tras Malibú Hacendado 3–0 Bayer de Los Caídos F7. No se han proporcionado asistencias adicionales y quedan sin dato."
       },
       {
         id: "2026-27-malibu-fc",
         label: "2026/27",
         competition: "Torneo Apertura · Liga de la Amistad",
-        status: "Parcial, un partido registrado",
+        status: "Parcial, tres partidos registrados",
         team: "Malibú FC",
-        matches: 1,
+        matches: 3,
         wins: 1,
         draws: 0,
-        losses: 0,
-        goalsFor: 11,
-        goalsAgainst: 1,
+        losses: 2,
+        goalsFor: 21,
+        goalsAgainst: 7,
         playerLeaders: [
-          { name: "Fele", goals: 5, assists: null },
+          { name: "Fele", goals: 7, assists: null },
           { name: "Fer Rizo", goals: 3, assists: null },
           { name: "Rubén (Pitu)", goals: 2, assists: null },
-          { name: "Gimeno", goals: 1, assists: null }
+          { name: "Gimeno", goals: 2, assists: null },
+          { name: "Dani Martín", goals: 2, assists: null },
+          { name: "Alber", goals: 2, assists: null },
+          { name: "Martín Álamo", goals: 1, assists: null },
+          { name: "Lemai", goals: 1, assists: null },
+          { name: "Ale Cartaya", goals: 1, assists: null }
         ],
-        note: "Registro parcial confirmado tras Malibú FC 11–1 Mil Leches. Las asistencias de este partido no se han proporcionado y quedan sin dato."
+        note: "Registro parcial confirmado tras Malibú FC 6–0 C.D. Cafetería Los Alfonso. No se han proporcionado asistencias y quedan sin dato."
       }
     ]
   },

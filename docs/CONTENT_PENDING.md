@@ -33,6 +33,13 @@ Aportado y autorizado por Iván el 2026-07-30:
 
 Continúa pendiente:
 
+### Resultados deportivos confirmados el 2026-10-07
+
+- Malibú FC 4–6 Racayo Santa Grow F7, 24 de septiembre, Las Delicias II. Goles de Lemai, Ale Cartaya y Dani Martín x2. Dani Chamo fue el crack y Carlos González debutó en la portería.
+- Malibú FC 6–0 C.D. Cafetería Los Alfonso, 1 de octubre, El Tablero II. Goles de Alber x2, Martín, Gimeno y Dani Fele x2. Alberto fue el crack y Gimeno dirigió el juego.
+- Malibú Hacendado 3–0 Bayer de Los Caídos F7, 5 de octubre, Montaña Pacho VI. Goles de Dani Fele, Rubén Pitu y Fer Rizo. Bruno fue el crack y Javi Pérez de la Rosa destacó por su omnipresencia.
+- Las asistencias, número oficial de jornada y condición local o visitante no aportados quedan sin dato.
+
 0. **Jornada del 14 al 20 de septiembre de 2026:** resultados confirmados por Iván: Malibú Hacendado 3–1 Porto Restaurante Altagay y Malibú FC 11–1 Mil Leches. Siguen pendientes los números oficiales de jornada y la condición local o visitante.
 
 1. Confirmar si el favicon debe diferenciarse del escudo; mientras tanto se utiliza una versión derivada.
@@ -42,7 +49,7 @@ Continúa pendiente:
 5. Desarrollar la historia del equipo con orígenes, cronología, temporadas, hitos y fuentes verificables.
 6. Confirmar vigencia contractual y condiciones de uso de los cuatro patrocinios, sin pendiente de asignación de equipación.
 7. **Plantilla parcialmente publicada (2026-09-11):** se muestran 18 nombres públicos con dorsal y posición, sin fotografía ni asignación a equipo. Quedan pendientes fotografías y permisos de imagen individualizados. Andoni Soto figura como entrenador jugador con dorsal 21, según confirmación de Iván.
-8. **Jornada parcialmente confirmada (2026-09-18):** Malibú Hacendado ganó 3–1 a Porto Restaurante Altagay el lunes 14 de septiembre a las 20:30 en Santa María del Mar; Malibú FC ganó 11–1 a Mil Leches el jueves 17 de septiembre a las 20:30 en Las Delicias. Faltan el número oficial de jornada y la condición local o visitante. No se han aportado asistencias del partido de Segunda.
+8. **Jornada inicial parcialmente confirmada (2026-09-18):** Malibú Hacendado ganó 3–1 a Porto Restaurante Altagay el lunes 14 de septiembre a las 20:30 en Santa María del Mar; Malibú FC ganó 11–1 a Mil Leches el jueves 17 de septiembre a las 20:30 en Las Delicias. Faltan el número oficial de jornada y la condición local o visitante. No se han aportado asistencias del partido de Segunda.
 9. Definir si las entradas gratuitas serán solo informativas o requerirán una reserva, límite de aforo, identificación y confirmación.
 
 ### Contacto
