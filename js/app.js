@@ -24,6 +24,59 @@
     document.body.prepend(status);
   }
 
+  const hero = $(".hero");
+  const heroInteraction = $(".hero-interaction");
+  const prefersReducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+  const finePointer = window.matchMedia?.("(pointer: fine)").matches;
+  if (hero && heroInteraction && !prefersReducedMotion && finePointer) {
+    const ball = $(".hero-ball", heroInteraction);
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    let active = false;
+    let frame = 0;
+    let lastRipple = 0;
+
+    const animateBall = () => {
+      currentX += (targetX - currentX) * .18;
+      currentY += (targetY - currentY) * .18;
+      ball.style.transform = `translate3d(${currentX - 22}px, ${currentY - 22}px, 0) rotate(${currentX * .08}deg)`;
+      if (active || Math.abs(targetX - currentX) > .5 || Math.abs(targetY - currentY) > .5) {
+        frame = window.requestAnimationFrame(animateBall);
+      } else {
+        frame = 0;
+      }
+    };
+
+    hero.addEventListener("pointermove", (event) => {
+      const bounds = hero.getBoundingClientRect();
+      targetX = event.clientX - bounds.left;
+      targetY = event.clientY - bounds.top;
+      heroInteraction.style.setProperty("--trail-x", `${targetX}px`);
+      heroInteraction.style.setProperty("--trail-y", `${targetY}px`);
+      heroInteraction.classList.add("is-active");
+      active = true;
+      if (!frame) frame = window.requestAnimationFrame(animateBall);
+
+      const now = performance.now();
+      if (now - lastRipple > 85) {
+        lastRipple = now;
+        const ripple = document.createElement("span");
+        ripple.className = "hero-ripple";
+        ripple.style.left = `${targetX}px`;
+        ripple.style.top = `${targetY}px`;
+        heroInteraction.appendChild(ripple);
+        window.setTimeout(() => ripple.remove(), 850);
+      }
+    });
+
+    hero.addEventListener("pointerleave", () => {
+      active = false;
+      heroInteraction.classList.remove("is-active");
+    });
+  }
+
   const cleanPhone = text(config.whatsappNumber).replace(/\D/g, "");
   const hasWhatsApp = cleanPhone.length >= 7 && cleanPhone.length <= 15;
 
