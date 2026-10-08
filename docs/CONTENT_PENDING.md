@@ -20,6 +20,7 @@ Aportado y autorizado por Iván el 2026-07-30:
 - Catálogo previsto: segunda equipación negra con letras blancas, bufanda, chaqueta retro, chándal, mochila, brazalete, llavero y pizarra táctica personalizada.
 - Imágenes de referencia de segunda equipación, chaqueta retro, mochila, bufanda, chándal, llavero y pizarra táctica, aportadas el 2026-07-31.
 - Autorización expresa para publicar los archivos aportados en la web oficial.
+- Nuevas fotos de alineación de Malibú FC y Malibú Hacendado, junto con la presentación de equipaciones 2026/27, aportadas y autorizadas para publicar el 2026-10-08.
 - Primer equipo: nombre público confirmado, Malibú Hacendado.
 - Equipaciones: son las mismas para Malibú Hacendado y Malibú FC.
 - Patrocinadores de la segunda equipación confirmados: Alianza BIM y Envite Canario.
@@ -48,7 +49,7 @@ Continúa pendiente:
 4. Aportar un texto institucional breve del club.
 5. Desarrollar la historia del equipo con orígenes, cronología, temporadas, hitos y fuentes verificables.
 6. Confirmar vigencia contractual y condiciones de uso de los cuatro patrocinios, sin pendiente de asignación de equipación.
-7. **Plantilla parcialmente publicada (2026-09-11):** se muestran 18 nombres públicos con dorsal y posición, sin fotografía ni asignación a equipo. Quedan pendientes fotografías y permisos de imagen individualizados. Andoni Soto figura como entrenador jugador con dorsal 21, según confirmación de Iván.
+7. **Plantilla publicada (2026-10-08):** se muestran los nombres públicos con dorsal y posición, sin fotografía ni asignación a equipo. Quedan pendientes fotografías y permisos de imagen individualizados. Andoni Soto figura como entrenador jugador con dorsal 21 y Carlos Gonzalez Vilar se incorpora como portero con dorsal 13, según MyGol y confirmación de Iván.
 8. **Jornada inicial parcialmente confirmada (2026-09-18):** Malibú Hacendado ganó 3–1 a Porto Restaurante Altagay el lunes 14 de septiembre a las 20:30 en Santa María del Mar; Malibú FC ganó 11–1 a Mil Leches el jueves 17 de septiembre a las 20:30 en Las Delicias. Faltan el número oficial de jornada y la condición local o visitante. No se han aportado asistencias del partido de Segunda.
 9. Definir si las entradas gratuitas serán solo informativas o requerirán una reserva, límite de aforo, identificación y confirmación.
 

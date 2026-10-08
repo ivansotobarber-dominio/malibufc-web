@@ -58,6 +58,7 @@ window.MALIBU_CONFIG = {
       { name: "Ivan Soto Barber", number: "28", position: "Centrocampista", published: true },
       { name: "Daniel Fernández de León", number: "30", position: "Delantero", published: true },
       { name: "Pedro Planelles Díaz", number: "31", position: "Portero", published: true },
+      { name: "Carlos Gonzalez Vilar", number: "13", position: "Portero", published: true },
       { name: "Agustín Ruiz Ortega", number: "33", position: "Defensa", published: true },
       { name: "Daniel Jesús Rodríguez Suárez", number: "44", position: "Defensa", published: true },
       { name: "Martín Javier Alamo Gonzalez", number: "66", position: "Defensa", published: true },

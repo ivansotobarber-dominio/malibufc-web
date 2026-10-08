@@ -331,6 +331,8 @@ h2 { font-weight: 950; text-transform: uppercase; letter-spacing: -.045em; }
 .match-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 24px; color: var(--muted); background: #f5f4ef; }
 .match-report-link { display: block; margin: 0 24px 20px; color: var(--navy); font-weight: 900; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 .matchday-report-link { display: inline-block; margin-top: 8px; color: var(--gold); font-weight: 900; text-decoration: none; }
+.matchday-fixture-tag { display: inline-block; margin-bottom: 10px; color: var(--gold); font-size: .72rem; font-weight: 950; letter-spacing: .08em; text-transform: uppercase; }
+.matchday-fixture[data-status="next"] .matchday-fixture-tag { color: var(--navy); }
 .latest-news-section { background: #f5f4ef; }
 .latest-news-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
 .latest-match-news { display: contents; }

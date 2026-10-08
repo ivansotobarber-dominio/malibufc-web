@@ -9,6 +9,9 @@ Fecha: 2026-09-17.
 | Foto de equipo | `assets/images/equipo/equipo-malibu-fc.webp` | Confirmado | Galería pública |
 | Foto de equipo en campo | `assets/images/equipo/equipo-malibu-fc-campo.webp` | Confirmado | Galería pública |
 | Cartel ascenso | `assets/images/equipo/ascenso-clausura-2026.webp` | Autorizado como imagen | No convierte el hito en canon sin validación |
+| Presentación de equipaciones 2026/27 | `assets/images/equipo/temporada-2026-27/presentacion-equipaciones-2026-27.png` | Aportada y solicitada para publicación por Iván el 2026-10-08 | Galería pública y comunicación de temporada |
+| Alineación Malibú FC, 2026-10-08 | `assets/images/equipo/temporada-2026-27/alineacion-malibu-fc-2026-10-08.jpg` | Aportada y solicitada para publicación por Iván el 2026-10-08 | Galería pública |
+| Alineación Malibú Hacendado, 2026-10-08 | `assets/images/equipo/temporada-2026-27/alineacion-malibu-hacendado-2026-10-08.jpg` | Aportada y solicitada para publicación por Iván el 2026-10-08 | Galería pública |
 | Primera equipación | `assets/images/productos/equipacion-oficial-malibu-fc.webp` | Referencia autorizada | Catálogo, sin activar venta |
 | Segunda equipación | `assets/images/productos/segunda-equipacion-malibu-fc.webp` | Referencia autorizada | Catálogo, sin activar venta |
 | Accesorios y prendas | `assets/images/productos/` | Referencias autorizadas | Catálogo, etiquetadas como diseño de referencia |

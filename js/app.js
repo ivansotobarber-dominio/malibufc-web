@@ -480,17 +480,36 @@
   const matchday = matchdays[0];
   const matchdayFixtures = $("#matchday-fixtures");
   if (matchdayFixtures && matchdays.length) {
+    const clubTeams = ["Malibú Hacendado", "Malibú FC"];
+    const eventBelongsTo = (event, team) => [event.home, event.away]
+      .some((value) => text(value).trim().toLowerCase() === team.toLowerCase());
+    const latestByTeam = clubTeams
+      .map((team) => matchdays
+        .filter((event) => event.statusLabel === "Final" && eventBelongsTo(event, team))
+        .sort((a, b) => new Date(b.dateISO || 0) - new Date(a.dateISO || 0))[0])
+      .filter(Boolean);
+    const nextByTeam = clubTeams
+      .map((team) => matchdays
+        .filter((event) => event.statusLabel !== "Final" && eventBelongsTo(event, team))
+        .sort((a, b) => new Date(a.dateISO || 0) - new Date(b.dateISO || 0))[0])
+      .filter(Boolean);
+    const homepageMatchdays = [...latestByTeam, ...nextByTeam];
     const fixtureCopy = (event) => event.resultLabel
       ? `${text(event.home, "Malibú FC")} ${text(event.resultLabel)} ${text(event.away, "Rival por confirmar")}`
       : `${text(event.home, "Malibú FC")} vs ${text(event.away, "Rival por confirmar")}`;
     matchdayFixtures.replaceChildren();
-    matchdays.forEach((event) => {
+    homepageMatchdays.forEach((event) => {
       const card = document.createElement("article");
       card.className = "matchday-fixture";
+      card.dataset.status = event.statusLabel === "Final" ? "final" : "next";
       const team = document.createElement("strong");
       team.textContent = text(event.home, "Malibú FC");
       const opponent = document.createElement("span");
       opponent.textContent = `vs ${text(event.away, "Rival por confirmar")}`;
+      const tag = document.createElement("small");
+      tag.className = "matchday-fixture-tag";
+      tag.textContent = event.statusLabel === "Final" ? "Último partido" : "Próximo partido";
+      card.appendChild(tag);
       if (event.resultLabel) {
         const score = document.createElement("span");
         score.className = "matchday-score";
@@ -511,7 +530,7 @@
       matchdayFixtures.appendChild(card);
     });
     const fanMatchCopy = $("#fan-match-copy");
-    if (fanMatchCopy) fanMatchCopy.textContent = matchdays.map(fixtureCopy).join(" | ");
+    if (fanMatchCopy) fanMatchCopy.textContent = homepageMatchdays.map(fixtureCopy).join(" | ");
   }
 
   const matchReports = (Array.isArray(config.calendar?.events) ? config.calendar.events : [])
