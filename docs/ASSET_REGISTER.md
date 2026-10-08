@@ -6,8 +6,8 @@ Fecha: 2026-09-17.
 |---|---|---|---|
 | Escudo oficial | `assets/images/club/escudo-malibu-fc.png` | Confirmado | Web pública y favicon derivado |
 | Favicon | `assets/images/club/favicon-malibu-fc.png` | Derivado autorizado | Web pública |
-| Foto de equipo | `assets/images/equipo/equipo-malibu-fc.webp` | Confirmado | Galería pública |
-| Foto de equipo en campo | `assets/images/equipo/equipo-malibu-fc-campo.webp` | Confirmado | Galería pública |
+| Foto de equipo, temporada 2025/26 | `assets/images/equipo/equipo-malibu-fc.webp` | Confirmado | Galería pública, archivo histórico 2025/26 |
+| Foto de equipo en campo, temporada 2025/26 | `assets/images/equipo/equipo-malibu-fc-campo.webp` | Confirmado | Galería pública, archivo histórico 2025/26 |
 | Cartel ascenso | `assets/images/equipo/ascenso-clausura-2026.webp` | Autorizado como imagen | No convierte el hito en canon sin validación |
 | Presentación de equipaciones 2026/27 | `assets/images/equipo/temporada-2026-27/presentacion-equipaciones-2026-27.png` | Aportada y solicitada para publicación por Iván el 2026-10-08 | Galería pública y comunicación de temporada |
 | Alineación Malibú FC, 2026-10-08 | `assets/images/equipo/temporada-2026-27/alineacion-malibu-fc-2026-10-08.jpg` | Aportada y solicitada para publicación por Iván el 2026-10-08 | Galería pública |
