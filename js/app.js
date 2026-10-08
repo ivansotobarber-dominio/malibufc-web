@@ -622,7 +622,7 @@
         heading.append(title, status);
         const meta = document.createElement("p");
         meta.className = "season-stat-meta";
-        meta.textContent = `${text(season.team, "Malibú FC")} · ${text(season.competition, "Competición pendiente")}`;
+        meta.textContent = `${text(season.team, "Malibú FC")} · ${text(season.division, "Categoría pendiente")} · ${text(season.competition, "Competición pendiente")}`;
         const sourceLink = document.createElement("a");
         sourceLink.className = "season-stat-source";
         sourceLink.href = text(season.sourceUrl, "#");

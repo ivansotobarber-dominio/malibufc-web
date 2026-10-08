@@ -10,6 +10,10 @@ window.MALIBU_CONFIG = {
   domain: "",
   firstTeamName: "Malibú Hacendado",
   kitTeams: ["Malibú Hacendado", "Malibú FC"],
+  teams: [
+    { name: "Malibú Hacendado", division: "Senior + Primera División" },
+    { name: "Malibú FC", division: "Senior + Segunda División grupo B" }
+  ],
 
   // Formato internacional, solo números. Ejemplo España: 34600111222
   whatsappNumber: "",
@@ -432,6 +436,7 @@ window.MALIBU_CONFIG = {
         sourceLabel: "Ver ficha oficial en MyGol",
         status: "Parcial, cuatro partidos registrados",
         team: "Malibú Hacendado",
+        division: "Senior + Primera División",
         matches: 4,
         wins: 3,
         draws: 0,
@@ -454,6 +459,7 @@ window.MALIBU_CONFIG = {
         sourceLabel: "Ver ficha oficial en MyGol",
         status: "Parcial, tres partidos registrados",
         team: "Malibú FC",
+        division: "Senior + Segunda División grupo B",
         matches: 3,
         wins: 1,
         draws: 0,
