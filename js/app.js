@@ -682,6 +682,18 @@
         sourceLink.textContent = text(season.sourceLabel, "Fuente oficial");
         sourceLink.target = "_blank";
         sourceLink.rel = "noopener noreferrer";
+        const sourceLinks = document.createElement("div");
+        sourceLinks.className = "season-stat-sources";
+        sourceLinks.appendChild(sourceLink);
+        if (season.teamUrl) {
+          const teamLink = document.createElement("a");
+          teamLink.className = "season-stat-source season-stat-team-link";
+          teamLink.href = text(season.teamUrl);
+          teamLink.textContent = text(season.teamLabel, "Ver ficha del equipo");
+          teamLink.target = "_blank";
+          teamLink.rel = "noopener noreferrer";
+          sourceLinks.appendChild(teamLink);
+        }
         const metrics = document.createElement("div");
         metrics.className = "season-stat-metrics";
         [["Partidos", season.matches], ["Victorias", season.wins], ["Empates", season.draws], ["Derrotas", season.losses], ["Goles a favor", season.goalsFor], ["Goles en contra", season.goalsAgainst]].forEach(([label, value]) => {
@@ -714,7 +726,7 @@
         const note = document.createElement("p");
         note.className = "season-stat-note";
         note.textContent = text(season.note);
-        article.append(heading, meta, sourceLink, metrics, leaders, note);
+        article.append(heading, meta, sourceLinks, metrics, leaders, note);
         statsRoot.appendChild(article);
       });
     }
