@@ -39,6 +39,7 @@ Continúa pendiente:
 - Malibú FC 4–6 Racayo Santa Grow F7, 24 de septiembre, Las Delicias II. Goles de Lemai, Ale Cartaya y Dani Martín x2. Dani Chamo fue el crack y Carlos González debutó en la portería.
 - Malibú FC 6–0 C.D. Cafetería Los Alfonso, 1 de octubre, El Tablero II. Goles de Alber x2, Martín, Gimeno y Dani Fele x2. Alberto fue el crack y Gimeno dirigió el juego.
 - Malibú Hacendado 3–0 Bayer de Los Caídos F7, 5 de octubre, Montaña Pacho VI. Goles de Dani Fele, Rubén Pitu y Fer Rizo. Bruno fue el crack y Javi Pérez de la Rosa destacó por su omnipresencia.
+- Malibú FC 1–1 Candelaria KI, 8 de octubre, El Tablero II. Gol de Fer Rizo. Lemai fue el crack y Víctor del Portillo debutó con el dorsal 10, llegado desde Colombia para este partido.
 - Las asistencias, número oficial de jornada y condición local o visitante no aportados quedan sin dato.
 
 0. **Jornada del 14 al 20 de septiembre de 2026:** resultados confirmados por Iván: Malibú Hacendado 3–1 Porto Restaurante Altagay y Malibú FC 11–1 Mil Leches. Siguen pendientes los números oficiales de jornada y la condición local o visitante.
