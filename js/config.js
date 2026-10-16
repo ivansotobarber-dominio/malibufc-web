@@ -474,15 +474,15 @@ window.MALIBU_CONFIG = {
         sourceLabel: "Ver clasificación en MyGol",
         teamUrl: "https://futbol7amistad.mygol.es/tournaments/250/teams/3604",
         teamLabel: "Ver ficha del equipo",
-        status: "Parcial, cuatro partidos registrados",
+        status: "Parcial, cinco partidos registrados",
         team: "Malibú FC",
         division: "Senior + Segunda División grupo B",
-        matches: 4,
-        wins: 2,
+        matches: 5,
+        wins: 3,
         draws: 1,
         losses: 1,
-        goalsFor: 22,
-        goalsAgainst: 8,
+        goalsFor: 27,
+        goalsAgainst: 11,
         playerLeaders: [
           { name: "Fele", goals: 7, assists: null },
           { name: "Fer Rizo", goals: 4, assists: null },
@@ -494,7 +494,7 @@ window.MALIBU_CONFIG = {
           { name: "Lemai", goals: 1, assists: null },
           { name: "Ale Cartaya", goals: 1, assists: null }
         ],
-        note: "Registro parcial confirmado tras Malibú FC 6–0 C.D. Cafetería Los Alfonso. No se han proporcionado asistencias y quedan sin dato."
+        note: "Registro parcial confirmado tras Malibú FC 5–3 Txema F7. No se han proporcionado goleadores ni asistencias de este partido y quedan sin dato."
       }
     ]
   },
