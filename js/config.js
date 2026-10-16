@@ -286,7 +286,8 @@ window.MALIBU_CONFIG = {
         home: "Txema F7",
         away: "Malibú FC",
         venue: "Las Delicias II",
-        statusLabel: "Próximo",
+        resultLabel: "3–5",
+        statusLabel: "Final",
         ticketPrice: "0 €",
         ticketEnabled: false
       },
