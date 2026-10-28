@@ -586,6 +586,75 @@
     if (fanMatchCopy) fanMatchCopy.textContent = homepageMatchdays.map(fixtureCopy).join(" | ");
   }
 
+  const clubNews = (Array.isArray(config.news) ? config.news : [])
+    .filter((item) => item.published === true)
+    .sort((a, b) => text(b.dateISO).localeCompare(text(a.dateISO)));
+  const clubNewsList = $("#club-news-list");
+  if (clubNewsList) {
+    clubNews.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "latest-news-card club-news-feature";
+      const imageLink = document.createElement("a");
+      imageLink.href = item.url;
+      imageLink.setAttribute("aria-label", item.title);
+      const image = document.createElement("img");
+      image.src = item.image;
+      image.alt = item.imageAlt;
+      image.width = 1092;
+      image.height = 1441;
+      image.loading = "lazy";
+      imageLink.append(image);
+      const body = document.createElement("div");
+      const date = document.createElement("p");
+      date.className = "eyebrow";
+      date.textContent = `${item.dateLabel} · ${item.category}`;
+      const title = document.createElement("h3");
+      title.textContent = item.title;
+      const summary = document.createElement("p");
+      summary.textContent = item.summary;
+      const link = document.createElement("a");
+      link.className = "text-link";
+      link.href = item.url;
+      link.textContent = "Leer la noticia →";
+      body.append(date, title, summary, link);
+      card.append(imageLink, body);
+      clubNewsList.append(card);
+    });
+  }
+  const newsArticle = $("[data-news-id]");
+  if (newsArticle) {
+    const item = clubNews.find((entry) => entry.id === newsArticle.dataset.newsId);
+    if (item) {
+      $("#news-title", newsArticle).textContent = item.title;
+      $("#news-date", newsArticle).textContent = item.dateLabel;
+      $("#news-date", newsArticle).dateTime = item.dateISO;
+      $("#news-summary", newsArticle).textContent = item.summary;
+      const poster = $("#news-poster", newsArticle);
+      poster.src = item.image;
+      poster.alt = item.imageAlt;
+      $("#news-caption", newsArticle).textContent = item.imageCaption;
+      item.paragraphs.forEach((copy) => {
+        const paragraph = document.createElement("p");
+        paragraph.textContent = copy;
+        $("#news-copy", newsArticle).append(paragraph);
+      });
+      item.players.forEach((player) => {
+        const entry = document.createElement("li");
+        const title = document.createElement("h3");
+        title.textContent = player.name;
+        const position = document.createElement("p");
+        position.className = "eyebrow";
+        position.textContent = player.position;
+        const description = document.createElement("p");
+        description.textContent = player.description;
+        entry.append(position, title, description);
+        $("#news-players", newsArticle).append(entry);
+      });
+      $("#news-closing", newsArticle).textContent = item.closing;
+      $("#news-source", newsArticle).href = item.sourceUrl;
+    }
+  }
+
   const matchReports = (Array.isArray(config.calendar?.events) ? config.calendar.events : [])
     .filter((event) => event.report && event.reportId && event.reportAnchor)
     .sort((a, b) => new Date(b.dateISO || 0) - new Date(a.dateISO || 0));

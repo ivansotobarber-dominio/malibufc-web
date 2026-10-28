@@ -5,6 +5,7 @@ Fecha: 2026-09-17.
 | Asset | Ruta | Estado | Uso autorizado |
 |---|---|---|---|
 | Escudo oficial | `assets/images/club/escudo-malibu-fc.png` | Confirmado | Web pública y favicon derivado |
+| Cartel de primera preselección de Tenerife 2027 | `assets/images/equipo/temporada-2026-27/preseleccion-tenerife-2027.png` | Generado con IA a partir de fotos aportadas por Iván, caras, etiquetas y escudos corregidos; publicación solicitada el 2026-10-28 | Noticia pública y portada. PNG original 1092 × 1441, sin recomprimir. No acredita convocatoria definitiva |
 | Favicon | `assets/images/club/favicon-malibu-fc.png` | Derivado autorizado | Web pública |
 | Foto de equipo, temporada 2025/26 | `assets/images/equipo/equipo-malibu-fc.webp` | Confirmado | Galería pública, archivo histórico 2025/26 |
 | Foto de equipo en campo, temporada 2025/26 | `assets/images/equipo/equipo-malibu-fc-campo.webp` | Confirmado | Galería pública, archivo histórico 2025/26 |

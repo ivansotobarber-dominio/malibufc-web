@@ -34,6 +34,8 @@ El primer equipo se denomina públicamente «Malibú Hacendado» y el otro equip
 
 ## Arquitectura actual
 
+La actualidad editorial adicional a las crónicas se centraliza en `js/config.js`, colección `news`. La noticia del 2026-10-28 sobre Bruno, Fernando Rizo, Rubén Pitu y Daniel Fernández en la primera preselección de Tenerife se publica en `/noticias/preseleccion-tenerife-2027/` y se destaca en «Últimas noticias». Fuente: anuncio del club en `https://www.instagram.com/malibufc__/p/DfDCLoiuvOw/`, leído el 2026-10-28. El anuncio se refiere al Campeonato Nacional AEMF de Fútbol 6 en Valladolid 2027; la convocatoria definitiva está pendiente.
+
 `index.html` contiene la portada y actúa como acceso resumido al ecosistema público. `plantilla/index.html`, `calendario/index.html` y `tienda/index.html` contienen páginas independientes con URL propia. `css/styles.css` y `css/review.css` contienen el sistema visual compartido, los puntos de ruptura responsive y los ajustes de accesibilidad. `js/config.js` contiene los datos operativos. `js/app.js` genera catálogo, alianzas y redes sociales, configura los enlaces de contacto y controla el menú móvil.
 
 `aviso-legal.html`, `privacidad.html` y `condiciones-pedido.html` son borradores. El escudo oficial, el favicon derivado, las fotografías del club y las imágenes de referencia del catálogo están almacenados en `assets/images/` y publicados con autorización expresa de Iván. Los archivos provisionales se conservan temporalmente, pero ya no se utilizan en la portada.

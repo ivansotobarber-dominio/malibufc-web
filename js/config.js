@@ -26,6 +26,35 @@ window.MALIBU_CONFIG = {
   veoLabel: "Archivo de partidos en Veo",
   email: "info@malibufc.es",
 
+  news: [
+    {
+      id: "preseleccion-tenerife-2027",
+      published: true,
+      dateISO: "2026-10-28",
+      dateLabel: "28 de octubre de 2026",
+      category: "Selección de Tenerife",
+      title: "Del Malibú a la preselección de Tenerife",
+      summary: "Bruno, Fer Rizo, Rubén Pitu y Dani Fele entran en la primera preselección de Tenerife para el Campeonato Nacional AEMF de Fútbol 6, previsto en Valladolid en 2027.",
+      url: "/noticias/preseleccion-tenerife-2027/",
+      image: "/assets/images/equipo/temporada-2026-27/preseleccion-tenerife-2027.png",
+      imageAlt: "Cartel del Malibú con Bruno Delgado Mesa, Fernando Rizo Martín, Rubén Pitu y Daniel Fernández, de izquierda a derecha, en la primera preselección de Tenerife.",
+      imageCaption: "Cartel del club elaborado con IA a partir de fotografías de los jugadores.",
+      sourceUrl: "https://www.instagram.com/malibufc__/p/DfDCLoiuvOw/",
+      paragraphs: [
+        "Cuatro jugadores del Malibú han sido incluidos en la primera preselección de Tenerife para el Campeonato Nacional AEMF de Fútbol 6, que se celebrará en Valladolid en 2027, según ha anunciado el club en su Instagram oficial.",
+        "Bruno Delgado Mesa, Fernando Rizo Martín, Rubén Francisco Bretón Acosta (Pitu) y Daniel Fernández de León (Fele) dan este primer paso hacia la selección. Un reconocimiento que llena de orgullo a toda la familia del Malibú y al trabajo que comparten cada jornada.",
+        "Se trata de una primera preselección. La convocatoria definitiva está pendiente y nuestros cuatro jugadores seguirán trabajando para ganarse un sitio y representar a Tenerife en el campeonato."
+      ],
+      players: [
+        { name: "Bruno Delgado Mesa", position: "Portero", description: "El alma del equipo. Seguridad bajo palos y una salida de balón digna de un centrocampista." },
+        { name: "Fernando Rizo Martín", position: "Centrocampista", description: "Calidad omnipresente. Aporta soluciones en todas las facetas del juego y aparece donde el equipo lo necesita." },
+        { name: "Rubén Pitu", position: "Delantero", description: "Nuestro capitán. Calidad, juego asociativo e inteligencia para interpretar cada partido." },
+        { name: "Daniel Fernández de León (Fele)", position: "Delantero", description: "Potencia, regate y gol. Un jugador que se echa el equipo a la espalda cada jornada." }
+      ],
+      closing: "Enhorabuena a los cuatro. Más que un club, una familia."
+    }
+  ],
+
   competition: {
     name: "Liga de la Amistad",
     websiteUrl: "https://futbol7amistad.com/",
