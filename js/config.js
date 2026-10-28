@@ -207,7 +207,7 @@ window.MALIBU_CONFIG = {
         home: "Atco. Platense F7 Senior+",
         away: "Malibú Hacendado",
         venue: "Las Chumberas",
-        resultLabel: "2–4",
+        resultLabel: "4–2",
         statusLabel: "Final",
         report: {
           title: "Fele marca dos en una derrota de mucho nivel",
@@ -276,14 +276,14 @@ window.MALIBU_CONFIG = {
         dateISO: "2026-10-08T21:30:00+01:00",
         dateLabel: "Jueves 8 de octubre · 21:30",
         competition: "Torneo Apertura · Liga de la Amistad",
-        home: "Candelaria KI",
+        home: "Candelaria KL",
         away: "Malibú FC",
         venue: "El Tablero II",
         resultLabel: "1–1",
         statusLabel: "Final",
         report: {
           title: "Fer puso el golazo y Lemai sostuvo el partidazo",
-          text: "Malibú FC empató 1–1 ante Candelaria KI en El Tablero II. Fer Rizo firmó un golazo y Lemai completó un partidazo. El encuentro dejó además el debut de Víctor del Portillo, llegado desde Colombia y con el dorsal 10 para disputar este partido.",
+          text: "Malibú FC empató 1–1 ante Candelaria KL en El Tablero II. Fer Rizo firmó un golazo y Lemai completó un partidazo. El encuentro dejó además el debut de Víctor del Portillo, llegado desde Colombia y con el dorsal 10 para disputar este partido.",
           awards: [
             { label: "El goleador", player: "Fer Rizo", detail: "Golazo para abrir el marcador." },
             { label: "El crack", player: "Lemai", detail: "Partidazo en un encuentro muy competido." },
@@ -303,7 +303,8 @@ window.MALIBU_CONFIG = {
         home: "Kortatu AFC",
         away: "Malibú Hacendado",
         venue: "San Andrés II",
-        statusLabel: "Próximo",
+        resultLabel: "1–7",
+        statusLabel: "Final",
         ticketPrice: "0 €",
         ticketEnabled: false
       },
@@ -328,7 +329,19 @@ window.MALIBU_CONFIG = {
         home: "Malibú Hacendado",
         away: "Tumberos F7",
         venue: "San Andrés I",
-        statusLabel: "Próximo",
+        resultLabel: "2–3",
+        statusLabel: "Final",
+        report: {
+          title: "Dominio sin premio en San Andrés",
+          text: "Malibú Hacendado perdió 2–3 ante Tumberos F7 en San Andrés I. El Malibú dominó todo el partido y generó numerosas ocasiones, pero la falta de acierto le costó una derrota muy dura. El rival convirtió las tres ocasiones que tuvo. Fer Rizo y Daniel Fernández de León marcaron los goles del equipo, con una asistencia de Fer. Ginés completó un partidazo y merece una mención especial.",
+          awards: [
+            { label: "Los goleadores", player: "Fer Rizo · Dani Fele", detail: "Un gol cada uno." },
+            { label: "La asistencia", player: "Fer Rizo", detail: "Una asistencia confirmada." },
+            { label: "Mención especial", player: "Ginés", detail: "Partidazo ante Tumberos." }
+          ]
+        },
+        reportId: "cronica-2026-10-19-tumberos",
+        reportAnchor: "/#cronica-2026-10-19-tumberos",
         ticketPrice: "0 €",
         ticketEnabled: false
       },
@@ -340,25 +353,27 @@ window.MALIBU_CONFIG = {
         home: "Malibú FC",
         away: "Nottingham Prisas F7",
         venue: "Montaña Pacho VI",
-        statusLabel: "Próximo",
+        resultLabel: "2–6",
+        statusLabel: "Final",
         ticketPrice: "0 €",
         ticketEnabled: false
       },
       {
         id: "2026-10-27-malibu-hacendado",
-        dateISO: "2026-10-27T20:30:00+01:00",
+        dateISO: "2026-10-27T20:30:00+00:00",
         dateLabel: "Martes 27 de octubre · 20:30",
         competition: "Torneo Apertura · Liga de la Amistad",
         home: "Malibú Hacendado",
         away: "Maximal Padel F.C. F7",
         venue: "Sta. María I",
-        statusLabel: "Próximo",
+        resultLabel: "5–1",
+        statusLabel: "Final",
         ticketPrice: "0 €",
         ticketEnabled: false
       },
       {
         id: "2026-10-29-malibu-fc",
-        dateISO: "2026-10-29T21:30:00+01:00",
+        dateISO: "2026-10-29T21:30:00+00:00",
         dateLabel: "Jueves 29 de octubre · 21:30",
         competition: "Torneo Apertura · Liga de la Amistad",
         home: "Atalaya F7",
@@ -478,22 +493,22 @@ window.MALIBU_CONFIG = {
         sourceLabel: "Ver clasificación en MyGol",
         teamUrl: "https://futbol7amistad.mygol.es/tournaments/208/teams/3396",
         teamLabel: "Ver ficha del equipo",
-        status: "Parcial, cuatro partidos registrados",
+        status: "Actualizado al 28/10/2026 · siete partidos",
         team: "Malibú Hacendado",
         division: "Senior + Primera División",
-        matches: 4,
-        wins: 3,
+        matches: 7,
+        wins: 5,
         draws: 0,
-        losses: 1,
-        goalsFor: 13,
-        goalsAgainst: 8,
+        losses: 2,
+        goalsFor: 27,
+        goalsAgainst: 13,
         playerLeaders: [
-          { name: "Fer Rizo", goals: 4, assists: null },
-          { name: "Fele", goals: 5, assists: 1 },
+          { name: "Fer Rizo", goals: 5, assists: 1 },
+          { name: "Fele", goals: 6, assists: 1 },
           { name: "Pitu", goals: 3, assists: 0 },
           { name: "Javi Pérez de la Rosa", goals: 1, assists: null }
         ],
-        note: "Registro parcial confirmado tras Malibú Hacendado 3–0 Bayer de Los Caídos F7. No se han proporcionado asistencias adicionales y quedan sin dato."
+        note: "Resultados y balance verificados en MyGol el 28/10/2026, incluido el 5–1 ante Maximal Pádel. Estadísticas individuales parciales: incorporados los goles de Fer Rizo y Fele y la asistencia de Fer ante Tumberos, confirmados por el club. Faltan los goleadores y asistencias ante Kortatu y Maximal; no se estiman datos."
       },
       {
         id: "2026-27-malibu-fc",
@@ -503,15 +518,15 @@ window.MALIBU_CONFIG = {
         sourceLabel: "Ver clasificación en MyGol",
         teamUrl: "https://futbol7amistad.mygol.es/tournaments/250/teams/3604",
         teamLabel: "Ver ficha del equipo",
-        status: "Parcial, cinco partidos registrados",
+        status: "Actualizado al 28/10/2026 · seis partidos",
         team: "Malibú FC",
         division: "Senior + Segunda División grupo B",
-        matches: 5,
+        matches: 6,
         wins: 3,
         draws: 1,
-        losses: 1,
-        goalsFor: 27,
-        goalsAgainst: 11,
+        losses: 2,
+        goalsFor: 29,
+        goalsAgainst: 17,
         playerLeaders: [
           { name: "Fele", goals: 7, assists: null },
           { name: "Fer Rizo", goals: 4, assists: null },
@@ -523,7 +538,7 @@ window.MALIBU_CONFIG = {
           { name: "Lemai", goals: 1, assists: null },
           { name: "Ale Cartaya", goals: 1, assists: null }
         ],
-        note: "Registro parcial confirmado tras Malibú FC 5–3 Txema F7. No se han proporcionado goleadores ni asistencias de este partido y quedan sin dato."
+        note: "Resultados verificados en MyGol el 28/10/2026, incluido el 2–6 ante Nottingham. MyGol ya refleja el 3–5 de Txema ante Malibú confirmado por el club. Los seis marcadores suman 17 goles encajados; la clasificación de MyGol muestra 18 y queda pendiente de conciliación. Estadísticas individuales parciales: faltan goleadores y asistencias ante Txema y Nottingham."
       }
     ]
   },

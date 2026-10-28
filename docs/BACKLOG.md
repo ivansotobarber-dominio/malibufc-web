@@ -12,6 +12,10 @@ Prioridades: P0 bloquea un hito comprometido, P1 aporta valor inmediato, P2 mejo
 
 ## Ahora
 
+### RES-20261028, resultados hasta la jornada 7
+
+Actualización autorizada por Iván. Completados los resultados de Kortatu (1–7), Tumberos (2–3), Nottingham (2–6) y Maximal (5–1); corregido el orden del 4–2 de Platense. Balance de ambos equipos conciliado con los marcadores. Txema ya consta 3–5 en MyGol; la clasificación de Segunda sigue mostrando un gol encajado adicional, documentado en la web. Crónica de Tumberos basada exclusivamente en la información aportada por Iván el 20/10. Estadísticas individuales parciales expresamente etiquetadas. Sin cambios de indexación ni activación comercial.
+
 ### PUB-20261028, noticia de la primera preselección de Tenerife
 
 Responsable: Codex. Autorización: petición expresa de Iván de leer Instagram y publicar la noticia en la web. Alcance: contenido editorial público, cartel corregido, página propia y acceso destacado desde portada. Estado: implementación y revisión local completadas el 2026-10-28, autorizada para despliegue. Nombres y condición de primera preselección contrastados con el anuncio del club, cartel íntegro, enlace desde portada y menú móvil comprobados, cuatro fichas renderizadas, sin errores de consola ni desbordamiento horizontal a 390 px. JavaScript y diff validados. Los P0 de lanzamiento funcional, comercio e indexación permanecen abiertos y no se activan en esta actualización editorial. Reversión: revertir únicamente el commit de esta noticia.
